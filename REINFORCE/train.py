@@ -1,7 +1,21 @@
 import gym
 import logging
 import numpy as np
+import sys
+sys.path.append("REINFORCE")
+import agent
 logging.basicConfig(filename="REINFORCE/CartPole-v0.log")
+import torch
+import random
+# def setup_seed(seed):
+#      torch.manual_seed(seed)
+#      torch.cuda.manual_seed_all(seed)
+#      np.random.seed(seed)
+#      random.seed(seed)
+#      torch.backends.cudnn.deterministic = True
+# # 设置随机数种子
+# setup_seed(20)
+
 def run_episode(env, agent):
     obs_list, action_list, reward_list = [], [], []
     obs = env.reset()
@@ -40,7 +54,9 @@ def train(env, agent, episodes):
     for i in range(episodes):
         obs_list, action_list, reward_list = run_episode(env, agent)
         if i % 10 == 0:
-            logger.info("Episode {}, Reward Sum {}.".format(i, sum(reward_list)))
+            print("Episode {}, Reward Sum {}.".format(i, sum(reward_list)))
+            logging.warning("Episode {}, Reward Sum {}.".format(i, sum(reward_list)))
+
 
         batch_obs = np.array(obs_list)
         batch_action = np.array(action_list)
@@ -50,10 +66,18 @@ def train(env, agent, episodes):
         if (i + 1) % 100 == 0:
             total_reward = evaluate(5, env, agent, render=True) 
 
+opt = {
+    "LEARNING_RATE" : 1e-3
+}
+
 if __name__ == "__main__":
     env_name = "CartPole-v0"
     env = gym.make(env_name)
+    print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))
+    print(opt)
     logging.warning(opt)
     num_act = env.action_space.n
-    num_obs = env.observation_space.shape[0]
+    obs_dim = env.observation_space.shape[0]
+    agent = agent.PG_agent(obs_dim, num_act, opt["LEARNING_RATE"])
+    train(env, agent, 400)
