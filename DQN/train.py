@@ -1,13 +1,13 @@
 import gym
 import sys
-sys.path.append("DQN_CartPole")
+sys.path.append("DQN")
 import agent
 import Q_network
 import experience_replay
 import torch
 import numpy as np
 import logging
-logging.basicConfig(filename = "DQN_CartPole/DQN_CartPole.log")
+logging.basicConfig(filename = "DQN/DQN_CartPole.log")
 def run_episode(env, agent, rpm):
     total_reward = 0
     obs = env.reset()
@@ -31,10 +31,10 @@ def run_episode(env, agent, rpm):
 
 
 # 评估 agent, 跑 5 个episode，总reward求平均
-def evaluate(env, agent, render=False):
+def evaluate(times, env, agent, render=False):
     with torch.no_grad():
         eval_reward = []
-        for i in range(5):
+        for i in range(times):
             obs = env.reset()
             episode_reward = 0
             while True:
@@ -47,7 +47,7 @@ def evaluate(env, agent, render=False):
                     break
             eval_reward.append(episode_reward)
     return np.mean(eval_reward)
-def train(episodes, env, agent, save):
+def train(episodes, env, env_name, agent, save):
     rpm = experience_replay.ReplayMemory(opt["MEMORY_SIZE"])
     while len(rpm) < opt["MEMORY_WARMUP_SIZE"]:
         run_episode(env, agent, rpm)
@@ -57,11 +57,11 @@ def train(episodes, env, agent, save):
         print("train episode {} : reward {}, steps {}".format(episode + 1, reward, steps))
         logging.warning("train episode {} : reward {}, steps {}".format(episode + 1, reward, steps))
         if episode % 50 == 0:
-            eval_reward = evaluate(env, agent, render = True)
-            print("evaluate 5 episodes : e_greedy {}, reward {}".format(agent.e_greedy, eval_reward))
+            eval_reward = evaluate(5, env, agent, render = True)
+            print("evaluate {} episodes : e_greedy {}, reward {}".format(5, agent.e_greedy, eval_reward))
             logging.warning("evaluate 5 episodes : e_greedy {}, reward {}".format(agent.e_greedy, eval_reward))
     if save:
-        agent.save()
+        agent.save(env_name)
     return agent
 
 opt = {
@@ -80,9 +80,10 @@ if __name__ == "__main__":
     env_name = "CartPole-v0"
     env = gym.make(env_name)
     logging.warning("DQN trained on {}".format(env_name))
-    logging.warning("configuration:")
     logging.warning(opt)
     num_act = env.action_space.n
     num_obs = env.observation_space.shape[0]
     dqn_agent = agent.DQN_agent(num_act, num_obs, opt["GAMMA"], opt["LEARNING_RATE"], opt["E_GREEDY"], opt["E_GREEDY_DECREMENT"])
-    train(opt["max_episode"], env, dqn_agent, True)
+    dqn_agent.load("DQN\CartPole-v0.pth")
+    print("evaluate on {} episode: reward {}".format(20, evaluate(20, env, dqn_agent, True)))
+    # train(opt["max_episode"], env, env_name, dqn_agent, True)

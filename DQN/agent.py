@@ -1,5 +1,6 @@
 import sys
-sys.path.append("DQN_CartPole")
+import os
+sys.path.append("DQN")
 import Q_network
 import numpy as np
 import torch
@@ -11,8 +12,7 @@ class DQN_agent():
         self.target_model = Q_network.Q_network(dim_obs, num_act)
         self.target_model.load_state_dict(copy.deepcopy(self.model.state_dict()))
         self.Loss = nn.MSELoss()
-        self.optim = torch.optim.Adam(self.model.parameters(), lr)
-
+        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
         self.dim_obs = dim_obs
         self.num_act = num_act
@@ -20,6 +20,7 @@ class DQN_agent():
         self.lr = lr
         self.global_step = 0
         self.update_target_steps = 200  # 每隔200个training steps再把model的参数复制到target_model中
+        self.optim = torch.optim.Adam(self.model.parameters(), self.lr)
 
         self.e_greedy = e_greedy  # 有一定概率随机选取动作，探索
         self.e_greedy_decrement = e_greed_decrement  # 随着训练逐步收敛，探索的程度慢慢降低
@@ -33,21 +34,27 @@ class DQN_agent():
         return action
     def predict(self, obs):
         self.model.eval()
-        obs = np.expand_dims(obs, axis = 0)
-        obs = torch.tensor(obs, dtype = torch.float32)
         with torch.no_grad():
+            obs = np.expand_dims(obs, axis = 0)
+            obs = torch.tensor(obs, dtype = torch.float32)
+            self.model.to(self.device)
+            obs = obs.to(self.device)
             pred_Q = self.model(obs)
+            pred_Q = pred_Q.cpu()
             pred_Q = np.squeeze(pred_Q, axis=0)
             act = np.argmax(pred_Q).item()  # 选择Q最大的下标，即对应的动作
         return act
     def learn(self, obs, act, reward, next_obs, terminal):
+        self.model.to(self.device)
         self.model.train()
         if self.global_step % self.update_target_steps == 0:
             self.sync_target()
         self.global_step += 1
         act = np.expand_dims(act, -1)
         obs, act, reward, next_obs, terminal = torch.tensor(obs, dtype = torch.float32), torch.tensor(act, dtype = torch.int64), torch.tensor(reward, dtype = torch.float32), torch.tensor(next_obs, dtype = torch.float32), torch.tensor(terminal, dtype = torch.float32)
+        obs, act, reward, next_obs, terminal = obs.to(self.device), act.to(self.device), reward.to(self.device), next_obs.to(self.device), terminal.to(self.device)
         with torch.no_grad():
+            self.target_model.to(self.device)
             next_pred_value = self.target_model(next_obs)
             best_value = torch.max(next_pred_value, -1)[0]
             target = reward + (1.0 - terminal) * self.gamma * best_value
@@ -61,10 +68,10 @@ class DQN_agent():
 
 
 
-    def save(self):
-        torch.save(self.model, "DQN_CartPole/Q_network.pth")
+    def save(self, name):
+        torch.save(self.model, os.path.join("DQN", name + ".pth"))
     def load(self, path):
-        self.model = torch.load(open(path, 'r'))
+        self.model = torch.load(path)
         self.sync_target()
 
     def sync_target(self):
