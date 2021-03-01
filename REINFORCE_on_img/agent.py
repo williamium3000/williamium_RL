@@ -22,7 +22,7 @@ class PG_agent():
         self.obs_shape = obs_shape
         self.num_act = num_act 
         self.lr = lr
-        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
         self.model = network.PGnetwork(self.obs_shape[0], self.obs_shape[1], self.obs_shape[2], self.num_act)
         self.optimizer = optim.Adam(self.model.parameters(), self.lr)
     def get_act_prob(self, obs):

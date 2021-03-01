@@ -48,7 +48,7 @@ class PGnetwork(nn.Module):
             nn.BatchNorm1d(32),
             nn.ReLU(),
             nn.Linear(32, num_act),
-            # nn.Softmax(1)
+            nn.Softmax(1)
             )
 
 

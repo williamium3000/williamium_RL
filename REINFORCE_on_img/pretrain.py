@@ -111,11 +111,11 @@ task_name = "Pong-v0"
 model_name = "customized"
 optimizer_name = "Adam"
 lr = 0.0001
-batch_size = 256
+batch_size = 512
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 num_classes = 100
 param_to_update_name_prefix = []
-epochs = 1
+epochs = 500
 print(
     """{}:
     - model name: {}
@@ -146,7 +146,7 @@ if __name__ == "__main__":
                 # transforms.Resize((size, size)),
                 transforms.RandomHorizontalFlip(),
                 transforms.ToTensor(),
-                # transforms.RandomErasing(p=0.2, scale=(0.02, 0.33), ratio=(0.3, 3.3), value= "random", inplace=False),
+                transforms.RandomErasing(p=0.2, scale=(0.02, 0.33), ratio=(0.3, 3.3), value= "random", inplace=False),
                 transforms.Normalize(0, 1)
             ]),
             'val': transforms.Compose([
@@ -159,16 +159,17 @@ if __name__ == "__main__":
     CIFAR10_train = torch.utils.data.DataLoader(CIFAR10_train_dataSet,
                                           batch_size=batch_size,
                                           shuffle=True,
-                                          num_workers=0,
+                                          num_workers=8,
                                           pin_memory=True)
     CIFAR10_val = torch.utils.data.DataLoader(CIFAR10_val_dataSet,
                                           batch_size=batch_size,
                                           shuffle=True,
-                                          num_workers=0,
+                                          num_workers=8,
                                           pin_memory=True)
 
      # load model
     model = network.PGnetwork(w = 32, h = 32, c = 3, num_act = num_classes)
+    model.load_state_dict(torch.load("REINFORCE_on_img/Pong-v0.pth"))
     # unfix param
     for name, param in model.named_parameters():
             for i in param_to_update_name_prefix:
