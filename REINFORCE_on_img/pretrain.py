@@ -16,7 +16,7 @@ import time
 import json
 import network
 def check_accuracy(device, loader, model, phase):
-    print('Checking accuracy on %s set: ' % phase)
+    print('Check``ing accuracy on %s set: ' % phase)
     num_correct = 0
     num_samples = 0
     model.eval()  # set model to evaluation mode
