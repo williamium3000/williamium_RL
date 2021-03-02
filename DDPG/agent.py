@@ -31,10 +31,8 @@ class DDPG_agent():
         self.global_step += 1
         if self.global_step % self.update_target_steps == 0:
             self.sync_target()
-        actor_cost = self._actor_learn(obs)
-        critic_cost = self._critic_learn(obs, action, reward, next_obs,
-                                         terminal)
-        return actor_cost, critic_cost
+        self._actor_learn(obs)
+        self._critic_learn(obs, action, reward, next_obs,terminal)
 
     def _actor_learn(self, obs):
         self.model.to(self.device)
@@ -50,8 +48,8 @@ class DDPG_agent():
     def _critic_learn(self, obs, act, reward, next_obs, terminal):
         self.model.to(self.device)
         self.model.train()
-        terminal = np.expand_dims(terminal, axis = 0)
-        reward = np.expand_dims(reward, axis = 0)
+        terminal = np.expand_dims(terminal, axis = -1)
+        reward = np.expand_dims(reward, axis = -1)
         obs, act, reward, next_obs, terminal = torch.tensor(obs, dtype = torch.float32), torch.tensor(act, dtype = torch.float32), torch.tensor(reward, dtype = torch.float32), torch.tensor(next_obs, dtype = torch.float32), torch.tensor(terminal, dtype = torch.float32)
         obs, act, reward, next_obs, terminal = obs.to(self.device), act.to(self.device), reward.to(self.device), next_obs.to(self.device), terminal.to(self.device)
         self.target_model.to(self.device)

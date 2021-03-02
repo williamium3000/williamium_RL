@@ -52,6 +52,7 @@ class PG_agent():
         with torch.no_grad():
             obs = obs_transform(obs)
             obs = torch.unsqueeze(obs, 0)
+            print(obs.shape)
             obs = obs.to(self.device)
             self.model.to(self.device)
             self.model.eval()

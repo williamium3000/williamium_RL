@@ -84,6 +84,6 @@ if __name__ == "__main__":
     num_act = env.action_space.n
     num_obs = env.observation_space.shape[0]
     dqn_agent = agent.DQN_agent(num_act, num_obs, opt["GAMMA"], opt["LEARNING_RATE"], opt["E_GREEDY"], opt["E_GREEDY_DECREMENT"])
-    dqn_agent.load("DQN\CartPole-v0.pth")
-    print("evaluate on {} episode: reward {}".format(20, evaluate(20, env, dqn_agent, True)))
-    # train(opt["max_episode"], env, env_name, dqn_agent, True)
+    # dqn_agent.load("DQN\CartPole-v0.pth")
+    # print("evaluate on {} episode: reward {}".format(20, evaluate(20, env, dqn_agent, True)))
+    train(opt["max_episode"], env, env_name, dqn_agent, True)

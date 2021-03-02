@@ -87,7 +87,7 @@ opt = {
     "GAMMA" : 0.99,      # reward 的衰减因子
     "TAU" : 0.001,       # 软更新的系数
     "MEMORY_SIZE" : int(1e6),                  # 经验池大小
-    "MEMORY_WARMUP_SIZE" : int(1e6) // 20,  # 预存一部分经验之后再开始训练
+    "MEMORY_WARMUP_SIZE" : int(1e6) // 200,  # 预存一部分经验之后再开始训练
     "BATCH_SIZE" : 128,
     "REWARD_SCALE" : 0.1 ,  # reward 缩放系数
     "NOISE" : 0.05,       # 动作噪声方差

@@ -24,7 +24,6 @@ def run_episode(env, agent):
     step = 0
     while True:
         step += 1
-        # obs = preprocess(obs)
         obs_list.append(obs)
         action = agent.sample(obs) # 采样动作
         action_list.append(action)
@@ -64,7 +63,6 @@ def train(env, env_name, agent, episodes):
         if i % 10 == 0:
             print("Episode {}, step {} Reward Sum {}.".format(i, step, sum(reward_list)))
             logging.warning("Episode {}, step {} Reward Sum {}.".format(i, step, sum(reward_list)))
-        # batch_obs = np.array(obs_list)
         batch_obs = obs_list
         batch_action = np.array(action_list)
         batch_reward = np.array(reward_list)
@@ -94,4 +92,4 @@ if __name__ == "__main__":
     num_act = env.action_space.n
     obs_shape = (32, 32, 3)
     agent = agent.PG_agent(obs_shape, num_act, opt["LEARNING_RATE"], True)
-    train(env, env_name, agent, 1000)
+    train(env, env_name, agent, 1)
