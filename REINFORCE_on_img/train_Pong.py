@@ -91,5 +91,5 @@ if __name__ == "__main__":
     logging.warning(opt)
     num_act = env.action_space.n
     obs_shape = (32, 32, 3)
-    agent = agent.PG_agent(obs_shape, num_act, opt["LEARNING_RATE"], True)
+    agent = agent.PG_agent(obs_shape, num_act, opt["LEARNING_RATE"], False)
     train(env, env_name, agent, 1)
