@@ -17,8 +17,8 @@ class DDPGnetwork(nn.Module):
         self.critic = criticNet(obs_dim + act_dim, 1)
     def forward(self, obs):
         return self.actor(obs)
-    def value(self, obs, action):
-        return self.critic(obs, action)
+    def value(self, obs_and_action):
+        return self.critic(obs_and_action)
 
 class actorNet(nn.Module):
     def __init__(self, obs_dim, act_dim):
@@ -46,8 +46,7 @@ class criticNet(nn.Module):
         self.fc2 = nn.Linear(32, 32, True)
         self.relu2 = nn.ReLU()
         self.fc3 = nn.Linear(32, act_dim, True)
-    def forward(self, x, a):
-        x = torch.cat([x, a], dim = -1)
+    def forward(self, x):
         x = self.fc1(x)
         x = self.relu1(x)
         x = self.fc2(x)
@@ -56,9 +55,40 @@ class criticNet(nn.Module):
         return x
 
 if __name__ == "__main__":
+    import copy
     t = DDPGnetwork(10, 1)
-    t1 = DDPGnetwork(10, 1).state_dict()
-    t2 = DDPGnetwork(10, 1).state_dict()
-    for n, p in t1.items():
-        t1[n] = t1[n] - t2[n]
-    t.load_state_dict(t1)
+    t_actor = []
+    t_critic = []
+    for p in t.actor.parameters():
+        t_actor.append(copy.deepcopy(p))
+    for p in t.critic.parameters():
+        t_critic.append(copy.deepcopy(p))
+
+    obs = torch.rand((100, 10))
+    from torch import optim
+    optimizer = optim.Adam(t.actor.parameters(), lr = 0.1)
+    optimizer2 = optim.Adam(t.critic.parameters(), lr = 0.1)
+    t.train()
+    action = t(obs)
+    obs_and_action = torch.cat([obs, action], dim = -1)
+    Q = t.value(obs_and_action)
+    loss = -1 * torch.mean(Q)
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+    print("actor param", "_"*50)
+    # for i, p in enumerate(t.actor.parameters()):
+    #     print(torch.sum(t_actor[i] - p))
+    # print("critic param", "_"*50)
+    # for i, p in enumerate(t.critic.parameters()):
+    #     print(torch.sum(t_critic[i] - p))
+    optimizer2.zero_grad()
+    for p in t.critic.parameters():
+        print(p.grad)
+
+    
+        
+
+
+    
+    

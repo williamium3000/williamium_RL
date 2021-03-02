@@ -31,15 +31,20 @@ class DDPG_agent():
         self.global_step += 1
         if self.global_step % self.update_target_steps == 0:
             self.sync_target()
-        self._actor_learn(obs)
         self._critic_learn(obs, action, reward, next_obs,terminal)
+        self._actor_learn(obs)
 
     def _actor_learn(self, obs):
         self.model.to(self.device)
         self.model.train()
+        # print("obs.shape {}".format(obs.shape))
         obs = torch.tensor(obs, dtype=torch.float32).to(self.device)
         action = self.model(obs)
-        Q = self.model.value(obs, action)
+        # print("action.shape {}".format(action.shape))
+        obs_and_act = torch.cat([obs, action], dim = -1)
+        # print("obs_and_act.shape {}".format(obs_and_act.shape))
+        Q = self.model.value(obs_and_act)
+        # print("Q.shape {}".format(Q.shape))
         loss = torch.mean(-1.0 * Q)
         self.actor_optim.zero_grad()
         loss.backward()
@@ -52,14 +57,27 @@ class DDPG_agent():
         reward = np.expand_dims(reward, axis = -1)
         obs, act, reward, next_obs, terminal = torch.tensor(obs, dtype = torch.float32), torch.tensor(act, dtype = torch.float32), torch.tensor(reward, dtype = torch.float32), torch.tensor(next_obs, dtype = torch.float32), torch.tensor(terminal, dtype = torch.float32)
         obs, act, reward, next_obs, terminal = obs.to(self.device), act.to(self.device), reward.to(self.device), next_obs.to(self.device), terminal.to(self.device)
+        
+        # print("obs.shape {}".format(obs.shape))
+        # print("act.shape {}".format(act.shape))
+        # print("reward.shape {}".format(reward.shape))
+        # print("next_obs.shape {}".format(next_obs.shape))
+        # print("terminal.shape {}".format(terminal.shape))
         self.target_model.to(self.device)
         self.target_model.eval()
         with torch.no_grad():
             next_action = self.target_model(next_obs)
-            next_Q = self.target_model.value(next_obs, next_action)
+            # print("next_action.shape {}".format(next_action.shape))
+            obs_and_act = torch.cat([next_obs, next_action], dim = -1)
+            # print("obs_and_act.shape {}".format(obs_and_act.shape))
+            next_Q = self.target_model.value(obs_and_act)
             target_Q = reward + (1.0 - terminal) * self.gamma * next_Q
+            # print("target_Q.shape {}".format(target_Q.shape))
 
-        Q = self.model.value(obs, act)
+        obs_and_act2 = torch.cat([obs, act], dim = -1) 
+        # print("obs_and_act2.shape {}".format(obs_and_act2.shape))
+        Q = self.model.value(obs_and_act2)
+        # print("Q.shape {}".format(Q.shape))
         loss = nn.MSELoss()(Q, target_Q)
         self.actor_optim.zero_grad()
         loss.backward()
@@ -69,14 +87,15 @@ class DDPG_agent():
     def sync_target(self, decay=None, share_vars_parallel_executor=None):
         """ self.target_model从self.model复制参数过来，可设置软更新参数
         """
-        if decay is None:
-            decay = self.tau
-        d1 = self.target_model.state_dict()
-        d2 = self.model.state_dict()
-        for key, value in d2.items():
-            d1[key] = decay * d2[key] + (1 - decay) * d1[key]
-        self.target_model.load_state_dict(d1)
-        self.target_model.eval()
+        # if decay is None:
+        #     decay = self.tau
+        # d1 = self.target_model.state_dict()
+        # d2 = self.model.state_dict()
+        # for key, value in d2.items():
+        #     d1[key] = decay * d2[key] + (1 - decay) * d1[key]
+        # self.target_model.load_state_dict(d1)
+        # self.target_model.eval()
+        self.target_model.load_state_dict(copy.deepcopy(self.model.state_dict()))
     def save(self, name):
         torch.save(self.model, os.path.join("DDPG", name + ".pth"))
     def load(self, path):
