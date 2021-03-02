@@ -9,6 +9,25 @@ import torch
 import random
 import env
 import experience_replay
+
+class NormalizedActions(gym.ActionWrapper):
+    ''' 将action范围重定在[0.1]之间
+    '''
+    def action(self, action):
+        
+        low_bound   = self.action_space.low
+        upper_bound = self.action_space.high
+        action = low_bound + (action + 1.0) * 0.5 * (upper_bound - low_bound)
+        action = np.clip(action, low_bound, upper_bound)
+        
+        return action
+
+    def reverse_action(self, action):
+        low_bound   = self.action_space.low
+        upper_bound = self.action_space.high
+        action = 2 * (action - low_bound) / (upper_bound - low_bound) - 1
+        action = np.clip(action, low_bound, upper_bound)
+        return action
 def setup_seed(seed):
      torch.manual_seed(seed)
      torch.cuda.manual_seed_all(seed)
@@ -92,12 +111,14 @@ opt = {
     "REWARD_SCALE" : 0.1 ,  # reward 缩放系数
     "NOISE" : 0.05,       # 动作噪声方差
     "LEARN_FREQ" : 5,
-    "TRAIN_EPISODE" : 5000 # 训练的总episode数
+    "TRAIN_EPISODE" : 1000 # 训练的总episode数
 }
 
 if __name__ == "__main__":
-    env_name = "CartPole-continous"
-    env = env.ContinuousCartPoleEnv()
+    # env_name = "CartPole-continous"
+    # env = env.ContinuousCartPoleEnv()
+    env_name = "Pendulum-v0"
+    env = NormalizedActions(gym.make("Pendulum-v0"))
     print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))
     print(opt)
