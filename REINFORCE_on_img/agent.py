@@ -52,7 +52,6 @@ class PG_agent():
         with torch.no_grad():
             obs = obs_transform(obs)
             obs = torch.unsqueeze(obs, 0)
-            print(obs.shape)
             obs = obs.to(self.device)
             self.model.to(self.device)
             self.model.eval()
@@ -69,9 +68,9 @@ class PG_agent():
         return act
     def learn(self, obs, act, reward):
         train_transform = transforms.Compose([
-                transforms.RandomRotation(degrees = 50),
-                transforms.RandomResizedCrop((self.obs_shape[0], self.obs_shape[1])),
-                # transforms.Resize((self.obs_shape[0], self.obs_shape[1])),
+                # transforms.RandomRotation(degrees = 50),
+                # transforms.RandomResizedCrop((self.obs_shape[0], self.obs_shape[1])),
+                transforms.Resize((self.obs_shape[0], self.obs_shape[1])),
                 transforms.RandomHorizontalFlip(),
                 transforms.ToTensor(),
                 transforms.RandomErasing(p=0.2, scale=(0.02, 0.33), ratio=(0.3, 3.3), value= "random", inplace=False),
@@ -85,11 +84,17 @@ class PG_agent():
         for obs_ in obs:
             obs_transformed.append(train_transform(obs_))
         obs, act, reward = torch.stack(obs_transformed), torch.tensor(act, dtype = torch.int64), torch.tensor(reward, dtype = torch.float32)
+        # print("obs.shape {}".format(obs.shape))
+        # print("act.shape {}".format(act.shape))
+        # print("reward.shape {}".format(reward.shape))
         obs, act, reward = obs.to(self.device), act.to(self.device), reward.to(self.device)
         act_prob = self.model(obs)
+        # print("act_prob.shape {}".format(act_prob.shape))
         act_prob = torch.gather(act_prob, 1, act)
+        # print("act_prob.shape {}".format(act_prob.shape))
         act_prob = torch.log(act_prob)
         cost = -1 * act_prob * reward
+        # print("cost.shape {}".format(cost.shape))
         loss = torch.mean(cost)
         self.optimizer.zero_grad()
         loss.backward()
