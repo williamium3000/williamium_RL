@@ -14,7 +14,7 @@ class PGnetwork(nn.Module):
     def __init__(self, w, h, c, num_act):
         super(PGnetwork, self).__init__()
 
-        self.features = (w // 4) * (h // 4) * 64
+        self.features = (w // 2) * (h // 2) * 32
 
         self.block1 = nn.Sequential(
             nn.Conv2d(c, 32, 3, 1, 1),
@@ -25,21 +25,9 @@ class PGnetwork(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(2, 2)
         )
-        self.block2 = nn.Sequential(
-            nn.Conv2d(32, 64, 3, 1, 1),
-            nn.ReLU(),
-            nn.Conv2d(64, 64, 3, 1, 1),
-            nn.ReLU(),
-            nn.Conv2d(64, 64, 3, 1, 1),
-            nn.ReLU(),
-            nn.MaxPool2d(2, 2)
-        )
+
         self.fc = nn.Sequential(
-            nn.Linear(self.features, 64),
-            nn.BatchNorm1d(64),
-            nn.ReLU(),
-            nn.Linear(64, 32),
-            nn.BatchNorm1d(32),
+            nn.Linear(self.features, 32),
             nn.ReLU(),
             nn.Linear(32, num_act),
             nn.Softmax(1)
@@ -49,7 +37,6 @@ class PGnetwork(nn.Module):
         
     def forward(self, x):
         x = self.block1(x)
-        x = self.block2(x)
         x = x.reshape(x.shape[0], -1)
         x = self.fc(x)
         return x
