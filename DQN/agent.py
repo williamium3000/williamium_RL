@@ -58,11 +58,11 @@ class DQN_agent():
         terminal = np.expand_dims(terminal, -1)
         obs, act, reward, next_obs, terminal = torch.tensor(obs, dtype = torch.float32), torch.tensor(act, dtype = torch.int64), torch.tensor(reward, dtype = torch.float32), torch.tensor(next_obs, dtype = torch.float32), torch.tensor(terminal, dtype = torch.float32)
         obs, act, reward, next_obs, terminal = obs.to(self.device), act.to(self.device), reward.to(self.device), next_obs.to(self.device), terminal.to(self.device)
-        with torch.no_grad():
-            self.target_model.to(self.device)
-            next_pred_value = self.target_model(next_obs)
-            best_value = torch.max(next_pred_value, -1, keepdim = True)[0]
-            target = reward + (1.0 - terminal) * self.gamma * best_value
+  
+        self.target_model.to(self.device)
+        next_pred_value = self.target_model(next_obs)
+        best_value = torch.max(next_pred_value, -1, keepdim = True)[0]
+        target = reward + (1.0 - terminal) * self.gamma * best_value
         y = self.model(obs)
         y = torch.gather(y, 1, act)
         loss = self.Loss(y, target)

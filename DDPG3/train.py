@@ -96,7 +96,7 @@ def train(env, env_name, agent, episodes, rpm):
 
         if (i + 1) % 100 == 0:
             total_reward = evaluate(5, env, agent, render=True) 
-    # agent.save(env_name)
+    agent.save(env_name)
 
 opt = {
     "LEARNING_RATE" : 1e-3,
@@ -109,7 +109,7 @@ opt = {
     "MEMORY_WARMUP_SIZE" : int(1e6) // 200,  # 预存一部分经验之后再开始训练
     "BATCH_SIZE" : 128,
     "REWARD_SCALE" : 0.1 ,  # reward 缩放系数
-    "NOISE" : 0.5,       # 动作噪声方差
+    "NOISE" : 0.05,       # 动作噪声方差
     "LEARN_FREQ" : 5,
     "TRAIN_EPISODE" : 1000 # 训练的总episode数
 }
