@@ -2,13 +2,13 @@ import gym
 import logging
 import numpy as np
 import sys
-sys.path.append("DDPG")
-import agent
+sys.path.append(".")
+from DDPG import agent
 logging.basicConfig(filename="DDPG/CartPole-continuous.log")
 import torch
 import random
-import env
-import experience_replay
+from DDPG import env
+from DDPG import experience_replay
 
 class NormalizedActions(gym.ActionWrapper):
     ''' 将action范围重定在[0.1]之间
@@ -38,17 +38,14 @@ def setup_seed(seed):
 setup_seed(20)
 
 def run_episode(env, agent, rpm):
-    obs_list, action_list, reward_list = [], [], []
     obs = env.reset()
     step = 0
     total_reward = 0
     while True:
-        step += 1
-        obs_list.append(obs)
         action = agent.predict(obs) # 采样动作
         action = np.clip(np.random.normal(action, opt["NOISE"]), -1.0, 1.0)
         next_obs, reward, done, info = env.step(action)
-        rpm.append(((obs, action, opt["REWARD_SCALE"] * reward, next_obs, done)))
+        rpm.append((obs, action, opt["REWARD_SCALE"] * reward, next_obs, done))
 
         if len(rpm) > opt["MEMORY_WARMUP_SIZE"] and (step % opt["LEARN_FREQ"]) == 0:
             (batch_obs, batch_action, batch_reward, batch_next_obs,
@@ -58,7 +55,7 @@ def run_episode(env, agent, rpm):
 
         obs = next_obs
         total_reward += reward
-
+        step += 1
         if done or step >= 200:
             break
     return step, total_reward
@@ -96,20 +93,19 @@ def train(env, env_name, agent, episodes, rpm):
 
         if (i + 1) % 100 == 0:
             total_reward = evaluate(5, env, agent, render=True) 
-    # agent.save(env_name)
+    agent.save(env_name)
 
 opt = {
-    "LEARNING_RATE" : 1e-3,
     "ACTOR_LR" : 1e-3,  # Actor网络的 learning rate
     "CRITIC_LR" : 1e-3,  # Critic网络的 learning rate
 
-    "GAMMA" : 0.99,      # reward 的衰减因子
-    "TAU" : 0.001,       # 软更新的系数
+    "GAMMA" : 0.95,      # reward 的衰减因子
+    "TAU" : 0.5,       # 软更新的系数
     "MEMORY_SIZE" : int(1e6),                  # 经验池大小
     "MEMORY_WARMUP_SIZE" : int(1e6) // 200,  # 预存一部分经验之后再开始训练
     "BATCH_SIZE" : 128,
     "REWARD_SCALE" : 0.1 ,  # reward 缩放系数
-    "NOISE" : 0.5,       # 动作噪声方差
+    "NOISE" : 0.05,       # 动作噪声方差
     "LEARN_FREQ" : 5,
     "TRAIN_EPISODE" : 1000 # 训练的总episode数
 }
