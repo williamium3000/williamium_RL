@@ -69,7 +69,7 @@ def train(env, env_name, agent, episodes):
 
         agent.learn(batch_obs, batch_action, batch_reward)
         if (i + 1) % 100 == 0:
-            total_reward = evaluate(5, env, agent, render=True) 
+            total_reward = evaluate(5, env, agent, render=False) 
     agent.save(env_name)
 
 opt = {
