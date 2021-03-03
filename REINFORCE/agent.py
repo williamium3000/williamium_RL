@@ -25,26 +25,23 @@ class PG_agent():
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         self.model = network.PGnetwork(self.obs_dim, self.num_act)
         self.optimizer = optim.Adam(self.model.parameters(), self.lr)
+    def get_prob(self, obs):
+        with torch.no_grad():
+            obs = np.expand_dims(obs, axis = 0)
+            obs = torch.tensor(obs, dtype = torch.float32).to(self.device)
+            self.model.to(self.device)
+            self.model.eval()
+            act_prob = self.model(obs).cpu().numpy()
+            act_prob = np.squeeze(act_prob, axis=0)  # 减少一维维度
+            return act_prob
     def sample(self, obs):
-        with torch.no_grad():
-            obs = np.expand_dims(obs, axis = 0)
-            obs = torch.tensor(obs, dtype = torch.float32).to(self.device)
-            self.model.to(self.device)
-            self.model.eval()
-            act_prob = self.model(obs).cpu().numpy()
-            act_prob = np.squeeze(act_prob, axis=0)  # 减少一维维度
-            act = np.random.choice(range(self.num_act), p=act_prob)  # 根据动作概率选取动作
-            return act
+        act_prob = self.get_prob(obs)
+        act = np.random.choice(range(self.num_act), p=act_prob)  # 根据动作概率选取动作
+        return act
     def predict(self, obs):
-        with torch.no_grad():
-            obs = np.expand_dims(obs, axis = 0)
-            obs = torch.tensor(obs, dtype = torch.float32).to(self.device)
-            self.model.to(self.device)
-            self.model.eval()
-            act_prob = self.model(obs).cpu().numpy()
-            act_prob = np.squeeze(act_prob, axis=0)  # 减少一维维度
-            act = np.argmax(act_prob)  # 根据动作概率选择概率最高的动作
-            return act
+        act_prob = self.get_prob(obs)
+        act = np.argmax(act_prob)  # 根据动作概率选择概率最高的动作
+        return act
     def learn(self, obs, act, reward):
         self.model.to(self.device)
         reward = self.calc_reward_to_go(reward)
