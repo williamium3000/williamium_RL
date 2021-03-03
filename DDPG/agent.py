@@ -89,13 +89,11 @@ class DDPG_agent():
         """
         if decay is None:
             decay = self.tau
-        d1 = self.target_model.state_dict()
-        d2 = self.model.state_dict()
-        for key, value in d2.items():
-            d1[key] = decay * d2[key] + (1 - decay) * d1[key]
-        self.target_model.load_state_dict(d1)
-        self.target_model.eval()
-        # self.target_model.load_state_dict(copy.deepcopy(self.model.state_dict()))
+        for target_param, param in zip(self.target_model.parameters(), self.model.parameters()):
+            target_param.data.copy_(
+                target_param.data * (1.0 - decay) +
+                param.data * decay
+            )
     def save(self, name):
         torch.save(self.model, os.path.join("DDPG", name + ".pth"))
     def load(self, path):

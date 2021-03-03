@@ -115,10 +115,10 @@ opt = {
 }
 
 if __name__ == "__main__":
-    # env_name = "CartPole-continous"
-    # env = env.ContinuousCartPoleEnv()
-    env_name = "Pendulum-v0"
-    env = NormalizedActions(gym.make("Pendulum-v0"))
+    env_name = "CartPole-continous"
+    env = env.ContinuousCartPoleEnv()
+    # env_name = "Pendulum-v0"
+    # env = NormalizedActions(gym.make("Pendulum-v0"))
     print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))
     print(opt)
