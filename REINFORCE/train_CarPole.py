@@ -4,7 +4,7 @@ import numpy as np
 import sys
 sys.path.append("REINFORCE")
 import agent
-logging.basicConfig(filename="REINFORCE/CartPole-v0.log")
+
 import torch
 import random
 import numpy as np
@@ -75,6 +75,8 @@ opt = {
 if __name__ == "__main__":
     env_name = "CartPole-v0"
     env = gym.make(env_name)
+    logging.basicConfig(filename="REINFORCE/{}log".format(env_name))
+
     print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))
     print(opt)
