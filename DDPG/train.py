@@ -4,12 +4,11 @@ import numpy as np
 import sys
 sys.path.append(".")
 from DDPG import agent
-logging.basicConfig(filename="DDPG/CartPole-continuous.log")
 import torch
 import random
 from DDPG import env
 from DDPG import experience_replay
-
+from rlschool import make_env
 class NormalizedActions(gym.ActionWrapper):
     ''' 将action范围重定在[0.1]之间
     '''
@@ -92,7 +91,7 @@ def train(env, env_name, agent, episodes, rpm):
             logging.warning("Episode {}, step {} Reward Sum {}.".format(i, step, total_reward))
 
         if (i + 1) % 100 == 0:
-            total_reward = evaluate(5, env, agent, render=True) 
+            total_reward = evaluate(5, env, agent, render=False) 
     agent.save(env_name)
 
 opt = {
@@ -107,14 +106,16 @@ opt = {
     "REWARD_SCALE" : 0.1 ,  # reward 缩放系数
     "NOISE" : 0.05,       # 动作噪声方差
     "LEARN_FREQ" : 5,
-    "TRAIN_EPISODE" : 1000 # 训练的总episode数
+    "TRAIN_EPISODE" : 3000 # 训练的总episode数
 }
 
 if __name__ == "__main__":
-    env_name = "CartPole-continous"
-    env = env.ContinuousCartPoleEnv()
+    env_name = "Quadrotor"
+    logging.basicConfig(filename="DDPG/{}.log".format(env_name))
+    # env = env.ContinuousCartPoleEnv()
     # env_name = "Pendulum-v0"
     # env = NormalizedActions(gym.make("Pendulum-v0"))
+    env = make_env(env_name, task="hovering_control")
     print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))
     print(opt)
