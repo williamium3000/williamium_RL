@@ -2,8 +2,8 @@ import gym
 import logging
 import numpy as np
 import sys
-sys.path.append("REINFORCE")
-import agent
+sys.path.append(".")
+from REINFORCE import agent
 logging.basicConfig(filename="REINFORCE/Pong-v0.log")
 import torch
 import random
@@ -94,4 +94,4 @@ if __name__ == "__main__":
     num_act = env.action_space.n
     obs_dim = 80 * 80
     agent = agent.PG_agent(obs_dim, num_act, opt["LEARNING_RATE"])
-    train(env, env_name, agent, 10000)
+    train(env, env_name, agent, 5000)

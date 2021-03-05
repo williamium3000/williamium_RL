@@ -90,32 +90,50 @@ def train(env, env_name, agent, episodes, rpm):
             print("Episode {}, step {} Reward Sum {}.".format(i, step, total_reward))
             logging.warning("Episode {}, step {} Reward Sum {}.".format(i, step, total_reward))
 
-        if (i + 1) % 100 == 0:
+        if (i + 1) % 10 == 0:
             total_reward = evaluate(5, env, agent, render=False) 
     agent.save(env_name)
 
+# opt = {
+#     "ACTOR_LR" : 0.0002,  # Actor网络的 learning rate
+#     "CRITIC_LR" : 0.001,  # Critic网络的 learning rate
+
+#     "GAMMA" : 0.99,      # reward 的衰减因子
+#     "TAU" : 0.02,       # 软更新的系数
+#     "MEMORY_SIZE" : int(1e6),                  # 经验池大小
+#     "MEMORY_WARMUP_SIZE" : int(1e4),  # 预存一部分经验之后再开始训练
+#     "BATCH_SIZE" : 256,
+#     "REWARD_SCALE" : 0.1,  # reward 缩放系数
+#     "NOISE" : 1,       # 动作噪声方差
+#     "LEARN_FREQ" : 2,
+#     "TRAIN_EPISODE" : int(1e6) # 训练的总episode数
+# }
+
 opt = {
-    "ACTOR_LR" : 1e-3,  # Actor网络的 learning rate
-    "CRITIC_LR" : 1e-3,  # Critic网络的 learning rate
+    "ACTOR_LR" : 0.001,  # Actor网络的 learning rate
+    "CRITIC_LR" : 0.001,  # Critic网络的 learning rate
 
     "GAMMA" : 0.95,      # reward 的衰减因子
-    "TAU" : 0.5,       # 软更新的系数
+    "TAU" : 0.1,       # 软更新的系数
     "MEMORY_SIZE" : int(1e6),                  # 经验池大小
-    "MEMORY_WARMUP_SIZE" : int(1e6) // 200,  # 预存一部分经验之后再开始训练
-    "BATCH_SIZE" : 128,
-    "REWARD_SCALE" : 0.1 ,  # reward 缩放系数
-    "NOISE" : 0.05,       # 动作噪声方差
+    "MEMORY_WARMUP_SIZE" : 500,  # 预存一部分经验之后再开始训练
+    "BATCH_SIZE" : 32,
+    "REWARD_SCALE" : 1,  # reward 缩放系数
+    "NOISE" : 0.01,       # 动作噪声方差
     "LEARN_FREQ" : 5,
-    "TRAIN_EPISODE" : 10000 # 训练的总episode数
+    "TRAIN_EPISODE" : 2000 # 训练的总episode数
 }
 
 if __name__ == "__main__":
-    # env_name = "CartPole-v0"
-    # env = env.ContinuousCartPoleEnv()
+    env_name = "CartPole-v0"
+    env = env.ContinuousCartPoleEnv()
+
     # env_name = "Pendulum-v0"
     # env = NormalizedActions(gym.make("Pendulum-v0"))
-    env_name = "Quadrotor"
-    env = make_env(env_name, task="hovering_control")
+
+    # env_name = "Quadrotor"
+    # env = make_env(env_name, task="hovering_control")
+
     logging.basicConfig(filename="DDPG/{}.log".format(env_name))
     print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))

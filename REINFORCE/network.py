@@ -13,20 +13,18 @@ setup_seed(20)
 class PGnetwork(nn.Module):
     def __init__(self, num_obs, num_act):
         super(PGnetwork, self).__init__()
-        self.fc1 = nn.Linear(num_obs, 32, True)
-        self.relu1 = nn.ReLU()
-        self.fc2 = nn.Linear(32, 32, True)
-        self.relu2 = nn.ReLU()
-        self.fc3 = nn.Linear(32, num_act, True)
-        self.sf = nn.Softmax(1)
+        self.fc = nn.Sequential(
+            nn.Linear(num_obs, num_obs // 10, True),
+            nn.ReLU(),
+            nn.Linear(num_obs // 10, num_obs // 10, True),
+            nn.ReLU(),
+            nn.Linear(num_obs // 10, num_act, True),
+            nn.Softmax(1)
+        )
+  
+
     def forward(self, x):
-        x = self.fc1(x)
-        x = self.relu1(x)
-        x = self.fc2(x)
-        x = self.relu2(x)
-        x = self.fc3(x)
-        x = self.sf(x)
-        return x
+        return self.fc(x)
 
 if __name__ == "__main__":
     test = Q_network(4, 10)

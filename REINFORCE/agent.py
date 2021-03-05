@@ -22,7 +22,7 @@ class PG_agent():
         self.obs_dim = obs_dim
         self.num_act = num_act 
         self.lr = lr
-        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
         self.model = network.PGnetwork(self.obs_dim, self.num_act)
         self.optimizer = optim.Adam(self.model.parameters(), self.lr)
     def get_prob(self, obs):
@@ -57,7 +57,7 @@ class PG_agent():
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
-    def calc_reward_to_go(self, reward_list, gamma=0.9):
+    def calc_reward_to_go(self, reward_list, gamma=0.99):
         for i in range(len(reward_list) - 2, -1, -1):
             # G_t = r_t + γ·r_t+1 + ... = r_t + γ·G_t+1
             reward_list[i] += gamma * reward_list[i + 1] # Gt

@@ -7,7 +7,7 @@ from DQN import experience_replay
 import torch
 import numpy as np
 import logging
-logging.basicConfig(filename = "DQN/DQN_CartPole.log")
+
 def run_episode(env, agent, rpm):
     total_reward = 0
     obs = env.reset()
@@ -57,7 +57,7 @@ def train(episodes, env, env_name, agent, save):
         print("train episode {} : reward {}, steps {}".format(episode + 1, reward, steps))
         logging.warning("train episode {} : reward {}, steps {}".format(episode + 1, reward, steps))
         if episode % 50 == 0:
-            eval_reward = evaluate(5, env, agent, render = True)
+            eval_reward = evaluate(5, env, agent, render = False)
             print("evaluate {} episodes : e_greedy {}, reward {}".format(5, agent.e_greedy, eval_reward))
             logging.warning("evaluate 5 episodes : e_greedy {}, reward {}".format(agent.e_greedy, eval_reward))
     if save:
@@ -65,19 +65,21 @@ def train(episodes, env, env_name, agent, save):
     return agent
 
 opt = {
-    "LEARN_FREQ" : 5, # 训练频率，不需要每一个step都learn，攒一些新增经验后再learn，提高效率
+    "LEARN_FREQ" : 3, # 训练频率，不需要每一个step都learn，攒一些新增经验后再learn，提高效率
     "MEMORY_SIZE" : 20000,    # replay memory的大小，越大越占用内存
-    "MEMORY_WARMUP_SIZE" : 200,  # replay_memory 里需要预存一些经验数据，再开启训练
-    "BATCH_SIZE" : 32,   # 每次给agent learn的数据数量，从replay memory随机里sample一批数据出来
+    "MEMORY_WARMUP_SIZE" : 300,  # replay_memory 里需要预存一些经验数据，再开启训练
+    "BATCH_SIZE" : 64,   # 每次给agent learn的数据数量，从replay memory随机里sample一批数据出来
     "LEARNING_RATE" : 0.001, # 学习率
     "GAMMA" : 0.99, # reward 的衰减因子，一般取 0.9 到 0.999 不等
     "E_GREEDY" : 0.1,
     "E_GREEDY_DECREMENT" : 1e-6,
-    "max_episode" : 2000
+    "max_episode" : 1000
 }
 
 if __name__ == "__main__":
-    env_name = "CartPole-v0"
+    # env_name = "CartPole-v0"
+    env_name = "MountainCar-v0"
+    logging.basicConfig(filename = "DQN/{}.log".format(env_name))
     env = gym.make(env_name)
     logging.warning("DQN trained on {}".format(env_name))
     logging.warning(opt)

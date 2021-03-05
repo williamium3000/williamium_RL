@@ -12,7 +12,7 @@ class DQN_agent():
         self.target_model = Q_network.Q_network(dim_obs, num_act)
         self.target_model.load_state_dict(copy.deepcopy(self.model.state_dict()))
         self.Loss = nn.MSELoss()
-        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 
         self.dim_obs = dim_obs
         self.num_act = num_act

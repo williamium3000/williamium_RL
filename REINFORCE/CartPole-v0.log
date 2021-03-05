@@ -1,0 +1,57 @@
+WARNING:root:DQN trained on CartPole-v0
+WARNING:root:{'LEARNING_RATE': 0.001}
+WARNING:root:Episode 0, Reward Sum 13.0.
+WARNING:root:Episode 10, Reward Sum 19.0.
+WARNING:root:Episode 20, Reward Sum 17.0.
+WARNING:root:Episode 30, Reward Sum 20.0.
+WARNING:root:Episode 40, Reward Sum 11.0.
+WARNING:root:Episode 50, Reward Sum 40.0.
+WARNING:root:Episode 60, Reward Sum 18.0.
+WARNING:root:Episode 70, Reward Sum 33.0.
+WARNING:root:Episode 80, Reward Sum 47.0.
+WARNING:root:Episode 90, Reward Sum 39.0.
+WARNING:root:evaluating on 5 episodes with mean reward 30.6.
+WARNING:root:Episode 100, Reward Sum 18.0.
+WARNING:root:Episode 110, Reward Sum 39.0.
+WARNING:root:Episode 120, Reward Sum 46.0.
+WARNING:root:Episode 130, Reward Sum 23.0.
+WARNING:root:Episode 140, Reward Sum 43.0.
+WARNING:root:Episode 150, Reward Sum 51.0.
+WARNING:root:Episode 160, Reward Sum 21.0.
+WARNING:root:Episode 170, Reward Sum 45.0.
+WARNING:root:Episode 180, Reward Sum 24.0.
+WARNING:root:Episode 190, Reward Sum 13.0.
+WARNING:root:evaluating on 5 episodes with mean reward 56.2.
+WARNING:root:Episode 200, Reward Sum 71.0.
+WARNING:root:Episode 210, Reward Sum 28.0.
+WARNING:root:Episode 220, Reward Sum 46.0.
+WARNING:root:Episode 230, Reward Sum 47.0.
+WARNING:root:Episode 240, Reward Sum 24.0.
+WARNING:root:Episode 250, Reward Sum 200.0.
+WARNING:root:Episode 260, Reward Sum 67.0.
+WARNING:root:Episode 270, Reward Sum 167.0.
+WARNING:root:Episode 280, Reward Sum 136.0.
+WARNING:root:Episode 290, Reward Sum 95.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 300, Reward Sum 200.0.
+WARNING:root:Episode 310, Reward Sum 200.0.
+WARNING:root:Episode 320, Reward Sum 200.0.
+WARNING:root:Episode 330, Reward Sum 189.0.
+WARNING:root:Episode 340, Reward Sum 182.0.
+WARNING:root:Episode 350, Reward Sum 200.0.
+WARNING:root:Episode 360, Reward Sum 200.0.
+WARNING:root:Episode 370, Reward Sum 200.0.
+WARNING:root:Episode 380, Reward Sum 200.0.
+WARNING:root:Episode 390, Reward Sum 171.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 400, Reward Sum 197.0.
+WARNING:root:Episode 410, Reward Sum 200.0.
+WARNING:root:Episode 420, Reward Sum 166.0.
+WARNING:root:Episode 430, Reward Sum 160.0.
+WARNING:root:Episode 440, Reward Sum 200.0.
+WARNING:root:Episode 450, Reward Sum 99.0.
+WARNING:root:Episode 460, Reward Sum 200.0.
+WARNING:root:Episode 470, Reward Sum 200.0.
+WARNING:root:Episode 480, Reward Sum 200.0.
+WARNING:root:Episode 490, Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.

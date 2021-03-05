@@ -12,14 +12,12 @@ class DDPG_agent():
         self.tau = tau
         self.actor_lr = actor_lr
         self.critic_lr = critic_lr
-        self.device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
         self.model = network.DDPGnetwork(obs_dim, act_dim)
         self.target_model = network.DDPGnetwork(obs_dim, act_dim)
         self.target_model.load_state_dict(copy.deepcopy(self.model.state_dict()))
         self.actor_optim = optim.Adam(self.model.actor.parameters(), self.actor_lr)
         self.critic_optim = optim.Adam(self.model.critic.parameters(), self.critic_lr)
-        self.global_step = 0
-        self.update_target_steps = 5
     def predict(self, obs):
         with torch.no_grad():
             self.model.to(self.device)
@@ -28,11 +26,10 @@ class DDPG_agent():
             return self.model(obs).detach().cpu().numpy()[0]
 
     def learn(self, obs, action, reward, next_obs, terminal):
-        self.global_step += 1
-        if self.global_step % self.update_target_steps == 0:
-            self.sync_target()
+
         self._critic_learn(obs, action, reward, next_obs,terminal)
         self._actor_learn(obs)
+        self.sync_target()
 
     def _actor_learn(self, obs):
         self.model.to(self.device)
@@ -87,6 +84,8 @@ class DDPG_agent():
     def sync_target(self, decay=None, share_vars_parallel_executor=None):
         """ self.target_model从self.model复制参数过来，可设置软更新参数
         """
+        self.target_model.to("cpu")
+        self.model.to("cpu")
         if decay is None:
             decay = self.tau
         for target_param, param in zip(self.target_model.parameters(), self.model.parameters()):

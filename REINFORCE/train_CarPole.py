@@ -65,17 +65,17 @@ def train(env, env_name, agent, episodes):
 
         agent.learn(batch_obs, batch_action, batch_reward)
         if (i + 1) % 100 == 0:
-            total_reward = evaluate(5, env, agent, render=True) 
+            total_reward = evaluate(5, env, agent, render=False) 
     agent.save(env_name)
 
 opt = {
-    "LEARNING_RATE" : 1e-3
+    "LEARNING_RATE" : 0.001
 }
 
 if __name__ == "__main__":
     env_name = "CartPole-v0"
     env = gym.make(env_name)
-    logging.basicConfig(filename="REINFORCE/{}log".format(env_name))
+    logging.basicConfig(filename="REINFORCE/{}.log".format(env_name))
 
     print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))
