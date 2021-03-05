@@ -1,0 +1,2559 @@
+Traceback (most recent call last):
+  File "DDPG/train.py", line 11, in <module>
+    from rlschool import make_env
+ModuleNotFoundError: No module named 'rlschool'
+DQN trained on Quadrotor
+{'ACTOR_LR': 0.001, 'CRITIC_LR': 0.001, 'GAMMA': 0.95, 'TAU': 0.5, 'MEMORY_SIZE': 1000000, 'MEMORY_WARMUP_SIZE': 5000, 'BATCH_SIZE': 128, 'REWARD_SCALE': 0.1, 'NOISE': 0.05, 'LEARN_FREQ': 5, 'TRAIN_EPISODE': 3000}
+Episode 0, step 121 Reward Sum -326.79537336704954.
+Episode 10, step 141 Reward Sum -201.65259104290303.
+Episode 20, step 117 Reward Sum -440.1124017473651.
+Episode 30, step 135 Reward Sum -262.8447800243213.
+Episode 40, step 127 Reward Sum -320.76797340963515.
+Episode 50, step 129 Reward Sum -329.9880250010661.
+Episode 60, step 105 Reward Sum -520.3579341973342.
+Episode 70, step 136 Reward Sum -253.99221036371628.
+Episode 80, step 119 Reward Sum -403.56555765397127.
+Episode 90, step 127 Reward Sum -330.6120695281588.
+evaluating on 5 episodes with mean reward -299.2800396143899.
+Episode 100, step 120 Reward Sum -424.07546438668635.
+Episode 110, step 128 Reward Sum -363.4755363650295.
+Episode 120, step 117 Reward Sum -432.6231915456459.
+Episode 130, step 145 Reward Sum -143.79933604899307.
+Episode 140, step 143 Reward Sum -130.72425340821354.
+Episode 150, step 127 Reward Sum -307.6630157741844.
+Episode 160, step 134 Reward Sum -210.19740917264804.
+Episode 170, step 130 Reward Sum -267.3797119314588.
+Episode 180, step 110 Reward Sum -475.218746335676.
+Episode 190, step 136 Reward Sum -197.71313754673852.
+evaluating on 5 episodes with mean reward -394.6183854878301.
+Episode 200, step 124 Reward Sum -391.5623922338583.
+Episode 210, step 123 Reward Sum -346.7335019474762.
+Episode 220, step 131 Reward Sum -220.1614817468545.
+Episode 230, step 108 Reward Sum -499.1563289564564.
+Episode 240, step 142 Reward Sum -147.46208067429768.
+Episode 250, step 110 Reward Sum -404.85700455807074.
+Episode 260, step 110 Reward Sum -481.9319591404536.
+Episode 270, step 144 Reward Sum -147.05081261187394.
+Episode 280, step 107 Reward Sum -479.6617176854925.
+Episode 290, step 122 Reward Sum -366.2623843209277.
+evaluating on 5 episodes with mean reward -352.5335299918107.
+Episode 300, step 110 Reward Sum -452.1261559041242.
+Episode 310, step 115 Reward Sum -433.70164426392023.
+Episode 320, step 104 Reward Sum -522.8471971066654.
+Episode 330, step 117 Reward Sum -476.2903353740759.
+Episode 340, step 130 Reward Sum -315.0329634141687.
+Episode 350, step 138 Reward Sum -204.04216910339366.
+Episode 360, step 132 Reward Sum -295.4359174348079.
+Episode 370, step 108 Reward Sum -504.136130207404.
+Episode 380, step 114 Reward Sum -408.92656452692336.
+Episode 390, step 110 Reward Sum -430.4549906277344.
+evaluating on 5 episodes with mean reward -399.4956866728272.
+Episode 400, step 112 Reward Sum -455.40154889384786.
+Episode 410, step 117 Reward Sum -440.9780027374216.
+Episode 420, step 138 Reward Sum -244.08737600532538.
+Episode 430, step 137 Reward Sum -167.8810108996992.
+Episode 440, step 117 Reward Sum -465.1107093632903.
+Episode 450, step 115 Reward Sum -386.6021831697026.
+Episode 460, step 104 Reward Sum -486.38791192614286.
+Episode 470, step 129 Reward Sum -291.7184210521353.
+Episode 480, step 110 Reward Sum -480.1121588180781.
+Episode 490, step 105 Reward Sum -498.42632789086997.
+evaluating on 5 episodes with mean reward -332.9577124750991.
+Episode 500, step 105 Reward Sum -537.6802027173935.
+Episode 510, step 121 Reward Sum -339.4189685078958.
+Episode 520, step 109 Reward Sum -509.3308714874452.
+Episode 530, step 122 Reward Sum -336.47132319939.
+Episode 540, step 133 Reward Sum -347.83647015297777.
+Episode 550, step 129 Reward Sum -298.6250135758043.
+Episode 560, step 131 Reward Sum -278.18498425093134.
+Episode 570, step 125 Reward Sum -318.42100217045345.
+Episode 580, step 117 Reward Sum -468.45430373162196.
+Episode 590, step 139 Reward Sum -188.63401874507218.
+evaluating on 5 episodes with mean reward -317.3895923072888.
+Episode 600, step 111 Reward Sum -414.5914312225654.
+Episode 610, step 133 Reward Sum -248.05036284179556.
+Episode 620, step 118 Reward Sum -385.4640616280037.
+Episode 630, step 114 Reward Sum -458.1061423507795.
+Episode 640, step 128 Reward Sum -297.5858773883317.
+Episode 650, step 129 Reward Sum -315.5985472867502.
+Episode 660, step 132 Reward Sum -281.74855736251084.
+Episode 670, step 112 Reward Sum -443.28955642456503.
+Episode 680, step 118 Reward Sum -428.4977226236509.
+Episode 690, step 127 Reward Sum -355.4752545134913.
+evaluating on 5 episodes with mean reward -432.31598696875983.
+Episode 700, step 113 Reward Sum -439.4059498044535.
+Episode 710, step 132 Reward Sum -242.91618733627453.
+Episode 720, step 137 Reward Sum -212.02564501920637.
+Episode 730, step 137 Reward Sum -213.40362153599796.
+Episode 740, step 127 Reward Sum -308.36351543822065.
+Episode 750, step 142 Reward Sum -166.31517458551986.
+Episode 760, step 129 Reward Sum -281.72778328340263.
+Episode 770, step 118 Reward Sum -400.08688955782753.
+Episode 780, step 140 Reward Sum -220.7253366584098.
+Episode 790, step 133 Reward Sum -241.2928660891477.
+evaluating on 5 episodes with mean reward -342.3556999080421.
+Episode 800, step 104 Reward Sum -506.5129178432969.
+Episode 810, step 104 Reward Sum -515.1283157071116.
+Episode 820, step 129 Reward Sum -343.8691067134283.
+Episode 830, step 136 Reward Sum -265.5814302187394.
+Episode 840, step 130 Reward Sum -266.8829683142204.
+Episode 850, step 110 Reward Sum -437.96859655776717.
+Episode 860, step 131 Reward Sum -242.23503483121766.
+Episode 870, step 103 Reward Sum -545.7082548634667.
+Episode 880, step 112 Reward Sum -469.5604992282438.
+Episode 890, step 119 Reward Sum -436.1423739588979.
+evaluating on 5 episodes with mean reward -361.1093748706729.
+Episode 900, step 135 Reward Sum -252.6091679951061.
+Episode 910, step 111 Reward Sum -427.7583965606545.
+Episode 920, step 116 Reward Sum -442.5526709424603.
+Episode 930, step 121 Reward Sum -337.6847792627852.
+Episode 940, step 143 Reward Sum -170.75933374232818.
+Episode 950, step 125 Reward Sum -311.1372865452663.
+Episode 960, step 141 Reward Sum -176.533796510657.
+Episode 970, step 141 Reward Sum -181.62933094741976.
+Episode 980, step 141 Reward Sum -141.60617424829243.
+Episode 990, step 140 Reward Sum -149.99766986979503.
+evaluating on 5 episodes with mean reward -403.8765843563973.
+Episode 1000, step 104 Reward Sum -511.824436732976.
+Episode 1010, step 110 Reward Sum -490.2219827928634.
+Episode 1020, step 116 Reward Sum -446.458034864433.
+Episode 1030, step 137 Reward Sum -230.85810250536028.
+Episode 1040, step 126 Reward Sum -402.4683364879147.
+Episode 1050, step 105 Reward Sum -554.6334174067789.
+Episode 1060, step 135 Reward Sum -232.06566864075594.
+Episode 1070, step 116 Reward Sum -398.55101046010685.
+Episode 1080, step 116 Reward Sum -471.6492391186271.
+Episode 1090, step 130 Reward Sum -232.9076861998727.
+evaluating on 5 episodes with mean reward -321.7080490698533.
+Episode 1100, step 116 Reward Sum -467.5123446070636.
+Episode 1110, step 109 Reward Sum -461.001708921936.
+Episode 1120, step 143 Reward Sum -175.21423611827473.
+Episode 1130, step 108 Reward Sum -468.98029248520186.
+Episode 1140, step 119 Reward Sum -448.78208982807115.
+Episode 1150, step 122 Reward Sum -350.091205842195.
+Episode 1160, step 107 Reward Sum -464.0734542485964.
+Episode 1170, step 105 Reward Sum -498.8337338048112.
+Episode 1180, step 129 Reward Sum -322.6543639692367.
+Episode 1190, step 103 Reward Sum -522.9380215487862.
+evaluating on 5 episodes with mean reward -374.5045267724662.
+Episode 1200, step 122 Reward Sum -391.8936627287436.
+Episode 1210, step 106 Reward Sum -472.8992098829161.
+Episode 1220, step 144 Reward Sum -173.871576885229.
+Episode 1230, step 117 Reward Sum -411.11838242712287.
+Episode 1240, step 114 Reward Sum -396.3546560021858.
+Episode 1250, step 129 Reward Sum -353.9695278382805.
+Episode 1260, step 122 Reward Sum -365.40849249765824.
+Episode 1270, step 125 Reward Sum -385.1271788682599.
+Episode 1280, step 124 Reward Sum -307.5885016208388.
+Episode 1290, step 117 Reward Sum -429.90121371988306.
+evaluating on 5 episodes with mean reward -465.62926081693666.
+Episode 1300, step 122 Reward Sum -413.76735479748794.
+Episode 1310, step 134 Reward Sum -238.90686632223827.
+Episode 1320, step 127 Reward Sum -297.28758628671267.
+Episode 1330, step 114 Reward Sum -482.75066799741353.
+Episode 1340, step 114 Reward Sum -438.245750576061.
+Episode 1350, step 114 Reward Sum -434.87290377793505.
+Episode 1360, step 105 Reward Sum -475.7706029807954.
+Episode 1370, step 142 Reward Sum -178.95967060452233.
+Episode 1380, step 106 Reward Sum -475.34880748037926.
+Episode 1390, step 114 Reward Sum -438.04146212705837.
+evaluating on 5 episodes with mean reward -452.4413191591715.
+Episode 1400, step 135 Reward Sum -208.72783533483855.
+Episode 1410, step 114 Reward Sum -390.3145606942474.
+Episode 1420, step 123 Reward Sum -334.2887643573977.
+Episode 1430, step 127 Reward Sum -305.830489271663.
+Episode 1440, step 130 Reward Sum -299.4189652596185.
+Episode 1450, step 140 Reward Sum -230.32280397302443.
+Episode 1460, step 104 Reward Sum -475.28512299405304.
+Episode 1470, step 106 Reward Sum -517.5931252563261.
+Episode 1480, step 121 Reward Sum -365.4929075088025.
+Episode 1490, step 105 Reward Sum -488.24769532761513.
+evaluating on 5 episodes with mean reward -339.139272084419.
+Episode 1500, step 128 Reward Sum -303.1970039294092.
+Episode 1510, step 107 Reward Sum -479.2540158140376.
+Episode 1520, step 141 Reward Sum -151.01156083150707.
+Episode 1530, step 112 Reward Sum -425.3943420435026.
+Episode 1540, step 107 Reward Sum -508.1743034431744.
+Episode 1550, step 119 Reward Sum -422.2876026191459.
+Episode 1560, step 125 Reward Sum -364.71771470782943.
+Episode 1570, step 131 Reward Sum -289.8436711014748.
+Episode 1580, step 111 Reward Sum -455.7498253142656.
+Episode 1590, step 107 Reward Sum -502.09576781059286.
+evaluating on 5 episodes with mean reward -363.4961885585777.
+Episode 1600, step 139 Reward Sum -156.74567749154397.
+Episode 1610, step 126 Reward Sum -321.74819553969184.
+Episode 1620, step 133 Reward Sum -244.09103540730484.
+Episode 1630, step 116 Reward Sum -413.50762911958043.
+Episode 1640, step 107 Reward Sum -487.6398175564147.
+Episode 1650, step 118 Reward Sum -434.3299382974776.
+Episode 1660, step 117 Reward Sum -409.7596456272144.
+Episode 1670, step 127 Reward Sum -330.2133991615174.
+Episode 1680, step 136 Reward Sum -264.25645644028094.
+Episode 1690, step 123 Reward Sum -313.5200348393862.
+evaluating on 5 episodes with mean reward -379.52347033447813.
+Episode 1700, step 119 Reward Sum -379.81585206235144.
+Episode 1710, step 137 Reward Sum -206.38211689310657.
+Episode 1720, step 128 Reward Sum -294.09486980156913.
+Episode 1730, step 135 Reward Sum -241.97847831077274.
+Episode 1740, step 105 Reward Sum -506.81860665981196.
+Episode 1750, step 121 Reward Sum -389.1288211576364.
+Episode 1760, step 116 Reward Sum -400.4727646146712.
+Episode 1770, step 125 Reward Sum -346.7798793686147.
+Episode 1780, step 118 Reward Sum -380.2003410079882.
+Episode 1790, step 127 Reward Sum -302.25691445614285.
+evaluating on 5 episodes with mean reward -378.96305258825424.
+Episode 1800, step 141 Reward Sum -205.87230706770185.
+Episode 1810, step 104 Reward Sum -459.3581878978513.
+Episode 1820, step 113 Reward Sum -395.51534349022825.
+Episode 1830, step 125 Reward Sum -351.3913075728086.
+Episode 1840, step 116 Reward Sum -406.33785483036735.
+Episode 1850, step 117 Reward Sum -383.68936717140235.
+Episode 1860, step 104 Reward Sum -496.81402313746565.
+Episode 1870, step 124 Reward Sum -327.2103967132417.
+Episode 1880, step 125 Reward Sum -382.5162776669914.
+Episode 1890, step 124 Reward Sum -366.6877020914665.
+evaluating on 5 episodes with mean reward -257.02074958616447.
+Episode 1900, step 116 Reward Sum -459.31714967309244.
+Episode 1910, step 112 Reward Sum -449.55988185436405.
+Episode 1920, step 111 Reward Sum -441.78050912198216.
+Episode 1930, step 125 Reward Sum -346.2386163099083.
+Episode 1940, step 125 Reward Sum -346.1798416276276.
+Episode 1950, step 123 Reward Sum -295.90542770838516.
+Episode 1960, step 112 Reward Sum -432.646572334407.
+Episode 1970, step 127 Reward Sum -321.66566514624367.
+Episode 1980, step 132 Reward Sum -259.7427285217109.
+Episode 1990, step 124 Reward Sum -341.7755328152339.
+evaluating on 5 episodes with mean reward -425.68851004341366.
+Episode 2000, step 107 Reward Sum -468.77233181700046.
+Episode 2010, step 105 Reward Sum -496.18782053683793.
+Episode 2020, step 108 Reward Sum -477.6445078511714.
+Episode 2030, step 138 Reward Sum -243.80813500322216.
+Episode 2040, step 125 Reward Sum -333.40229885322174.
+Episode 2050, step 136 Reward Sum -186.7388022471593.
+Episode 2060, step 108 Reward Sum -433.93146374319264.
+Episode 2070, step 113 Reward Sum -446.21152362855713.
+Episode 2080, step 125 Reward Sum -321.0636575140643.
+Episode 2090, step 141 Reward Sum -180.2570647992906.
+evaluating on 5 episodes with mean reward -291.09608901551263.
+Episode 2100, step 125 Reward Sum -409.51686806054295.
+Episode 2110, step 126 Reward Sum -316.4468960514807.
+Episode 2120, step 105 Reward Sum -493.03781202531593.
+Episode 2130, step 126 Reward Sum -295.9506220118976.
+Episode 2140, step 107 Reward Sum -482.99710674625004.
+Episode 2150, step 110 Reward Sum -430.7042229607897.
+Episode 2160, step 105 Reward Sum -478.58378067770497.
+Episode 2170, step 142 Reward Sum -172.6954963716459.
+Episode 2180, step 116 Reward Sum -359.3286985904053.
+Episode 2190, step 115 Reward Sum -385.13355461022246.
+evaluating on 5 episodes with mean reward -423.4781507847.
+Episode 2200, step 125 Reward Sum -342.7181600225663.
+Episode 2210, step 116 Reward Sum -430.2647428982398.
+Episode 2220, step 107 Reward Sum -447.46473040206655.
+Episode 2230, step 123 Reward Sum -373.28470598596516.
+Episode 2240, step 128 Reward Sum -289.6490793216907.
+Episode 2250, step 121 Reward Sum -377.2007905660401.
+Episode 2260, step 132 Reward Sum -239.44049223878818.
+Episode 2270, step 115 Reward Sum -412.4472982274996.
+Episode 2280, step 120 Reward Sum -348.61883749339324.
+Episode 2290, step 122 Reward Sum -418.37242720815055.
+evaluating on 5 episodes with mean reward -407.05303077011473.
+Episode 2300, step 106 Reward Sum -548.4170987065709.
+Episode 2310, step 144 Reward Sum -243.76092873827272.
+Episode 2320, step 118 Reward Sum -395.41371330750906.
+Episode 2330, step 131 Reward Sum -265.78149771190937.
+Episode 2340, step 121 Reward Sum -408.07854943326794.
+Episode 2350, step 139 Reward Sum -239.7011538427243.
+Episode 2360, step 135 Reward Sum -260.9150298347654.
+Episode 2370, step 140 Reward Sum -106.53764167236945.
+Episode 2380, step 122 Reward Sum -324.2780466698774.
+Episode 2390, step 117 Reward Sum -429.8407713672421.
+evaluating on 5 episodes with mean reward -305.9173796631534.
+Episode 2400, step 121 Reward Sum -330.8407806605742.
+Episode 2410, step 136 Reward Sum -181.85526567229397.
+Episode 2420, step 107 Reward Sum -481.82997348031813.
+Episode 2430, step 107 Reward Sum -482.23049638265496.
+Episode 2440, step 119 Reward Sum -342.5496685482813.
+Episode 2450, step 126 Reward Sum -333.90334872263696.
+Episode 2460, step 122 Reward Sum -400.06005022855953.
+Episode 2470, step 116 Reward Sum -444.6057573161852.
+Episode 2480, step 120 Reward Sum -367.18528003719615.
+Episode 2490, step 109 Reward Sum -444.4443957972881.
+evaluating on 5 episodes with mean reward -313.05452529648863.
+Episode 2500, step 125 Reward Sum -374.8595847091705.
+Episode 2510, step 135 Reward Sum -202.6732205052146.
+Episode 2520, step 106 Reward Sum -505.33768387082694.
+Episode 2530, step 133 Reward Sum -290.1112432830818.
+Episode 2540, step 112 Reward Sum -489.14576733571596.
+Episode 2550, step 118 Reward Sum -424.7835391172596.
+Episode 2560, step 137 Reward Sum -225.96451443621365.
+Episode 2570, step 128 Reward Sum -291.1506752190225.
+Episode 2580, step 143 Reward Sum -132.78686735879157.
+Episode 2590, step 138 Reward Sum -235.44023246799352.
+evaluating on 5 episodes with mean reward -375.3942456486549.
+Episode 2600, step 118 Reward Sum -388.45095867303843.
+Episode 2610, step 134 Reward Sum -212.60431686617693.
+Episode 2620, step 109 Reward Sum -499.49605267674167.
+Episode 2630, step 108 Reward Sum -476.9736563314756.
+Episode 2640, step 132 Reward Sum -303.87873520836337.
+Episode 2650, step 132 Reward Sum -271.4542128082371.
+Episode 2660, step 126 Reward Sum -324.5885987774046.
+Episode 2670, step 112 Reward Sum -466.32700185264855.
+Episode 2680, step 122 Reward Sum -362.5264850368929.
+Episode 2690, step 120 Reward Sum -422.28116596279693.
+evaluating on 5 episodes with mean reward -368.3254405452843.
+Episode 2700, step 131 Reward Sum -307.42870380136435.
+Episode 2710, step 138 Reward Sum -201.68106423440742.
+Episode 2720, step 130 Reward Sum -265.49153904229.
+Episode 2730, step 103 Reward Sum -529.1920077559823.
+Episode 2740, step 108 Reward Sum -454.56495057025603.
+Episode 2750, step 103 Reward Sum -531.33843806116.
+Episode 2760, step 105 Reward Sum -491.29850713478675.
+Episode 2770, step 120 Reward Sum -368.66291334582587.
+Episode 2780, step 140 Reward Sum -153.94198499530103.
+Episode 2790, step 116 Reward Sum -407.44131947281033.
+evaluating on 5 episodes with mean reward -353.5553574370316.
+Episode 2800, step 131 Reward Sum -278.3819052291827.
+Episode 2810, step 106 Reward Sum -489.2460922518951.
+Episode 2820, step 129 Reward Sum -274.1495927857015.
+Episode 2830, step 110 Reward Sum -481.31582528220366.
+Episode 2840, step 129 Reward Sum -332.52611958418936.
+Episode 2850, step 112 Reward Sum -441.9401075186998.
+Episode 2860, step 140 Reward Sum -180.4412967248627.
+Episode 2870, step 121 Reward Sum -325.7157294077029.
+Episode 2880, step 109 Reward Sum -498.26631925024776.
+Episode 2890, step 136 Reward Sum -229.51614578116124.
+evaluating on 5 episodes with mean reward -397.2564758220557.
+Episode 2900, step 131 Reward Sum -261.5586552099504.
+Episode 2910, step 141 Reward Sum -140.65432588682773.
+Episode 2920, step 116 Reward Sum -438.1449490876836.
+Episode 2930, step 114 Reward Sum -446.8827835476789.
+Episode 2940, step 126 Reward Sum -305.8245035455324.
+Episode 2950, step 131 Reward Sum -276.80321001526823.
+Episode 2960, step 114 Reward Sum -442.0966771510225.
+Episode 2970, step 115 Reward Sum -439.88984879525634.
+Episode 2980, step 136 Reward Sum -207.96589028237395.
+Episode 2990, step 139 Reward Sum -216.50836268928148.
+evaluating on 5 episodes with mean reward -324.1410990926121.
+DQN trained on Quadrotor
+{'ACTOR_LR': 0.001, 'CRITIC_LR': 0.001, 'GAMMA': 0.95, 'TAU': 0.5, 'MEMORY_SIZE': 1000000, 'MEMORY_WARMUP_SIZE': 5000, 'BATCH_SIZE': 128, 'REWARD_SCALE': 0.1, 'NOISE': 0.05, 'LEARN_FREQ': 5, 'TRAIN_EPISODE': 10000}
+Traceback (most recent call last):
+  File "DDPG/train.py", line 128, in <module>
+    train(env, env_name, agent, opt["TRAIN_EPISODE"], rpm)
+  File "DDPG/train.py", line 86, in train
+    run_episode(env, agent, rpm)
+  File "DDPG/train.py", line 46, in run_episode
+    next_obs, reward, done, info = env.step(action)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/rlschool/quadrotor/env.py", line 131, in step
+    self.simulator.step(cmd.tolist(), self.dt)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/rlschool/quadrotor/quadrotorsim.py", line 304, in step
+    self._run_internal(act)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/rlschool/quadrotor/quadrotorsim.py", line 178, in _run_internal
+    t_grav = -np.cross(f_grav, self._gravity_center)
+  File "<__array_function__ internals>", line 5, in cross
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/numpy/core/numeric.py", line 1633, in cross
+    multiply(a0, b1, out=cp2)
+KeyboardInterrupt
+DQN trained on Quadrotor
+{'ACTOR_LR': 0.001, 'CRITIC_LR': 0.001, 'GAMMA': 0.95, 'TAU': 0.5, 'MEMORY_SIZE': 1000000, 'MEMORY_WARMUP_SIZE': 5000, 'BATCH_SIZE': 128, 'REWARD_SCALE': 0.1, 'NOISE': 0.05, 'LEARN_FREQ': 5, 'TRAIN_EPISODE': 10000}
+Episode 0, step 121 Reward Sum -326.79537336704954.
+Episode 10, step 141 Reward Sum -201.65259104290303.
+Episode 20, step 117 Reward Sum -440.1124017473651.
+Episode 30, step 135 Reward Sum -262.8447800243213.
+Episode 40, step 127 Reward Sum -320.76797340963515.
+Episode 50, step 129 Reward Sum -329.9880250010661.
+Episode 60, step 105 Reward Sum -520.3579341973342.
+Episode 70, step 136 Reward Sum -253.99221036371628.
+Episode 80, step 119 Reward Sum -403.56555765397127.
+Episode 90, step 127 Reward Sum -330.6120695281588.
+evaluating on 5 episodes with mean reward -299.2800396143899.
+Episode 100, step 120 Reward Sum -424.07546438668635.
+Episode 110, step 128 Reward Sum -363.4755363650295.
+Episode 120, step 117 Reward Sum -432.6231915456459.
+Episode 130, step 145 Reward Sum -143.79933604899307.
+Episode 140, step 143 Reward Sum -130.72425340821354.
+Episode 150, step 127 Reward Sum -307.6630157741844.
+Episode 160, step 134 Reward Sum -210.19740917264804.
+Episode 170, step 130 Reward Sum -267.3797119314588.
+Episode 180, step 110 Reward Sum -475.218746335676.
+Episode 190, step 136 Reward Sum -197.71313754673852.
+evaluating on 5 episodes with mean reward -394.6183854878301.
+Episode 200, step 124 Reward Sum -391.5623922338583.
+Episode 210, step 123 Reward Sum -346.7335019474762.
+Episode 220, step 131 Reward Sum -220.1614817468545.
+Episode 230, step 108 Reward Sum -499.1563289564564.
+Episode 240, step 142 Reward Sum -147.46208067429768.
+Episode 250, step 110 Reward Sum -404.85700455807074.
+Episode 260, step 110 Reward Sum -481.9319591404536.
+Episode 270, step 144 Reward Sum -147.05081261187394.
+Episode 280, step 107 Reward Sum -479.6617176854925.
+Episode 290, step 122 Reward Sum -366.2623843209277.
+evaluating on 5 episodes with mean reward -352.5335299918107.
+Episode 300, step 110 Reward Sum -452.1261559041242.
+Episode 310, step 115 Reward Sum -433.70164426392023.
+Episode 320, step 104 Reward Sum -522.8471971066654.
+Episode 330, step 117 Reward Sum -476.2903353740759.
+Episode 340, step 130 Reward Sum -315.0329634141687.
+Episode 350, step 138 Reward Sum -204.04216910339366.
+Episode 360, step 132 Reward Sum -295.4359174348079.
+Episode 370, step 108 Reward Sum -504.136130207404.
+Episode 380, step 114 Reward Sum -408.92656452692336.
+Episode 390, step 110 Reward Sum -430.4549906277344.
+evaluating on 5 episodes with mean reward -399.4956866728272.
+Episode 400, step 112 Reward Sum -455.40154889384786.
+Episode 410, step 117 Reward Sum -440.9780027374216.
+Episode 420, step 138 Reward Sum -244.08737600532538.
+Episode 430, step 137 Reward Sum -167.8810108996992.
+Episode 440, step 117 Reward Sum -465.1107093632903.
+Episode 450, step 115 Reward Sum -386.6021831697026.
+Episode 460, step 104 Reward Sum -486.38791192614286.
+Episode 470, step 129 Reward Sum -291.7184210521353.
+Episode 480, step 110 Reward Sum -480.1121588180781.
+Episode 490, step 105 Reward Sum -498.42632789086997.
+evaluating on 5 episodes with mean reward -332.9577124750991.
+Episode 500, step 105 Reward Sum -537.6802027173935.
+Episode 510, step 121 Reward Sum -339.4189685078958.
+Episode 520, step 109 Reward Sum -509.3308714874452.
+Episode 530, step 122 Reward Sum -336.47132319939.
+Episode 540, step 133 Reward Sum -347.83647015297777.
+Episode 550, step 129 Reward Sum -298.6250135758043.
+Episode 560, step 131 Reward Sum -278.18498425093134.
+Episode 570, step 125 Reward Sum -318.42100217045345.
+Episode 580, step 117 Reward Sum -468.45430373162196.
+Episode 590, step 139 Reward Sum -188.63401874507218.
+evaluating on 5 episodes with mean reward -317.3895923072888.
+Episode 600, step 111 Reward Sum -414.5914312225654.
+Episode 610, step 133 Reward Sum -248.05036284179556.
+Episode 620, step 118 Reward Sum -385.4640616280037.
+Episode 630, step 114 Reward Sum -458.1061423507795.
+Episode 640, step 128 Reward Sum -297.5858773883317.
+Episode 650, step 129 Reward Sum -315.5985472867502.
+Episode 660, step 132 Reward Sum -281.74855736251084.
+Episode 670, step 112 Reward Sum -443.28955642456503.
+Episode 680, step 118 Reward Sum -428.4977226236509.
+Episode 690, step 127 Reward Sum -355.4752545134913.
+evaluating on 5 episodes with mean reward -432.31598696875983.
+Episode 700, step 113 Reward Sum -439.4059498044535.
+Episode 710, step 132 Reward Sum -242.91618733627453.
+Episode 720, step 137 Reward Sum -212.02564501920637.
+Episode 730, step 137 Reward Sum -213.40362153599796.
+Episode 740, step 127 Reward Sum -308.36351543822065.
+Episode 750, step 142 Reward Sum -166.31517458551986.
+Episode 760, step 129 Reward Sum -281.72778328340263.
+Episode 770, step 118 Reward Sum -400.08688955782753.
+Episode 780, step 140 Reward Sum -220.7253366584098.
+Episode 790, step 133 Reward Sum -241.2928660891477.
+evaluating on 5 episodes with mean reward -342.3556999080421.
+Episode 800, step 104 Reward Sum -506.5129178432969.
+Episode 810, step 104 Reward Sum -515.1283157071116.
+Episode 820, step 129 Reward Sum -343.8691067134283.
+Episode 830, step 136 Reward Sum -265.5814302187394.
+Episode 840, step 130 Reward Sum -266.8829683142204.
+Episode 850, step 110 Reward Sum -437.96859655776717.
+Episode 860, step 131 Reward Sum -242.23503483121766.
+Episode 870, step 103 Reward Sum -545.7082548634667.
+Episode 880, step 112 Reward Sum -469.5604992282438.
+Episode 890, step 119 Reward Sum -436.1423739588979.
+evaluating on 5 episodes with mean reward -361.1093748706729.
+Episode 900, step 135 Reward Sum -252.6091679951061.
+Episode 910, step 111 Reward Sum -427.7583965606545.
+Episode 920, step 116 Reward Sum -442.5526709424603.
+Episode 930, step 121 Reward Sum -337.6847792627852.
+Episode 940, step 143 Reward Sum -170.75933374232818.
+Episode 950, step 125 Reward Sum -311.1372865452663.
+Episode 960, step 141 Reward Sum -176.533796510657.
+Episode 970, step 141 Reward Sum -181.62933094741976.
+Episode 980, step 141 Reward Sum -141.60617424829243.
+Episode 990, step 140 Reward Sum -149.99766986979503.
+evaluating on 5 episodes with mean reward -403.8765843563973.
+Episode 1000, step 104 Reward Sum -511.824436732976.
+Episode 1010, step 110 Reward Sum -490.2219827928634.
+Episode 1020, step 116 Reward Sum -446.458034864433.
+Episode 1030, step 137 Reward Sum -230.85810250536028.
+Episode 1040, step 126 Reward Sum -402.4683364879147.
+Episode 1050, step 105 Reward Sum -554.6334174067789.
+Episode 1060, step 135 Reward Sum -232.06566864075594.
+Episode 1070, step 116 Reward Sum -398.55101046010685.
+Episode 1080, step 116 Reward Sum -471.6492391186271.
+Episode 1090, step 130 Reward Sum -232.9076861998727.
+evaluating on 5 episodes with mean reward -321.7080490698533.
+Episode 1100, step 116 Reward Sum -467.5123446070636.
+Episode 1110, step 109 Reward Sum -461.001708921936.
+Episode 1120, step 143 Reward Sum -175.21423611827473.
+Episode 1130, step 108 Reward Sum -468.98029248520186.
+Episode 1140, step 119 Reward Sum -448.78208982807115.
+Episode 1150, step 122 Reward Sum -350.091205842195.
+Episode 1160, step 107 Reward Sum -464.0734542485964.
+Episode 1170, step 105 Reward Sum -498.8337338048112.
+Episode 1180, step 129 Reward Sum -322.6543639692367.
+Episode 1190, step 103 Reward Sum -522.9380215487862.
+evaluating on 5 episodes with mean reward -374.5045267724662.
+Episode 1200, step 122 Reward Sum -391.8936627287436.
+Episode 1210, step 106 Reward Sum -472.8992098829161.
+Episode 1220, step 144 Reward Sum -173.871576885229.
+Episode 1230, step 117 Reward Sum -411.11838242712287.
+Episode 1240, step 114 Reward Sum -396.3546560021858.
+Episode 1250, step 129 Reward Sum -353.9695278382805.
+Episode 1260, step 122 Reward Sum -365.40849249765824.
+Episode 1270, step 125 Reward Sum -385.1271788682599.
+Episode 1280, step 124 Reward Sum -307.5885016208388.
+Episode 1290, step 117 Reward Sum -429.90121371988306.
+evaluating on 5 episodes with mean reward -465.62926081693666.
+Episode 1300, step 122 Reward Sum -413.76735479748794.
+Episode 1310, step 134 Reward Sum -238.90686632223827.
+Episode 1320, step 127 Reward Sum -297.28758628671267.
+Episode 1330, step 114 Reward Sum -482.75066799741353.
+Episode 1340, step 114 Reward Sum -438.245750576061.
+Episode 1350, step 114 Reward Sum -434.87290377793505.
+Episode 1360, step 105 Reward Sum -475.7706029807954.
+Episode 1370, step 142 Reward Sum -178.95967060452233.
+Episode 1380, step 106 Reward Sum -475.34880748037926.
+Episode 1390, step 114 Reward Sum -438.04146212705837.
+evaluating on 5 episodes with mean reward -452.4413191591715.
+Episode 1400, step 135 Reward Sum -208.72783533483855.
+Episode 1410, step 114 Reward Sum -390.3145606942474.
+Episode 1420, step 123 Reward Sum -334.2887643573977.
+Episode 1430, step 127 Reward Sum -305.830489271663.
+Episode 1440, step 130 Reward Sum -299.4189652596185.
+Episode 1450, step 140 Reward Sum -230.32280397302443.
+Episode 1460, step 104 Reward Sum -475.28512299405304.
+Episode 1470, step 106 Reward Sum -517.5931252563261.
+Episode 1480, step 121 Reward Sum -365.4929075088025.
+Episode 1490, step 105 Reward Sum -488.24769532761513.
+evaluating on 5 episodes with mean reward -339.139272084419.
+Episode 1500, step 128 Reward Sum -303.1970039294092.
+Episode 1510, step 107 Reward Sum -479.2540158140376.
+Episode 1520, step 141 Reward Sum -151.01156083150707.
+Episode 1530, step 112 Reward Sum -425.3943420435026.
+Episode 1540, step 107 Reward Sum -508.1743034431744.
+Episode 1550, step 119 Reward Sum -422.2876026191459.
+Episode 1560, step 125 Reward Sum -364.71771470782943.
+Episode 1570, step 131 Reward Sum -289.8436711014748.
+Episode 1580, step 111 Reward Sum -455.7498253142656.
+Episode 1590, step 107 Reward Sum -502.09576781059286.
+evaluating on 5 episodes with mean reward -363.4961885585777.
+Episode 1600, step 139 Reward Sum -156.74567749154397.
+Episode 1610, step 126 Reward Sum -321.74819553969184.
+Episode 1620, step 133 Reward Sum -244.09103540730484.
+Episode 1630, step 116 Reward Sum -413.50762911958043.
+Episode 1640, step 107 Reward Sum -487.6398175564147.
+Episode 1650, step 118 Reward Sum -434.3299382974776.
+Episode 1660, step 117 Reward Sum -409.7596456272144.
+Episode 1670, step 127 Reward Sum -330.2133991615174.
+Episode 1680, step 136 Reward Sum -264.25645644028094.
+Episode 1690, step 123 Reward Sum -313.5200348393862.
+evaluating on 5 episodes with mean reward -379.52347033447813.
+Episode 1700, step 119 Reward Sum -379.81585206235144.
+Episode 1710, step 137 Reward Sum -206.38211689310657.
+Episode 1720, step 128 Reward Sum -294.09486980156913.
+Episode 1730, step 135 Reward Sum -241.97847831077274.
+Episode 1740, step 105 Reward Sum -506.81860665981196.
+Episode 1750, step 121 Reward Sum -389.1288211576364.
+Episode 1760, step 116 Reward Sum -400.4727646146712.
+Episode 1770, step 125 Reward Sum -346.7798793686147.
+Episode 1780, step 118 Reward Sum -380.2003410079882.
+Episode 1790, step 127 Reward Sum -302.25691445614285.
+evaluating on 5 episodes with mean reward -378.96305258825424.
+Episode 1800, step 141 Reward Sum -205.87230706770185.
+Episode 1810, step 104 Reward Sum -459.3581878978513.
+Episode 1820, step 113 Reward Sum -395.51534349022825.
+Episode 1830, step 125 Reward Sum -351.3913075728086.
+Episode 1840, step 116 Reward Sum -406.33785483036735.
+Episode 1850, step 117 Reward Sum -383.68936717140235.
+Episode 1860, step 104 Reward Sum -496.81402313746565.
+Episode 1870, step 124 Reward Sum -327.2103967132417.
+Episode 1880, step 125 Reward Sum -382.5162776669914.
+Episode 1890, step 124 Reward Sum -366.6877020914665.
+evaluating on 5 episodes with mean reward -257.02074958616447.
+Episode 1900, step 116 Reward Sum -459.31714967309244.
+Episode 1910, step 112 Reward Sum -449.55988185436405.
+Episode 1920, step 111 Reward Sum -441.78050912198216.
+Episode 1930, step 125 Reward Sum -346.2386163099083.
+Episode 1940, step 125 Reward Sum -346.1798416276276.
+Episode 1950, step 123 Reward Sum -295.90542770838516.
+Episode 1960, step 112 Reward Sum -432.646572334407.
+Episode 1970, step 127 Reward Sum -321.66566514624367.
+Episode 1980, step 132 Reward Sum -259.7427285217109.
+Episode 1990, step 124 Reward Sum -341.7755328152339.
+evaluating on 5 episodes with mean reward -425.68851004341366.
+Episode 2000, step 107 Reward Sum -468.77233181700046.
+Episode 2010, step 105 Reward Sum -496.18782053683793.
+Episode 2020, step 108 Reward Sum -477.6445078511714.
+Episode 2030, step 138 Reward Sum -243.80813500322216.
+Episode 2040, step 125 Reward Sum -333.40229885322174.
+Episode 2050, step 136 Reward Sum -186.7388022471593.
+Episode 2060, step 108 Reward Sum -433.93146374319264.
+Episode 2070, step 113 Reward Sum -446.21152362855713.
+Episode 2080, step 125 Reward Sum -321.0636575140643.
+Episode 2090, step 141 Reward Sum -180.2570647992906.
+evaluating on 5 episodes with mean reward -291.09608901551263.
+Episode 2100, step 125 Reward Sum -409.51686806054295.
+Episode 2110, step 126 Reward Sum -316.4468960514807.
+Episode 2120, step 105 Reward Sum -493.03781202531593.
+Episode 2130, step 126 Reward Sum -295.9506220118976.
+Episode 2140, step 107 Reward Sum -482.99710674625004.
+Episode 2150, step 110 Reward Sum -430.7042229607897.
+Episode 2160, step 105 Reward Sum -478.58378067770497.
+Episode 2170, step 142 Reward Sum -172.6954963716459.
+Episode 2180, step 116 Reward Sum -359.3286985904053.
+Episode 2190, step 115 Reward Sum -385.13355461022246.
+evaluating on 5 episodes with mean reward -423.4781507847.
+Episode 2200, step 125 Reward Sum -342.7181600225663.
+Episode 2210, step 116 Reward Sum -430.2647428982398.
+Episode 2220, step 107 Reward Sum -447.46473040206655.
+Episode 2230, step 123 Reward Sum -373.28470598596516.
+Episode 2240, step 128 Reward Sum -289.6490793216907.
+Episode 2250, step 121 Reward Sum -377.2007905660401.
+Episode 2260, step 132 Reward Sum -239.44049223878818.
+Episode 2270, step 115 Reward Sum -412.4472982274996.
+Episode 2280, step 120 Reward Sum -348.61883749339324.
+Episode 2290, step 122 Reward Sum -418.37242720815055.
+evaluating on 5 episodes with mean reward -407.05303077011473.
+Episode 2300, step 106 Reward Sum -548.4170987065709.
+Episode 2310, step 144 Reward Sum -243.76092873827272.
+Episode 2320, step 118 Reward Sum -395.41371330750906.
+Episode 2330, step 131 Reward Sum -265.78149771190937.
+Episode 2340, step 121 Reward Sum -408.07854943326794.
+Episode 2350, step 139 Reward Sum -239.7011538427243.
+Episode 2360, step 135 Reward Sum -260.9150298347654.
+Episode 2370, step 140 Reward Sum -106.53764167236945.
+Episode 2380, step 122 Reward Sum -324.2780466698774.
+Episode 2390, step 117 Reward Sum -429.8407713672421.
+evaluating on 5 episodes with mean reward -305.9173796631534.
+Episode 2400, step 121 Reward Sum -330.8407806605742.
+Episode 2410, step 136 Reward Sum -181.85526567229397.
+Episode 2420, step 107 Reward Sum -481.82997348031813.
+Episode 2430, step 107 Reward Sum -482.23049638265496.
+Episode 2440, step 119 Reward Sum -342.5496685482813.
+Episode 2450, step 126 Reward Sum -333.90334872263696.
+Episode 2460, step 122 Reward Sum -400.06005022855953.
+Episode 2470, step 116 Reward Sum -444.6057573161852.
+Episode 2480, step 120 Reward Sum -367.18528003719615.
+Episode 2490, step 109 Reward Sum -444.4443957972881.
+evaluating on 5 episodes with mean reward -313.05452529648863.
+Episode 2500, step 125 Reward Sum -374.8595847091705.
+Episode 2510, step 135 Reward Sum -202.6732205052146.
+Episode 2520, step 106 Reward Sum -505.33768387082694.
+Episode 2530, step 133 Reward Sum -290.1112432830818.
+Episode 2540, step 112 Reward Sum -489.14576733571596.
+Episode 2550, step 118 Reward Sum -424.7835391172596.
+Episode 2560, step 137 Reward Sum -225.96451443621365.
+Episode 2570, step 128 Reward Sum -291.1506752190225.
+Episode 2580, step 143 Reward Sum -132.78686735879157.
+Episode 2590, step 138 Reward Sum -235.44023246799352.
+evaluating on 5 episodes with mean reward -375.3942456486549.
+Episode 2600, step 118 Reward Sum -388.45095867303843.
+Episode 2610, step 134 Reward Sum -212.60431686617693.
+Episode 2620, step 109 Reward Sum -499.49605267674167.
+Episode 2630, step 108 Reward Sum -476.9736563314756.
+Episode 2640, step 132 Reward Sum -303.87873520836337.
+Episode 2650, step 132 Reward Sum -271.4542128082371.
+Episode 2660, step 126 Reward Sum -324.5885987774046.
+Episode 2670, step 112 Reward Sum -466.32700185264855.
+Episode 2680, step 122 Reward Sum -362.5264850368929.
+Episode 2690, step 120 Reward Sum -422.28116596279693.
+evaluating on 5 episodes with mean reward -368.3254405452843.
+Episode 2700, step 131 Reward Sum -307.42870380136435.
+Episode 2710, step 138 Reward Sum -201.68106423440742.
+Episode 2720, step 130 Reward Sum -265.49153904229.
+Episode 2730, step 103 Reward Sum -529.1920077559823.
+Episode 2740, step 108 Reward Sum -454.56495057025603.
+Episode 2750, step 103 Reward Sum -531.33843806116.
+Episode 2760, step 105 Reward Sum -491.29850713478675.
+Episode 2770, step 120 Reward Sum -368.66291334582587.
+Episode 2780, step 140 Reward Sum -153.94198499530103.
+Episode 2790, step 116 Reward Sum -407.44131947281033.
+evaluating on 5 episodes with mean reward -353.5553574370316.
+Episode 2800, step 131 Reward Sum -278.3819052291827.
+Episode 2810, step 106 Reward Sum -489.2460922518951.
+Episode 2820, step 129 Reward Sum -274.1495927857015.
+Episode 2830, step 110 Reward Sum -481.31582528220366.
+Episode 2840, step 129 Reward Sum -332.52611958418936.
+Episode 2850, step 112 Reward Sum -441.9401075186998.
+Episode 2860, step 140 Reward Sum -180.4412967248627.
+Episode 2870, step 121 Reward Sum -325.7157294077029.
+Episode 2880, step 109 Reward Sum -498.26631925024776.
+Episode 2890, step 136 Reward Sum -229.51614578116124.
+evaluating on 5 episodes with mean reward -397.2564758220557.
+Episode 2900, step 131 Reward Sum -261.5586552099504.
+Episode 2910, step 141 Reward Sum -140.65432588682773.
+Episode 2920, step 116 Reward Sum -438.1449490876836.
+Episode 2930, step 114 Reward Sum -446.8827835476789.
+Episode 2940, step 126 Reward Sum -305.8245035455324.
+Episode 2950, step 131 Reward Sum -276.80321001526823.
+Episode 2960, step 114 Reward Sum -442.0966771510225.
+Episode 2970, step 115 Reward Sum -439.88984879525634.
+Episode 2980, step 136 Reward Sum -207.96589028237395.
+Episode 2990, step 139 Reward Sum -216.50836268928148.
+evaluating on 5 episodes with mean reward -324.1410990926121.
+Episode 3000, step 115 Reward Sum -384.2934113027714.
+Episode 3010, step 117 Reward Sum -376.6855895220448.
+Episode 3020, step 121 Reward Sum -344.1557854695744.
+Episode 3030, step 114 Reward Sum -387.016990055704.
+Episode 3040, step 135 Reward Sum -233.18533433739776.
+Episode 3050, step 104 Reward Sum -479.79741713007814.
+Episode 3060, step 124 Reward Sum -328.20317484315945.
+Episode 3070, step 137 Reward Sum -207.65085581133363.
+Episode 3080, step 135 Reward Sum -157.388937094436.
+Episode 3090, step 142 Reward Sum -189.87055880362522.
+evaluating on 5 episodes with mean reward -380.0431677783304.
+Episode 3100, step 135 Reward Sum -244.21461693776038.
+Episode 3110, step 118 Reward Sum -397.14512782169663.
+Episode 3120, step 128 Reward Sum -292.1493912603129.
+Episode 3130, step 129 Reward Sum -281.60469536332454.
+Episode 3140, step 117 Reward Sum -393.2514289937905.
+Episode 3150, step 122 Reward Sum -334.7951448196314.
+Episode 3160, step 137 Reward Sum -251.23143411687286.
+Episode 3170, step 110 Reward Sum -452.5543218471364.
+Episode 3180, step 105 Reward Sum -485.3235135672083.
+Episode 3190, step 120 Reward Sum -386.6887618829359.
+evaluating on 5 episodes with mean reward -339.8630994637626.
+Episode 3200, step 111 Reward Sum -437.4915695094609.
+Episode 3210, step 117 Reward Sum -415.5533184121573.
+Episode 3220, step 123 Reward Sum -369.0512380077422.
+Episode 3230, step 114 Reward Sum -454.16865853885935.
+Episode 3240, step 119 Reward Sum -432.5461409181716.
+Episode 3250, step 114 Reward Sum -438.57523779406324.
+Episode 3260, step 137 Reward Sum -241.39896615904237.
+Episode 3270, step 140 Reward Sum -214.92703304871716.
+Episode 3280, step 120 Reward Sum -421.57769204977154.
+Episode 3290, step 124 Reward Sum -367.8114423117038.
+evaluating on 5 episodes with mean reward -339.78686525316124.
+Episode 3300, step 134 Reward Sum -203.11624416321973.
+Episode 3310, step 127 Reward Sum -296.47135665149625.
+Episode 3320, step 114 Reward Sum -425.9899899700058.
+Episode 3330, step 112 Reward Sum -443.964676547844.
+Episode 3340, step 113 Reward Sum -446.00493492009224.
+Episode 3350, step 142 Reward Sum -158.99841865621917.
+Episode 3360, step 108 Reward Sum -457.5907996179903.
+Episode 3370, step 130 Reward Sum -250.59073785503858.
+Episode 3380, step 117 Reward Sum -357.15099260836064.
+Episode 3390, step 138 Reward Sum -195.20498520590814.
+evaluating on 5 episodes with mean reward -378.43077812851254.
+Episode 3400, step 124 Reward Sum -298.2680519863254.
+Episode 3410, step 121 Reward Sum -360.5923232633425.
+Episode 3420, step 112 Reward Sum -427.2181383504916.
+Episode 3430, step 125 Reward Sum -338.2883626180082.
+Episode 3440, step 142 Reward Sum -160.67532183605164.
+Episode 3450, step 107 Reward Sum -452.510943941552.
+Episode 3460, step 105 Reward Sum -502.9980267206212.
+Episode 3470, step 141 Reward Sum -175.55898290794102.
+Episode 3480, step 103 Reward Sum -518.6043621741222.
+Episode 3490, step 135 Reward Sum -220.0255275105542.
+evaluating on 5 episodes with mean reward -393.5276744503088.
+Episode 3500, step 127 Reward Sum -350.4659482917107.
+Episode 3510, step 119 Reward Sum -430.0053246846305.
+Episode 3520, step 140 Reward Sum -231.2285833852308.
+Episode 3530, step 134 Reward Sum -226.77205430066883.
+Episode 3540, step 121 Reward Sum -379.1436533457071.
+Episode 3550, step 131 Reward Sum -312.450693367525.
+Episode 3560, step 120 Reward Sum -403.3019415234981.
+Episode 3570, step 107 Reward Sum -514.6685334082924.
+Episode 3580, step 127 Reward Sum -355.37002307171764.
+Episode 3590, step 131 Reward Sum -256.53275637595436.
+evaluating on 5 episodes with mean reward -361.5931338679902.
+Episode 3600, step 120 Reward Sum -432.02582559697976.
+Episode 3610, step 137 Reward Sum -192.75089190589716.
+Episode 3620, step 108 Reward Sum -510.84894747890297.
+Episode 3630, step 124 Reward Sum -326.04922712794206.
+Episode 3640, step 109 Reward Sum -520.5044219480853.
+Episode 3650, step 115 Reward Sum -427.4764496000213.
+Episode 3660, step 107 Reward Sum -527.1431622338147.
+Episode 3670, step 132 Reward Sum -203.262119099079.
+Episode 3680, step 103 Reward Sum -518.2220303879434.
+Episode 3690, step 134 Reward Sum -194.95601218062922.
+evaluating on 5 episodes with mean reward -242.92838085242389.
+Episode 3700, step 117 Reward Sum -422.68196781211685.
+Episode 3710, step 139 Reward Sum -134.69135049162284.
+Episode 3720, step 132 Reward Sum -273.9240171868801.
+Episode 3730, step 105 Reward Sum -507.9732614153429.
+Episode 3740, step 115 Reward Sum -410.7459073611914.
+Episode 3750, step 134 Reward Sum -198.7267666023094.
+Episode 3760, step 117 Reward Sum -399.4392840285211.
+Episode 3770, step 139 Reward Sum -216.22325791144684.
+Episode 3780, step 106 Reward Sum -497.9559274063771.
+Episode 3790, step 132 Reward Sum -230.37785164514028.
+evaluating on 5 episodes with mean reward -404.0543151024726.
+Episode 3800, step 115 Reward Sum -440.57002966356174.
+Episode 3810, step 140 Reward Sum -242.0879742959499.
+Episode 3820, step 125 Reward Sum -321.4078215806294.
+Episode 3830, step 136 Reward Sum -202.22409706260495.
+Episode 3840, step 108 Reward Sum -463.0450297230434.
+Episode 3850, step 103 Reward Sum -463.72903785649635.
+Episode 3860, step 103 Reward Sum -500.4953517949307.
+Episode 3870, step 105 Reward Sum -516.0876112370206.
+Episode 3880, step 137 Reward Sum -171.6432064517826.
+Episode 3890, step 118 Reward Sum -417.4922766926372.
+evaluating on 5 episodes with mean reward -354.58923548581913.
+Episode 3900, step 126 Reward Sum -305.27211628472804.
+Episode 3910, step 120 Reward Sum -361.64313788097246.
+Episode 3920, step 134 Reward Sum -233.2685677026339.
+Episode 3930, step 142 Reward Sum -109.78405329874433.
+Episode 3940, step 143 Reward Sum -105.75982417863955.
+Episode 3950, step 118 Reward Sum -362.7427706136975.
+Episode 3960, step 133 Reward Sum -286.8618736362265.
+Episode 3970, step 127 Reward Sum -281.5938184439257.
+Episode 3980, step 125 Reward Sum -284.9577431101779.
+Episode 3990, step 133 Reward Sum -284.39082309062934.
+evaluating on 5 episodes with mean reward -442.37210115494355.
+Episode 4000, step 122 Reward Sum -338.85079273426726.
+Episode 4010, step 138 Reward Sum -203.63446978500554.
+Episode 4020, step 105 Reward Sum -498.6751420267053.
+Episode 4030, step 121 Reward Sum -394.6968751103299.
+Episode 4040, step 125 Reward Sum -314.9668850675268.
+Episode 4050, step 120 Reward Sum -347.10396527753096.
+Episode 4060, step 133 Reward Sum -311.4488638382027.
+Episode 4070, step 105 Reward Sum -483.3461459314068.
+Episode 4080, step 110 Reward Sum -471.28050353763985.
+Episode 4090, step 120 Reward Sum -390.51614648174643.
+evaluating on 5 episodes with mean reward -418.6610153149808.
+Episode 4100, step 107 Reward Sum -503.37110449414973.
+Episode 4110, step 113 Reward Sum -443.0690765417908.
+Episode 4120, step 109 Reward Sum -458.28938965866564.
+Episode 4130, step 130 Reward Sum -302.0143065069602.
+Episode 4140, step 116 Reward Sum -371.0667773561792.
+Episode 4150, step 116 Reward Sum -439.4763533515591.
+Episode 4160, step 140 Reward Sum -155.28137642738122.
+Episode 4170, step 124 Reward Sum -361.8027777759507.
+Episode 4180, step 127 Reward Sum -341.16436707808396.
+Episode 4190, step 128 Reward Sum -304.1956219499841.
+evaluating on 5 episodes with mean reward -396.90679182079316.
+Episode 4200, step 120 Reward Sum -365.10143827508006.
+Episode 4210, step 120 Reward Sum -310.41780210916716.
+Episode 4220, step 107 Reward Sum -488.80436406144196.
+Episode 4230, step 127 Reward Sum -303.8829924299679.
+Episode 4240, step 115 Reward Sum -409.8113383361421.
+Episode 4250, step 137 Reward Sum -229.2999208054132.
+Episode 4260, step 124 Reward Sum -345.5394738886895.
+Episode 4270, step 102 Reward Sum -482.5390808609938.
+Episode 4280, step 105 Reward Sum -503.47312390969466.
+Episode 4290, step 107 Reward Sum -444.77908041928674.
+evaluating on 5 episodes with mean reward -386.180736185359.
+Episode 4300, step 107 Reward Sum -481.8974657551847.
+Episode 4310, step 130 Reward Sum -291.3261306860435.
+Episode 4320, step 106 Reward Sum -480.57189057183786.
+Episode 4330, step 121 Reward Sum -367.701433837791.
+Episode 4340, step 143 Reward Sum -150.85341069675175.
+Episode 4350, step 138 Reward Sum -251.12348908116982.
+Episode 4360, step 130 Reward Sum -287.39412070264467.
+Episode 4370, step 113 Reward Sum -468.02375731454305.
+Episode 4380, step 112 Reward Sum -487.2040655782465.
+Episode 4390, step 114 Reward Sum -391.38041064406787.
+evaluating on 5 episodes with mean reward -409.8506460127884.
+Episode 4400, step 114 Reward Sum -415.326328653338.
+Episode 4410, step 103 Reward Sum -510.82618231532683.
+Episode 4420, step 114 Reward Sum -449.0714962311967.
+Episode 4430, step 141 Reward Sum -204.76615991773193.
+Episode 4440, step 128 Reward Sum -247.43232792819416.
+Episode 4450, step 104 Reward Sum -525.105043159872.
+Episode 4460, step 109 Reward Sum -468.8028081642935.
+Episode 4470, step 117 Reward Sum -430.574915559079.
+Episode 4480, step 138 Reward Sum -181.79932450747918.
+Episode 4490, step 137 Reward Sum -188.5890113034012.
+evaluating on 5 episodes with mean reward -317.12336085262547.
+Episode 4500, step 118 Reward Sum -389.03131318714924.
+Episode 4510, step 115 Reward Sum -432.2311595205158.
+Episode 4520, step 109 Reward Sum -445.61103390522226.
+Episode 4530, step 136 Reward Sum -191.70761353572814.
+Episode 4540, step 111 Reward Sum -505.7113227473655.
+Episode 4550, step 139 Reward Sum -181.48582182340851.
+Episode 4560, step 129 Reward Sum -301.73307044789163.
+Episode 4570, step 105 Reward Sum -483.81253681242265.
+Episode 4580, step 129 Reward Sum -288.55072540840007.
+Episode 4590, step 104 Reward Sum -496.1670938941934.
+evaluating on 5 episodes with mean reward -388.39847135405114.
+Episode 4600, step 106 Reward Sum -512.3658315905515.
+Episode 4610, step 115 Reward Sum -445.764985759183.
+Episode 4620, step 123 Reward Sum -377.0223345319954.
+Episode 4630, step 119 Reward Sum -391.62248573536397.
+Episode 4640, step 124 Reward Sum -326.1689669214582.
+Episode 4650, step 116 Reward Sum -442.07806636414335.
+Episode 4660, step 104 Reward Sum -484.60775066888374.
+Episode 4670, step 108 Reward Sum -453.2654662919814.
+Episode 4680, step 134 Reward Sum -272.1000003957083.
+Episode 4690, step 139 Reward Sum -215.03608551894456.
+evaluating on 5 episodes with mean reward -384.2956961287004.
+Episode 4700, step 133 Reward Sum -233.52740777667478.
+Episode 4710, step 124 Reward Sum -368.6237267483455.
+Episode 4720, step 102 Reward Sum -474.2750136388564.
+Episode 4730, step 142 Reward Sum -211.42281085177947.
+Episode 4740, step 131 Reward Sum -280.76626951583097.
+Episode 4750, step 135 Reward Sum -229.74131842999287.
+Episode 4760, step 125 Reward Sum -252.8519626746641.
+Episode 4770, step 113 Reward Sum -447.48520225769346.
+Episode 4780, step 130 Reward Sum -289.44117966313763.
+Episode 4790, step 129 Reward Sum -316.9867461100449.
+evaluating on 5 episodes with mean reward -406.7556366086501.
+Episode 4800, step 103 Reward Sum -523.7517678810248.
+Episode 4810, step 134 Reward Sum -248.36812226329863.
+Episode 4820, step 112 Reward Sum -472.17850719035715.
+Episode 4830, step 104 Reward Sum -471.3192323582439.
+Episode 4840, step 106 Reward Sum -483.24651995065807.
+Episode 4850, step 116 Reward Sum -409.1125007818324.
+Episode 4860, step 111 Reward Sum -470.14141905052287.
+Episode 4870, step 119 Reward Sum -371.6747945607608.
+Episode 4880, step 125 Reward Sum -279.4677941074224.
+Episode 4890, step 113 Reward Sum -415.48768176838945.
+evaluating on 5 episodes with mean reward -311.68304574859957.
+Episode 4900, step 137 Reward Sum -214.64560488099477.
+Episode 4910, step 134 Reward Sum -311.12840723508685.
+Episode 4920, step 119 Reward Sum -376.735459064106.
+Episode 4930, step 132 Reward Sum -210.64561146089096.
+Episode 4940, step 109 Reward Sum -485.99746530141266.
+Episode 4950, step 110 Reward Sum -452.96781360473267.
+Episode 4960, step 127 Reward Sum -293.34592267663953.
+Episode 4970, step 118 Reward Sum -397.6432751704111.
+Episode 4980, step 116 Reward Sum -433.4054629268137.
+Episode 4990, step 134 Reward Sum -221.50185525340575.
+evaluating on 5 episodes with mean reward -417.97007105469055.
+Episode 5000, step 138 Reward Sum -203.2308119946999.
+Episode 5010, step 129 Reward Sum -341.81558263717756.
+Episode 5020, step 134 Reward Sum -240.22103131301495.
+Episode 5030, step 106 Reward Sum -427.272708735132.
+Episode 5040, step 137 Reward Sum -259.3593827614044.
+Episode 5050, step 123 Reward Sum -411.7713973704329.
+Episode 5060, step 142 Reward Sum -113.16424811803869.
+Episode 5070, step 105 Reward Sum -486.03495539185326.
+Episode 5080, step 116 Reward Sum -418.0644024278859.
+Episode 5090, step 129 Reward Sum -282.07577649111494.
+evaluating on 5 episodes with mean reward -396.575137699269.
+Episode 5100, step 124 Reward Sum -380.87674794856775.
+Episode 5110, step 134 Reward Sum -234.45931289271186.
+Episode 5120, step 128 Reward Sum -283.28352085276083.
+Episode 5130, step 110 Reward Sum -447.1720686450992.
+Episode 5140, step 119 Reward Sum -365.9294548699817.
+Episode 5150, step 137 Reward Sum -144.5337381724984.
+Episode 5160, step 119 Reward Sum -409.5664794703987.
+Episode 5170, step 123 Reward Sum -346.54574522480533.
+Episode 5180, step 121 Reward Sum -393.2635096168142.
+Episode 5190, step 136 Reward Sum -237.2027858134504.
+evaluating on 5 episodes with mean reward -333.39123393697383.
+Episode 5200, step 103 Reward Sum -510.9052554455818.
+Episode 5210, step 131 Reward Sum -256.3417883011039.
+Episode 5220, step 129 Reward Sum -267.6668252524767.
+Episode 5230, step 137 Reward Sum -220.52517883657285.
+Episode 5240, step 130 Reward Sum -249.68726688260472.
+Episode 5250, step 124 Reward Sum -324.24202904489124.
+Episode 5260, step 114 Reward Sum -442.30665876887497.
+Episode 5270, step 114 Reward Sum -423.55153706596445.
+Episode 5280, step 134 Reward Sum -205.0579110352071.
+Episode 5290, step 126 Reward Sum -343.17294154603115.
+evaluating on 5 episodes with mean reward -426.7753502354186.
+Episode 5300, step 135 Reward Sum -238.54719053337675.
+Episode 5310, step 130 Reward Sum -254.4621596940209.
+Episode 5320, step 128 Reward Sum -289.84652727825664.
+Episode 5330, step 140 Reward Sum -179.16163016086847.
+Episode 5340, step 108 Reward Sum -476.6944807913579.
+Episode 5350, step 144 Reward Sum -109.91552625658461.
+Episode 5360, step 113 Reward Sum -447.5048797086229.
+Episode 5370, step 105 Reward Sum -490.24876476485736.
+Episode 5380, step 121 Reward Sum -382.4345001161811.
+Episode 5390, step 122 Reward Sum -355.32945514573146.
+evaluating on 5 episodes with mean reward -305.04115980303254.DQN trained on Pong-v0
+{'LEARNING_RATE': 0.001}
+Episode 0, Reward Sum -21.0.
+Episode 10, Reward Sum -21.0.
+Episode 20, Reward Sum -20.0.
+Episode 30, Reward Sum -20.0.
+Episode 40, Reward Sum -20.0.
+Episode 50, Reward Sum -19.0.
+Episode 60, Reward Sum -20.0.
+Episode 70, Reward Sum -19.0.
+Episode 80, Reward Sum -21.0.
+Episode 90, Reward Sum -21.0.
+evaluating on 5 episodes with mean reward -21.0.
+Episode 100, Reward Sum -20.0.
+Episode 110, Reward Sum -21.0.
+Episode 120, Reward Sum -20.0.
+Episode 130, Reward Sum -21.0.
+Episode 140, Reward Sum -20.0.
+Episode 150, Reward Sum -20.0.
+Episode 160, Reward Sum -21.0.
+Episode 170, Reward Sum -20.0.
+Episode 180, Reward Sum -21.0.
+Episode 190, Reward Sum -20.0.
+evaluating on 5 episodes with mean reward -20.8.
+Episode 200, Reward Sum -21.0.
+Episode 210, Reward Sum -20.0.
+Episode 220, Reward Sum -21.0.
+Episode 230, Reward Sum -21.0.
+Episode 240, Reward Sum -20.0.
+Episode 250, Reward Sum -21.0.
+Episode 260, Reward Sum -20.0.
+Episode 270, Reward Sum -20.0.
+Episode 280, Reward Sum -21.0.
+Episode 290, Reward Sum -19.0.
+evaluating on 5 episodes with mean reward -20.2.
+Episode 300, Reward Sum -20.0.
+Episode 310, Reward Sum -21.0.
+Episode 320, Reward Sum -20.0.
+Episode 330, Reward Sum -20.0.
+Episode 340, Reward Sum -20.0.
+Episode 350, Reward Sum -19.0.
+Episode 360, Reward Sum -21.0.
+Episode 370, Reward Sum -19.0.
+Episode 380, Reward Sum -20.0.
+Episode 390, Reward Sum -20.0.
+evaluating on 5 episodes with mean reward -19.6.
+Episode 400, Reward Sum -21.0.
+Episode 410, Reward Sum -19.0.
+Episode 420, Reward Sum -21.0.
+Episode 430, Reward Sum -20.0.
+Episode 440, Reward Sum -19.0.
+Episode 450, Reward Sum -19.0.
+Episode 460, Reward Sum -19.0.
+Episode 470, Reward Sum -20.0.
+Episode 480, Reward Sum -16.0.
+Episode 490, Reward Sum -18.0.
+evaluating on 5 episodes with mean reward -18.8.
+Episode 500, Reward Sum -18.0.
+Episode 510, Reward Sum -18.0.
+Episode 520, Reward Sum -19.0.
+Episode 530, Reward Sum -19.0.
+Episode 540, Reward Sum -18.0.
+Episode 550, Reward Sum -18.0.
+Episode 560, Reward Sum -18.0.
+Episode 570, Reward Sum -19.0.
+Episode 580, Reward Sum -20.0.
+Episode 590, Reward Sum -14.0.
+evaluating on 5 episodes with mean reward -21.0.
+Episode 600, Reward Sum -18.0.
+Episode 610, Reward Sum -18.0.
+Episode 620, Reward Sum -18.0.
+Episode 630, Reward Sum -19.0.
+Episode 640, Reward Sum -18.0.
+Episode 650, Reward Sum -19.0.
+Episode 660, Reward Sum -17.0.
+Episode 670, Reward Sum -19.0.
+Episode 680, Reward Sum -21.0.
+Episode 690, Reward Sum -18.0.
+evaluating on 5 episodes with mean reward -20.0.
+Episode 700, Reward Sum -19.0.
+Episode 710, Reward Sum -18.0.
+Episode 720, Reward Sum -20.0.
+Episode 730, Reward Sum -18.0.
+Episode 740, Reward Sum -18.0.
+Episode 750, Reward Sum -21.0.
+Episode 760, Reward Sum -20.0.
+Episode 770, Reward Sum -18.0.
+Episode 780, Reward Sum -21.0.
+Episode 790, Reward Sum -20.0.
+evaluating on 5 episodes with mean reward -18.6.
+Episode 800, Reward Sum -19.0.
+Episode 810, Reward Sum -19.0.
+Episode 820, Reward Sum -17.0.
+Episode 830, Reward Sum -19.0.
+Episode 840, Reward Sum -19.0.
+Episode 850, Reward Sum -19.0.
+Episode 860, Reward Sum -20.0.
+Episode 870, Reward Sum -19.0.
+Episode 880, Reward Sum -19.0.
+Episode 890, Reward Sum -19.0.
+evaluating on 5 episodes with mean reward -19.2.
+Episode 900, Reward Sum -19.0.
+Episode 910, Reward Sum -18.0.
+Episode 920, Reward Sum -19.0.
+Episode 930, Reward Sum -19.0.
+Episode 940, Reward Sum -21.0.
+Episode 950, Reward Sum -18.0.
+Episode 960, Reward Sum -17.0.
+Episode 970, Reward Sum -19.0.
+Episode 980, Reward Sum -16.0.
+Episode 990, Reward Sum -16.0.
+evaluating on 5 episodes with mean reward -19.6.
+Episode 1000, Reward Sum -16.0.
+Episode 1010, Reward Sum -16.0.
+Episode 1020, Reward Sum -19.0.
+Episode 1030, Reward Sum -18.0.
+Episode 1040, Reward Sum -16.0.
+Episode 1050, Reward Sum -21.0.
+Episode 1060, Reward Sum -17.0.
+Episode 1070, Reward Sum -18.0.
+Episode 1080, Reward Sum -20.0.
+Episode 1090, Reward Sum -19.0.
+evaluating on 5 episodes with mean reward -19.4.
+Episode 1100, Reward Sum -19.0.
+Episode 1110, Reward Sum -17.0.
+Episode 1120, Reward Sum -19.0.
+Episode 1130, Reward Sum -18.0.
+Episode 1140, Reward Sum -19.0.
+Episode 1150, Reward Sum -18.0.
+Episode 1160, Reward Sum -16.0.
+Episode 1170, Reward Sum -18.0.
+Episode 1180, Reward Sum -19.0.
+Episode 1190, Reward Sum -16.0.
+evaluating on 5 episodes with mean reward -17.8.
+Episode 1200, Reward Sum -17.0.
+Episode 1210, Reward Sum -20.0.
+Episode 1220, Reward Sum -21.0.
+Episode 1230, Reward Sum -16.0.
+Episode 1240, Reward Sum -18.0.
+Episode 1250, Reward Sum -20.0.
+Episode 1260, Reward Sum -17.0.
+Episode 1270, Reward Sum -18.0.
+Episode 1280, Reward Sum -21.0.
+Episode 1290, Reward Sum -18.0.
+evaluating on 5 episodes with mean reward -18.8.
+Episode 1300, Reward Sum -17.0.
+Episode 1310, Reward Sum -20.0.
+Episode 1320, Reward Sum -20.0.
+Episode 1330, Reward Sum -20.0.
+Episode 1340, Reward Sum -19.0.
+Episode 1350, Reward Sum -19.0.
+Episode 1360, Reward Sum -20.0.
+Episode 1370, Reward Sum -18.0.
+Episode 1380, Reward Sum -17.0.
+Episode 1390, Reward Sum -17.0.
+evaluating on 5 episodes with mean reward -19.2.
+Episode 1400, Reward Sum -20.0.
+Episode 1410, Reward Sum -21.0.
+Episode 1420, Reward Sum -19.0.
+Episode 1430, Reward Sum -19.0.
+Episode 1440, Reward Sum -20.0.
+Episode 1450, Reward Sum -17.0.
+Episode 1460, Reward Sum -18.0.
+Episode 1470, Reward Sum -19.0.
+Episode 1480, Reward Sum -18.0.
+Episode 1490, Reward Sum -19.0.
+evaluating on 5 episodes with mean reward -18.4.
+Episode 1500, Reward Sum -19.0.
+Episode 1510, Reward Sum -20.0.
+Episode 1520, Reward Sum -17.0.
+Episode 1530, Reward Sum -20.0.
+Episode 1540, Reward Sum -19.0.
+Episode 1550, Reward Sum -21.0.
+Episode 1560, Reward Sum -20.0.
+Episode 1570, Reward Sum -17.0.
+Episode 1580, Reward Sum -21.0.
+Episode 1590, Reward Sum -19.0.
+evaluating on 5 episodes with mean reward -19.6.
+Episode 1600, Reward Sum -19.0.
+Episode 1610, Reward Sum -19.0.
+Episode 1620, Reward Sum -19.0.
+Episode 1630, Reward Sum -18.0.
+Episode 1640, Reward Sum -20.0.
+Episode 1650, Reward Sum -19.0.
+Episode 1660, Reward Sum -17.0.
+Episode 1670, Reward Sum -19.0.
+Episode 1680, Reward Sum -20.0.
+Episode 1690, Reward Sum -19.0.
+evaluating on 5 episodes with mean reward -18.4.
+Episode 1700, Reward Sum -16.0.
+Episode 1710, Reward Sum -16.0.
+Episode 1720, Reward Sum -15.0.
+Episode 1730, Reward Sum -17.0.
+Episode 1740, Reward Sum -21.0.
+Episode 1750, Reward Sum -17.0.
+Episode 1760, Reward Sum -16.0.
+Episode 1770, Reward Sum -12.0.
+Episode 1780, Reward Sum -18.0.
+Episode 1790, Reward Sum -17.0.
+evaluating on 5 episodes with mean reward -18.4.
+Episode 1800, Reward Sum -18.0.
+Episode 1810, Reward Sum -17.0.
+Episode 1820, Reward Sum -21.0.
+Episode 1830, Reward Sum -13.0.
+Episode 1840, Reward Sum -18.0.
+Episode 1850, Reward Sum -17.0.
+Episode 1860, Reward Sum -17.0.
+Episode 1870, Reward Sum -18.0.
+Episode 1880, Reward Sum -16.0.
+Episode 1890, Reward Sum -18.0.
+evaluating on 5 episodes with mean reward -17.0.
+Episode 1900, Reward Sum -16.0.
+Episode 1910, Reward Sum -16.0.
+Episode 1920, Reward Sum -19.0.
+Episode 1930, Reward Sum -19.0.
+Episode 1940, Reward Sum -17.0.
+Episode 1950, Reward Sum -11.0.
+Episode 1960, Reward Sum -14.0.
+Episode 1970, Reward Sum -19.0.
+Episode 1980, Reward Sum -17.0.
+Episode 1990, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -13.8.
+Episode 2000, Reward Sum -15.0.
+Episode 2010, Reward Sum -13.0.
+Episode 2020, Reward Sum -12.0.
+Episode 2030, Reward Sum -8.0.
+Episode 2040, Reward Sum -18.0.
+Episode 2050, Reward Sum -8.0.
+Episode 2060, Reward Sum -15.0.
+Episode 2070, Reward Sum -13.0.
+Episode 2080, Reward Sum -14.0.
+Episode 2090, Reward Sum -15.0.
+evaluating on 5 episodes with mean reward -12.8.
+Episode 2100, Reward Sum -15.0.
+Episode 2110, Reward Sum -18.0.
+Episode 2120, Reward Sum -18.0.
+Episode 2130, Reward Sum -16.0.
+Episode 2140, Reward Sum -13.0.
+Episode 2150, Reward Sum -12.0.
+Episode 2160, Reward Sum -13.0.
+Episode 2170, Reward Sum -12.0.
+Episode 2180, Reward Sum -16.0.
+Episode 2190, Reward Sum -16.0.
+evaluating on 5 episodes with mean reward -12.0.
+Episode 2200, Reward Sum -16.0.
+Episode 2210, Reward Sum -16.0.
+Episode 2220, Reward Sum -16.0.
+Episode 2230, Reward Sum -12.0.
+Episode 2240, Reward Sum -15.0.
+Episode 5400, step 116 Reward Sum -419.38987956956214.
+Episode 5410, step 112 Reward Sum -482.3657536023214.
+Episode 5420, step 134 Reward Sum -212.61331734652578.
+Episode 5430, step 132 Reward Sum -289.70881913539495.
+Episode 5440, step 110 Reward Sum -483.1995719071965.
+Episode 5450, step 115 Reward Sum -431.3672394399872.
+Episode 5460, step 105 Reward Sum -509.25132863597236.
+Episode 5470, step 115 Reward Sum -396.40051013251065.
+Episode 5480, step 115 Reward Sum -406.3813288367586.
+Episode 5490, step 135 Reward Sum -241.9274297630861.
+evaluating on 5 episodes with mean reward -296.1957526508704.
+Episode 5500, step 109 Reward Sum -452.2797840683706.
+Episode 5510, step 134 Reward Sum -251.9852801959564.
+Episode 5520, step 105 Reward Sum -505.4468984839178.
+Episode 5530, step 103 Reward Sum -507.4990094763611.
+Episode 5540, step 141 Reward Sum -216.0192639013879.
+Episode 5550, step 124 Reward Sum -304.4778130305724.
+Episode 5560, step 138 Reward Sum -221.13025768056409.
+Episode 5570, step 127 Reward Sum -319.64951318524777.
+Episode 5580, step 129 Reward Sum -356.5999213467407.
+Episode 5590, step 121 Reward Sum -369.08460215684585.
+evaluating on 5 episodes with mean reward -348.6413489098729.
+Episode 5600, step 142 Reward Sum -163.2127890729772.
+Episode 5610, step 140 Reward Sum -179.07094607329924.
+Episode 5620, step 105 Reward Sum -504.8090477021233.
+Episode 5630, step 113 Reward Sum -448.9598563467602.
+Episode 5640, step 104 Reward Sum -517.4126844428772.
+Episode 5650, step 137 Reward Sum -213.84637558183033.
+Episode 5660, step 109 Reward Sum -471.0961308459207.
+Episode 5670, step 139 Reward Sum -185.43540533727324.
+Episode 5680, step 123 Reward Sum -363.7520322153151.
+Episode 5690, step 137 Reward Sum -160.54755300424753.
+evaluating on 5 episodes with mean reward -296.32006060465017.
+Episode 5700, step 118 Reward Sum -391.3293703357061.
+Episode 5710, step 124 Reward Sum -301.7168811329059.
+Episode 5720, step 105 Reward Sum -495.2096088671134.
+Episode 5730, step 124 Reward Sum -360.8424501739859.
+Episode 5740, step 105 Reward Sum -518.6882512136351.
+Episode 5750, step 118 Reward Sum -400.30569450673266.
+Episode 5760, step 115 Reward Sum -368.1578690658066.
+Episode 5770, step 136 Reward Sum -189.53620145677206.
+Episode 5780, step 120 Reward Sum -385.1413597927207.
+Episode 5790, step 116 Reward Sum -389.96111191845733.
+evaluating on 5 episodes with mean reward -294.37822204256116.
+Episode 5800, step 123 Reward Sum -354.9053267340018.
+Episode 5810, step 112 Reward Sum -436.2265489359237.
+Episode 5820, step 121 Reward Sum -413.26945838277436.
+Episode 5830, step 119 Reward Sum -365.2671171339104.
+Episode 5840, step 126 Reward Sum -308.89413028131406.
+Episode 5850, step 137 Reward Sum -199.3014544522741.
+Episode 5860, step 121 Reward Sum -343.55580186345816.
+Episode 5870, step 132 Reward Sum -256.47589683668076.
+Episode 5880, step 107 Reward Sum -451.63991730655886.
+Episode 5890, step 117 Reward Sum -436.9070105454619.
+evaluating on 5 episodes with mean reward -356.86704610436857.
+Episode 5900, step 113 Reward Sum -426.43426315719256.
+Episode 5910, step 117 Reward Sum -408.64746148242136.
+Episode 5920, step 126 Reward Sum -307.2276381286971.
+Episode 5930, step 115 Reward Sum -396.0481116853779.
+Episode 5940, step 122 Reward Sum -398.7446153909767.
+Episode 5950, step 133 Reward Sum -190.81243544361567.
+Episode 5960, step 126 Reward Sum -346.8847744562802.
+Episode 5970, step 107 Reward Sum -488.0293976148225.
+Episode 5980, step 111 Reward Sum -477.3570616721466.
+Episode 5990, step 137 Reward Sum -216.56228137644396.
+evaluating on 5 episodes with mean reward -359.9972709587747.
+Episode 6000, step 104 Reward Sum -503.67564616544604.
+Episode 6010, step 109 Reward Sum -440.19523183831257.
+Episode 6020, step 119 Reward Sum -360.11692304444097.
+Episode 6030, step 121 Reward Sum -354.37700360333616.
+Episode 6040, step 108 Reward Sum -485.90345746816894.
+Episode 6050, step 111 Reward Sum -417.59227695360664.
+Episode 6060, step 128 Reward Sum -243.15936908663437.
+Episode 6070, step 108 Reward Sum -501.35573135430315.
+Episode 6080, step 104 Reward Sum -444.2975982213097.
+Episode 6090, step 123 Reward Sum -384.63351079377657.
+evaluating on 5 episodes with mean reward -360.42148977101294.
+Episode 6100, step 129 Reward Sum -245.2897237998943.
+Episode 6110, step 117 Reward Sum -409.5291448907718.
+Episode 6120, step 110 Reward Sum -425.3615795661935.
+Episode 6130, step 104 Reward Sum -526.5575828388869.
+Episode 6140, step 129 Reward Sum -294.9086172822806.
+Episode 6150, step 115 Reward Sum -409.0152755931742.
+Episode 6160, step 107 Reward Sum -460.6138315264405.
+Episode 6170, step 128 Reward Sum -296.3115516663429.
+Episode 6180, step 126 Reward Sum -317.20206108005993.
+Episode 6190, step 122 Reward Sum -307.33579575987676.
+evaluating on 5 episodes with mean reward -375.2914752839396.
+Episode 6200, step 112 Reward Sum -454.3191239196587.
+Episode 6210, step 142 Reward Sum -195.94902116221834.
+Episode 6220, step 135 Reward Sum -224.52084492136362.
+Episode 6230, step 105 Reward Sum -503.3050934352388.
+Episode 6240, step 136 Reward Sum -265.2419479939464.
+Episode 6250, step 116 Reward Sum -405.20398914245175.
+Episode 6260, step 118 Reward Sum -404.0244337097931.
+Episode 6270, step 129 Reward Sum -308.1653635575883.
+Episode 6280, step 118 Reward Sum -409.53781224729954.
+Episode 6290, step 108 Reward Sum -467.95024532199426.
+evaluating on 5 episodes with mean reward -410.08214576342317.
+Episode 6300, step 128 Reward Sum -348.03932539671433.
+Episode 6310, step 123 Reward Sum -362.92122036275305.
+Episode 6320, step 108 Reward Sum -451.9364921257127.
+Episode 6330, step 141 Reward Sum -171.26710019218083.
+Episode 6340, step 117 Reward Sum -400.29659688216526.
+Episode 6350, step 135 Reward Sum -262.9659248181605.
+Episode 6360, step 131 Reward Sum -233.04937855498062.
+Episode 6370, step 125 Reward Sum -322.52348411675894.
+Episode 6380, step 117 Reward Sum -377.0321762274323.
+Episode 6390, step 110 Reward Sum -439.78583464386764.
+evaluating on 5 episodes with mean reward -319.25709147856503.
+Episode 6400, step 120 Reward Sum -349.7890404163327.
+Episode 6410, step 108 Reward Sum -425.39272113510054.
+Episode 6420, step 127 Reward Sum -314.80374790528407.
+Episode 6430, step 117 Reward Sum -426.8337714494442.
+Episode 6440, step 110 Reward Sum -432.79568040433685.
+Episode 6450, step 138 Reward Sum -212.73285354196577.
+Episode 6460, step 106 Reward Sum -513.0323036482451.
+Episode 6470, step 133 Reward Sum -269.66720566892786.
+Episode 6480, step 120 Reward Sum -350.90088027817217.
+Episode 6490, step 116 Reward Sum -422.99398070083566.
+evaluating on 5 episodes with mean reward -271.3130319482779.
+Episode 6500, step 137 Reward Sum -229.43334599858176.
+Episode 6510, step 121 Reward Sum -392.43254788668645.
+Episode 6520, step 140 Reward Sum -176.24489339628934.
+Episode 6530, step 142 Reward Sum -167.80235222117875.
+Episode 6540, step 133 Reward Sum -283.58129750783877.
+Episode 6550, step 112 Reward Sum -394.4169088245684.
+Episode 6560, step 127 Reward Sum -327.05848829594555.
+Episode 6570, step 133 Reward Sum -209.87740414741737.
+Episode 6580, step 110 Reward Sum -400.65932105157316.
+Episode 6590, step 102 Reward Sum -499.4475015576175.
+evaluating on 5 episodes with mean reward -240.61730318564554.
+Episode 6600, step 128 Reward Sum -234.97403276022962.
+Episode 6610, step 109 Reward Sum -475.23005816108423.
+Episode 6620, step 137 Reward Sum -216.87781740527882.
+Episode 6630, step 119 Reward Sum -350.6288482652794.
+Episode 6640, step 105 Reward Sum -481.53121237013085.
+Episode 6650, step 127 Reward Sum -295.4273272159515.
+Episode 6660, step 115 Reward Sum -417.90028361996633.
+Episode 6670, step 136 Reward Sum -232.82464111065332.
+Episode 6680, step 140 Reward Sum -219.63256729346685.
+Episode 6690, step 122 Reward Sum -345.1844580532888.
+evaluating on 5 episodes with mean reward -421.84958963190275.
+Episode 6700, step 135 Reward Sum -230.36599723770317.
+Episode 6710, step 138 Reward Sum -181.76347436274975.
+Episode 6720, step 117 Reward Sum -351.22290877761844.
+Episode 6730, step 115 Reward Sum -454.40418621718885.
+Episode 6740, step 139 Reward Sum -186.91635976279633.
+Episode 6750, step 109 Reward Sum -434.0225316439077.
+Episode 6760, step 129 Reward Sum -328.6568580275537.
+Episode 6770, step 103 Reward Sum -469.64957057884453.
+Episode 6780, step 130 Reward Sum -272.26745366611186.
+Episode 6790, step 111 Reward Sum -452.39205097836356.
+evaluating on 5 episodes with mean reward -347.82036077686223.
+Episode 6800, step 135 Reward Sum -261.21119379757073.
+Episode 6810, step 108 Reward Sum -484.21811454720904.
+Episode 6820, step 139 Reward Sum -205.42832847322464.
+Episode 6830, step 113 Reward Sum -461.8221330639443.
+Episode 6840, step 125 Reward Sum -375.7975766119353.
+Episode 6850, step 141 Reward Sum -231.28240988588206.
+Episode 6860, step 136 Reward Sum -250.29069012345352.
+Episode 6870, step 134 Reward Sum -267.99714839587.
+Episode 6880, step 134 Reward Sum -300.60951768943954.
+Episode 6890, step 138 Reward Sum -213.2993254505393.
+evaluating on 5 episodes with mean reward -366.43738749126965.
+Episode 6900, step 121 Reward Sum -438.701615756967.
+Episode 6910, step 134 Reward Sum -258.2364325631139.
+Episode 6920, step 121 Reward Sum -343.07252298528135.
+Episode 6930, step 127 Reward Sum -320.8917181724851.
+Episode 6940, step 113 Reward Sum -468.8544504055095.
+Episode 6950, step 124 Reward Sum -405.50535066727275.
+Episode 6960, step 129 Reward Sum -286.9048267432789.
+Episode 6970, step 119 Reward Sum -373.4204848163335.
+Episode 6980, step 112 Reward Sum -481.33081348891625.
+Episode 6990, step 140 Reward Sum -171.29545609323324.
+evaluating on 5 episodes with mean reward -415.62022409874936.
+Episode 7000, step 110 Reward Sum -464.0937099124467.
+Episode 7010, step 120 Reward Sum -433.77334420492554.
+Episode 7020, step 130 Reward Sum -268.7673096048792.
+Episode 7030, step 112 Reward Sum -472.3426435215772.
+Episode 7040, step 130 Reward Sum -245.48240529590382.
+Episode 7050, step 118 Reward Sum -394.3109553434965.
+Episode 7060, step 116 Reward Sum -389.60453922259217.
+Episode 7070, step 116 Reward Sum -370.98831511658807.
+Episode 7080, step 134 Reward Sum -238.50625186336117.
+Episode 7090, step 140 Reward Sum -190.6729802224333.
+evaluating on 5 episodes with mean reward -319.3648910371855.
+Episode 7100, step 111 Reward Sum -421.80115470603295.
+Episode 7110, step 129 Reward Sum -344.0758480052931.
+Episode 7120, step 103 Reward Sum -516.295560488116.
+Episode 7130, step 137 Reward Sum -159.8970064160563.
+Episode 7140, step 117 Reward Sum -436.5174434708001.
+Episode 7150, step 117 Reward Sum -420.4647785115774.
+Episode 7160, step 108 Reward Sum -452.60077735276906.
+Episode 7170, step 141 Reward Sum -203.99137955139253.
+Episode 7180, step 110 Reward Sum -413.19194748372547.
+Episode 7190, step 126 Reward Sum -317.0809148313059.
+evaluating on 5 episodes with mean reward -306.8070275040768.
+Episode 7200, step 104 Reward Sum -513.3173760292773.
+Episode 7210, step 124 Reward Sum -339.60334658831266.
+Episode 7220, step 124 Reward Sum -303.6263412061845.
+Episode 7230, step 112 Reward Sum -474.96769333511634.
+Episode 7240, step 111 Reward Sum -434.08107068951944.
+Episode 7250, step 111 Reward Sum -412.43778621071124.
+Episode 7260, step 132 Reward Sum -260.18040600313003.
+Episode 7270, step 104 Reward Sum -484.8428622366245.
+Episode 7280, step 129 Reward Sum -339.6648825197007.
+Episode 7290, step 105 Reward Sum -469.89319493138646.
+evaluating on 5 episodes with mean reward -340.67029847463357.
+Episode 7300, step 140 Reward Sum -230.08497632353536.
+Episode 7310, step 108 Reward Sum -503.2366366672827.
+Episode 7320, step 126 Reward Sum -308.61858249824905.
+Episode 7330, step 117 Reward Sum -443.7409306951278.
+Episode 7340, step 139 Reward Sum -186.72242630058105.
+Episode 7350, step 119 Reward Sum -386.239080675087.
+Episode 7360, step 103 Reward Sum -487.71625921495814.
+Episode 7370, step 120 Reward Sum -361.19123439848676.
+Episode 7380, step 133 Reward Sum -226.6654416146942.
+Episode 7390, step 142 Reward Sum -159.0615874990148.
+evaluating on 5 episodes with mean reward -321.97674460877624.
+Episode 7400, step 130 Reward Sum -280.3246679970674.
+Episode 7410, step 118 Reward Sum -363.37709386271206.
+Episode 7420, step 119 Reward Sum -377.6285703378262.
+Episode 7430, step 130 Reward Sum -279.5822026905825.
+Episode 7440, step 118 Reward Sum -391.70630854417135.
+Episode 7450, step 121 Reward Sum -387.6221209529352.
+Episode 7460, step 105 Reward Sum -486.72252735827385.
+Episode 7470, step 139 Reward Sum -196.2254468799429.
+Episode 7480, step 109 Reward Sum -468.4020311509223.
+Episode 7490, step 107 Reward Sum -456.85351588277905.
+evaluating on 5 episodes with mean reward -298.27239889785915.
+Episode 7500, step 142 Reward Sum -148.45999828308237.
+Episode 7510, step 118 Reward Sum -417.53572740181403.
+Episode 7520, step 106 Reward Sum -481.28635740781186.
+Episode 7530, step 117 Reward Sum -463.5499722914447.
+Episode 7540, step 141 Reward Sum -145.43418781147108.
+Episode 7550, step 110 Reward Sum -416.27891301854277.
+Episode 7560, step 111 Reward Sum -452.70640805593047.
+Episode 7570, step 131 Reward Sum -309.1214434434614.
+Episode 7580, step 128 Reward Sum -338.05374975855534.
+Episode 7590, step 112 Reward Sum -404.2916284510941.
+evaluating on 5 episodes with mean reward -390.4790409004054.
+Episode 7600, step 108 Reward Sum -501.9474172624126.
+Episode 7610, step 121 Reward Sum -330.1619416763331.
+Episode 7620, step 126 Reward Sum -323.5378979023392.
+Episode 7630, step 112 Reward Sum -488.53537727644016.
+Episode 7640, step 133 Reward Sum -324.37269879873605.
+Episode 7650, step 109 Reward Sum -452.28847777029563.
+Episode 7660, step 119 Reward Sum -430.77366204672717.
+Episode 7670, step 106 Reward Sum -472.1378424461699.
+Episode 7680, step 104 Reward Sum -470.8224248946775.
+Episode 7690, step 139 Reward Sum -255.3084925106198.
+evaluating on 5 episodes with mean reward -327.04222955581974.
+Episode 7700, step 105 Reward Sum -472.037570561486.
+Episode 7710, step 115 Reward Sum -386.06659763563107.
+Episode 7720, step 104 Reward Sum -447.1027008466458.
+Episode 7730, step 104 Reward Sum -484.52655466417184.
+Episode 7740, step 113 Reward Sum -451.43987311884365.
+Episode 7750, step 143 Reward Sum -193.54860928798098.
+Episode 7760, step 126 Reward Sum -349.75238169645456.
+Episode 7770, step 114 Reward Sum -429.37686393728694.
+Episode 7780, step 118 Reward Sum -408.68410856568374.
+Episode 7790, step 137 Reward Sum -141.81190266668642.
+evaluating on 5 episodes with mean reward -348.4093843360482.
+Episode 7800, step 140 Reward Sum -117.15036413674852.
+Episode 7810, step 140 Reward Sum -224.90918590479274.
+Episode 7820, step 106 Reward Sum -475.51125070219626.
+Episode 7830, step 133 Reward Sum -283.4604025629532.
+Episode 7840, step 108 Reward Sum -456.6022974146407.
+Episode 7850, step 120 Reward Sum -407.168589444965.
+Episode 7860, step 136 Reward Sum -186.49700244274132.
+Episode 7870, step 106 Reward Sum -483.99403660272526.
+Episode 7880, step 125 Reward Sum -348.03361957228935.
+Episode 7890, step 104 Reward Sum -516.5668948882936.
+evaluating on 5 episodes with mean reward -333.38327426584226.
+Episode 7900, step 105 Reward Sum -514.019050524155.
+Episode 7910, step 139 Reward Sum -222.28743520994902.
+Episode 7920, step 112 Reward Sum -399.0252456535655.
+Episode 7930, step 140 Reward Sum -210.87345396995758.
+Episode 7940, step 135 Reward Sum -239.54698955300856.
+Episode 7950, step 104 Reward Sum -465.5687278645907.
+Episode 7960, step 128 Reward Sum -275.3001018770208.
+Episode 7970, step 137 Reward Sum -198.81285796789092.
+Episode 7980, step 111 Reward Sum -433.9122875062687.
+Episode 7990, step 112 Reward Sum -516.6793196293406.
+evaluating on 5 episodes with mean reward -387.8391995104361.
+Episode 8000, step 114 Reward Sum -393.95602252176326.
+Episode 8010, step 141 Reward Sum -99.31360257187757.
+Episode 8020, step 114 Reward Sum -391.7619640198531.
+Episode 8030, step 136 Reward Sum -233.3484927752242.
+Episode 8040, step 112 Reward Sum -456.4490001880245.
+Episode 8050, step 140 Reward Sum -209.6852659644978.
+Episode 8060, step 127 Reward Sum -255.91540242384994.
+Episode 8070, step 138 Reward Sum -171.70679570149088.
+Episode 8080, step 138 Reward Sum -139.12261634481948.
+Episode 8090, step 139 Reward Sum -187.92972187982986.
+evaluating on 5 episodes with mean reward -402.92115704229894.
+Episode 8100, step 103 Reward Sum -532.7445137512124.
+Episode 8110, step 107 Reward Sum -451.4497582104345.
+Episode 8120, step 124 Reward Sum -331.8438769965708.
+Episode 8130, step 136 Reward Sum -170.5667518465285.
+Episode 8140, step 136 Reward Sum -236.53050929262668.
+Episode 8150, step 108 Reward Sum -453.1162507103431.
+Episode 8160, step 120 Reward Sum -327.7826301024515.
+Episode 8170, step 142 Reward Sum -126.39722782351286.
+Episode 8180, step 113 Reward Sum -419.03886725392124.
+Episode 8190, step 123 Reward Sum -289.14014586111773.
+evaluating on 5 episodes with mean reward -376.84247917526346.
+Episode 8200, step 134 Reward Sum -195.42244299057253.
+Episode 8210, step 119 Reward Sum -390.0842865297066.
+Episode 8220, step 126 Reward Sum -279.7752574093587.
+Episode 8230, step 111 Reward Sum -494.1354737574639.
+Episode 8240, step 131 Reward Sum -328.6250973211179.
+Episode 8250, step 108 Reward Sum -481.54825851773705.
+Episode 8260, step 115 Reward Sum -417.7200796393889.
+Episode 8270, step 142 Reward Sum -175.14039063142226.
+Episode 8280, step 126 Reward Sum -322.2963629406338.
+Episode 8290, step 104 Reward Sum -502.89275299230866.
+evaluating on 5 episodes with mean reward -322.0389927001079.
+Episode 8300, step 141 Reward Sum -164.94136050992367.
+Episode 8310, step 105 Reward Sum -486.8959383729429.
+Episode 8320, step 143 Reward Sum -162.17384612978753.
+Episode 8330, step 108 Reward Sum -517.1367219683799.
+Episode 8340, step 131 Reward Sum -258.3666163900017.
+Episode 8350, step 114 Reward Sum -428.2147825435574.
+Episode 8360, step 122 Reward Sum -341.5211737468782.
+Episode 8370, step 132 Reward Sum -301.4446045333371.
+Episode 8380, step 141 Reward Sum -229.63582426351869.
+Episode 8390, step 108 Reward Sum -457.0885061443039.
+evaluating on 5 episodes with mean reward -414.54750841276456.
+Episode 8400, step 105 Reward Sum -513.5981583060485.
+Episode 8410, step 111 Reward Sum -437.50113547649573.
+Episode 8420, step 118 Reward Sum -429.1432233738527.
+Episode 8430, step 133 Reward Sum -209.4420570227356.
+Episode 8440, step 127 Reward Sum -308.5924290625905.
+Episode 8450, step 109 Reward Sum -481.1196173252706.
+Episode 8460, step 110 Reward Sum -455.49074033384977.
+Episode 8470, step 129 Reward Sum -268.00518367033055.
+Episode 8480, step 132 Reward Sum -269.8202526083185.
+Episode 8490, step 103 Reward Sum -529.8443269290524.
+evaluating on 5 episodes with mean reward -372.07248709393036.
+Episode 8500, step 128 Reward Sum -300.5630223148472.
+Episode 8510, step 114 Reward Sum -405.5066894348858.
+Episode 8520, step 106 Reward Sum -478.0674004847443.
+Episode 8530, step 112 Reward Sum -469.6010389930564.
+Episode 8540, step 111 Reward Sum -453.1079409596478.
+Episode 8550, step 141 Reward Sum -115.21552699859828.
+Episode 8560, step 104 Reward Sum -493.0579273573993.
+Episode 8570, step 105 Reward Sum -487.9422833848012.
+Episode 8580, step 123 Reward Sum -335.28010476233146.
+Episode 8590, step 127 Reward Sum -298.5281632490273.
+evaluating on 5 episodes with mean reward -323.3403057623993.
+Episode 8600, step 109 Reward Sum -483.56297925965254.
+Episode 8610, step 118 Reward Sum -423.10135427875207.
+Episode 8620, step 141 Reward Sum -161.93807195960534.
+Episode 8630, step 142 Reward Sum -155.47801238741232.
+Episode 8640, step 119 Reward Sum -413.08581855399285.
+Episode 8650, step 135 Reward Sum -188.84752018675678.
+Episode 8660, step 104 Reward Sum -499.826824740088.
+Episode 8670, step 139 Reward Sum -88.17677663203065.
+Episode 8680, step 119 Reward Sum -389.9502934228309.
+Episode 8690, step 108 Reward Sum -436.67444310499565.
+evaluating on 5 episodes with mean reward -311.3749753229532.
+Episode 8700, step 111 Reward Sum -418.3781053131239.
+Episode 8710, step 129 Reward Sum -224.67518448175375.
+Episode 8720, step 136 Reward Sum -244.1556654685562.
+Episode 8730, step 130 Reward Sum -282.5374389977834.
+Episode 8740, step 115 Reward Sum -415.8876239196139.
+Episode 8750, step 103 Reward Sum -490.8753289032993.
+Episode 8760, step 120 Reward Sum -398.48549274140254.
+Episode 8770, step 106 Reward Sum -500.31188179314927.
+Episode 8780, step 110 Reward Sum -479.6853532885957.
+Episode 8790, step 112 Reward Sum -439.62230943494353.
+evaluating on 5 episodes with mean reward -386.9747618375892.
+Episode 8800, step 136 Reward Sum -227.66701616565382.
+Episode 8810, step 102 Reward Sum -516.3135323859701.
+Episode 8820, step 117 Reward Sum -410.79748068706704.
+Episode 8830, step 119 Reward Sum -386.2475664267983.
+Episode 8840, step 104 Reward Sum -478.0206129979686.
+Episode 8850, step 113 Reward Sum -415.20845414054185.
+Episode 8860, step 118 Reward Sum -410.5680737583839.
+Episode 8870, step 143 Reward Sum -172.63993164364766.
+Episode 8880, step 116 Reward Sum -408.1274062270292.
+Episode 8890, step 135 Reward Sum -196.17544059436815.
+evaluating on 5 episodes with mean reward -358.64515967881766.
+Episode 8900, step 125 Reward Sum -309.60384822477477.
+Episode 8910, step 124 Reward Sum -304.52876601311374.
+Episode 8920, step 131 Reward Sum -296.92145943182294.
+Episode 8930, step 119 Reward Sum -362.0753903790089.
+Episode 8940, step 125 Reward Sum -320.54999126097755.
+Episode 8950, step 133 Reward Sum -249.1174027386583.
+Episode 8960, step 116 Reward Sum -384.13929771050044.
+Episode 8970, step 118 Reward Sum -394.97328580345516.
+Episode 8980, step 121 Reward Sum -330.53872468179213.
+Episode 8990, step 124 Reward Sum -312.8733978105172.
+evaluating on 5 episodes with mean reward -403.1912842943343.
+Episode 9000, step 136 Reward Sum -258.34461663916335.
+Episode 9010, step 111 Reward Sum -446.6381848212468.
+Episode 9020, step 139 Reward Sum -206.56531700708052.
+Episode 9030, step 107 Reward Sum -437.0834051017233.
+Episode 9040, step 116 Reward Sum -383.55310043902233.
+Episode 9050, step 134 Reward Sum -164.04401431820023.
+Episode 9060, step 109 Reward Sum -489.53187504438716.
+Episode 9070, step 124 Reward Sum -284.0936057331826.
+Episode 9080, step 136 Reward Sum -238.5777759697692.
+Episode 9090, step 108 Reward Sum -506.97335576227556.
+evaluating on 5 episodes with mean reward -345.7740462498231.
+Episode 9100, step 105 Reward Sum -492.43663415993205.
+Episode 9110, step 106 Reward Sum -508.0346149761783.
+Episode 9120, step 123 Reward Sum -343.7884769732036.
+Episode 9130, step 103 Reward Sum -497.41821783591.
+Episode 9140, step 113 Reward Sum -458.32301745075523.
+Episode 9150, step 124 Reward Sum -335.7580641274841.
+Episode 9160, step 141 Reward Sum -203.24988507379177.
+Episode 9170, step 124 Reward Sum -390.5488689819478.
+Episode 9180, step 139 Reward Sum -203.6658998341793.
+Episode 9190, step 134 Reward Sum -226.32730720824307.
+evaluating on 5 episodes with mean reward -443.56236277379486.
+Episode 9200, step 140 Reward Sum -170.1013159719682.
+Episode 9210, step 104 Reward Sum -490.3688142314576.
+Episode 9220, step 140 Reward Sum -174.61187764261837.
+Episode 9230, step 115 Reward Sum -441.8359602930218.
+Episode 9240, step 142 Reward Sum -142.22852806086607.
+Episode 9250, step 126 Reward Sum -322.14663947541135.
+Episode 9260, step 107 Reward Sum -456.23978472242175.
+Episode 9270, step 103 Reward Sum -472.26977221144074.
+Episode 9280, step 107 Reward Sum -484.8391265376313.
+Episode 9290, step 119 Reward Sum -401.6318119361925.
+evaluating on 5 episodes with mean reward -321.06156858341427.
+Episode 9300, step 127 Reward Sum -274.24502293057634.
+Episode 9310, step 139 Reward Sum -180.4198845815838.
+Episode 9320, step 109 Reward Sum -510.2958114309809.
+Episode 9330, step 118 Reward Sum -388.6753438123551.
+Episode 9340, step 114 Reward Sum -475.54199103654577.
+Episode 9350, step 103 Reward Sum -515.1012288677741.
+Episode 9360, step 126 Reward Sum -255.75808582103448.
+Episode 9370, step 111 Reward Sum -425.110319006426.
+Episode 9380, step 127 Reward Sum -315.14686700308687.
+Episode 9390, step 124 Reward Sum -344.5783394033598.
+evaluating on 5 episodes with mean reward -336.2455695916759.
+Episode 9400, step 119 Reward Sum -369.2687010404876.
+Episode 9410, step 108 Reward Sum -458.2604674932784.
+Episode 9420, step 142 Reward Sum -188.40167961702844.
+Episode 9430, step 139 Reward Sum -229.0544116373362.
+Episode 9440, step 108 Reward Sum -506.5970972990156.
+Episode 9450, step 141 Reward Sum -146.95460326332434.
+Episode 9460, step 132 Reward Sum -262.0370972175786.
+Episode 9470, step 125 Reward Sum -354.110405263415.
+Episode 9480, step 131 Reward Sum -238.41082730183672.
+Episode 9490, step 119 Reward Sum -361.7685839305293.
+evaluating on 5 episodes with mean reward -361.81243858618996.
+Episode 9500, step 126 Reward Sum -339.6162451651449.
+Episode 9510, step 121 Reward Sum -376.02954581082975.
+Episode 9520, step 105 Reward Sum -525.0080153614105.
+Episode 9530, step 135 Reward Sum -266.4601552855768.
+Episode 9540, step 115 Reward Sum -446.77474302751517.
+Episode 9550, step 118 Reward Sum -406.05483610314354.
+Episode 9560, step 131 Reward Sum -249.55398962982088.
+Episode 9570, step 135 Reward Sum -248.08422765958736.
+Episode 9580, step 119 Reward Sum -425.9705042409111.
+Episode 9590, step 136 Reward Sum -266.86414808118536.
+evaluating on 5 episodes with mean reward -361.2057232974973.
+Episode 9600, step 117 Reward Sum -454.59634633424366.
+Episode 9610, step 127 Reward Sum -301.321355643037.
+Episode 9620, step 140 Reward Sum -185.2043482026699.
+Episode 9630, step 138 Reward Sum -196.95699217537856.
+Episode 9640, step 135 Reward Sum -295.57647167293106.
+Episode 9650, step 104 Reward Sum -499.4269904672807.
+Episode 9660, step 136 Reward Sum -218.5832610456724.
+Episode 9670, step 140 Reward Sum -155.0435158653175.
+Episode 9680, step 106 Reward Sum -523.9103354667396.
+Episode 9690, step 138 Reward Sum -152.81769935627986.
+evaluating on 5 episodes with mean reward -438.81291527026167.
+Episode 9700, step 112 Reward Sum -419.0088441855337.
+Episode 9710, step 123 Reward Sum -355.9467685993851.
+Episode 9720, step 111 Reward Sum -482.39918030723777.
+Episode 9730, step 124 Reward Sum -299.6592843271141.
+Episode 9740, step 103 Reward Sum -468.1802149372808.
+Episode 9750, step 116 Reward Sum -460.6735366177716.
+Episode 9760, step 119 Reward Sum -395.1165968266358.
+Episode 9770, step 142 Reward Sum -175.420059215873.
+Episode 9780, step 108 Reward Sum -439.04668469108.
+Episode 9790, step 105 Reward Sum -535.2459432452964.
+evaluating on 5 episodes with mean reward -337.5585673304041.
+Episode 9800, step 115 Reward Sum -370.27561723010206.
+Episode 9810, step 122 Reward Sum -334.1139149451876.
+Episode 9820, step 119 Reward Sum -353.857593355865.
+Episode 9830, step 111 Reward Sum -444.99188264169595.
+Episode 9840, step 108 Reward Sum -454.8370844203148.
+Episode 9850, step 120 Reward Sum -374.26315467790033.
+Episode 9860, step 136 Reward Sum -224.853460924917.
+Episode 9870, step 131 Reward Sum -274.83513449691185.
+Episode 9880, step 124 Reward Sum -357.68278823395775.
+Episode 9890, step 141 Reward Sum -217.24628297878533.
+evaluating on 5 episodes with mean reward -298.7827360964158.
+Episode 9900, step 115 Reward Sum -435.73772589964653.
+Episode 9910, step 121 Reward Sum -409.2183866629512.
+Episode 9920, step 133 Reward Sum -243.00523728086577.
+Episode 9930, step 103 Reward Sum -539.279902098414.
+Episode 9940, step 135 Reward Sum -318.99978468476917.
+Episode 9950, step 110 Reward Sum -425.3314993003572.
+Episode 9960, step 137 Reward Sum -221.369630844885.
+Episode 9970, step 123 Reward Sum -371.9945015459709.
+Episode 9980, step 105 Reward Sum -542.2759388127072.
+Episode 9990, step 115 Reward Sum -395.926247717755.
+evaluating on 5 episodes with mean reward -328.81178973334653.
+
+Episode 2250, Reward Sum -13.0.
+Episode 2260, Reward Sum -13.0.
+Episode 2270, Reward Sum -13.0.
+Episode 2280, Reward Sum -15.0.
+Episode 2290, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -14.6.
+Episode 2300, Reward Sum -10.0.
+Episode 2310, Reward Sum -13.0.
+Episode 2320, Reward Sum -11.0.
+Episode 2330, Reward Sum -12.0.
+Episode 2340, Reward Sum -14.0.
+Episode 2350, Reward Sum -13.0.
+Episode 2360, Reward Sum -15.0.
+Episode 2370, Reward Sum -15.0.
+Episode 2380, Reward Sum -12.0.
+Episode 2390, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -11.6.
+Episode 2400, Reward Sum -10.0.
+Episode 2410, Reward Sum -11.0.
+Episode 2420, Reward Sum -15.0.
+Episode 2430, Reward Sum -12.0.
+Episode 2440, Reward Sum -14.0.
+Episode 2450, Reward Sum -14.0.
+Episode 2460, Reward Sum -11.0.
+Episode 2470, Reward Sum -8.0.
+Episode 2480, Reward Sum -8.0.
+Episode 2490, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -13.6.
+Episode 2500, Reward Sum -8.0.
+Episode 2510, Reward Sum -9.0.
+Episode 2520, Reward Sum -6.0.
+Episode 2530, Reward Sum -15.0.
+Episode 2540, Reward Sum -15.0.
+Episode 2550, Reward Sum -8.0.
+Episode 2560, Reward Sum -18.0.
+Episode 2570, Reward Sum -9.0.
+Episode 2580, Reward Sum -8.0.
+Episode 2590, Reward Sum -8.0.
+evaluating on 5 episodes with mean reward -11.2.
+Episode 2600, Reward Sum -11.0.
+Episode 2610, Reward Sum -14.0.
+Episode 2620, Reward Sum -3.0.
+Episode 2630, Reward Sum -9.0.
+Episode 2640, Reward Sum -1.0.
+Episode 2650, Reward Sum -11.0.
+Episode 2660, Reward Sum -10.0.
+Episode 2670, Reward Sum -14.0.
+Episode 2680, Reward Sum -13.0.
+Episode 2690, Reward Sum -7.0.
+evaluating on 5 episodes with mean reward -14.2.
+Episode 2700, Reward Sum -4.0.
+Episode 2710, Reward Sum -13.0.
+Episode 2720, Reward Sum -13.0.
+Episode 2730, Reward Sum -9.0.
+Episode 2740, Reward Sum -4.0.
+Episode 2750, Reward Sum -11.0.
+Episode 2760, Reward Sum -14.0.
+Episode 2770, Reward Sum -13.0.
+Episode 2780, Reward Sum -7.0.
+Episode 2790, Reward Sum -14.0.
+evaluating on 5 episodes with mean reward -12.2.
+Episode 2800, Reward Sum -8.0.
+Episode 2810, Reward Sum -8.0.
+Episode 2820, Reward Sum -9.0.
+Episode 2830, Reward Sum -13.0.
+Episode 2840, Reward Sum -12.0.
+Episode 2850, Reward Sum -15.0.
+Episode 2860, Reward Sum -7.0.
+Episode 2870, Reward Sum -11.0.
+Episode 2880, Reward Sum -13.0.
+Episode 2890, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -9.2.
+Episode 2900, Reward Sum -13.0.
+Episode 2910, Reward Sum -16.0.
+Episode 2920, Reward Sum -13.0.
+Episode 2930, Reward Sum -10.0.
+Episode 2940, Reward Sum -10.0.
+Episode 2950, Reward Sum -12.0.
+Episode 2960, Reward Sum -12.0.
+Episode 2970, Reward Sum -15.0.
+Episode 2980, Reward Sum -10.0.
+Episode 2990, Reward Sum -18.0.
+evaluating on 5 episodes with mean reward -13.4.
+Episode 3000, Reward Sum -9.0.
+Episode 3010, Reward Sum -8.0.
+Episode 3020, Reward Sum -16.0.
+Episode 3030, Reward Sum -5.0.
+Episode 3040, Reward Sum -9.0.
+Episode 3050, Reward Sum -9.0.
+Episode 3060, Reward Sum -8.0.
+Episode 3070, Reward Sum -11.0.
+Episode 3080, Reward Sum -9.0.
+Episode 3090, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -11.6.
+Episode 3100, Reward Sum -10.0.
+Episode 3110, Reward Sum -11.0.
+Episode 3120, Reward Sum -11.0.
+Episode 3130, Reward Sum -12.0.
+Episode 3140, Reward Sum -15.0.
+Episode 3150, Reward Sum -10.0.
+Episode 3160, Reward Sum -7.0.
+Episode 3170, Reward Sum -15.0.
+Episode 3180, Reward Sum -16.0.
+Episode 3190, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -9.8.
+Episode 3200, Reward Sum -16.0.
+Episode 3210, Reward Sum -11.0.
+Episode 3220, Reward Sum -10.0.
+Episode 3230, Reward Sum -8.0.
+Episode 3240, Reward Sum -12.0.
+Episode 3250, Reward Sum -8.0.
+Episode 3260, Reward Sum -13.0.
+Episode 3270, Reward Sum -13.0.
+Episode 3280, Reward Sum -9.0.
+Episode 3290, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -8.6.
+Episode 3300, Reward Sum -7.0.
+Episode 3310, Reward Sum -15.0.
+Episode 3320, Reward Sum -9.0.
+Episode 3330, Reward Sum -3.0.
+Episode 3340, Reward Sum -13.0.
+Episode 3350, Reward Sum -14.0.
+Episode 3360, Reward Sum -12.0.
+Episode 3370, Reward Sum -14.0.
+Episode 3380, Reward Sum -12.0.
+Episode 3390, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -9.2.
+Episode 3400, Reward Sum -11.0.
+Episode 3410, Reward Sum -7.0.
+Episode 3420, Reward Sum -13.0.
+Episode 3430, Reward Sum -11.0.
+Episode 3440, Reward Sum -14.0.
+Episode 3450, Reward Sum -7.0.
+Episode 3460, Reward Sum -7.0.
+Episode 3470, Reward Sum -7.0.
+Episode 3480, Reward Sum -17.0.
+Episode 3490, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -10.8.
+Episode 3500, Reward Sum -12.0.
+Episode 3510, Reward Sum -11.0.
+Episode 3520, Reward Sum -6.0.
+Episode 3530, Reward Sum -6.0.
+Episode 3540, Reward Sum -11.0.
+Episode 3550, Reward Sum -9.0.
+Episode 3560, Reward Sum -11.0.
+Episode 3570, Reward Sum -5.0.
+Episode 3580, Reward Sum -11.0.
+Episode 3590, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -8.6.
+Episode 3600, Reward Sum -13.0.
+Episode 3610, Reward Sum -15.0.
+Episode 3620, Reward Sum -11.0.
+Episode 3630, Reward Sum -15.0.
+Episode 3640, Reward Sum -14.0.
+Episode 3650, Reward Sum -10.0.
+Episode 3660, Reward Sum -11.0.
+Episode 3670, Reward Sum -10.0.
+Episode 3680, Reward Sum -2.0.
+Episode 3690, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -8.2.
+Episode 3700, Reward Sum -15.0.
+Episode 3710, Reward Sum -3.0.
+Episode 3720, Reward Sum -12.0.
+Episode 3730, Reward Sum -9.0.
+Episode 3740, Reward Sum -10.0.
+Episode 3750, Reward Sum -9.0.
+Episode 3760, Reward Sum -9.0.
+Episode 3770, Reward Sum -14.0.
+Episode 3780, Reward Sum -15.0.
+Episode 3790, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -12.2.
+Episode 3800, Reward Sum -13.0.
+Episode 3810, Reward Sum -8.0.
+Episode 3820, Reward Sum -5.0.
+Episode 3830, Reward Sum -9.0.
+Episode 3840, Reward Sum -12.0.
+Episode 3850, Reward Sum -10.0.
+Episode 3860, Reward Sum -12.0.
+Episode 3870, Reward Sum -9.0.
+Episode 3880, Reward Sum -8.0.
+Episode 3890, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -4.0.
+Episode 3900, Reward Sum -11.0.
+Episode 3910, Reward Sum -12.0.
+Episode 3920, Reward Sum -13.0.
+Episode 3930, Reward Sum -12.0.
+Episode 3940, Reward Sum -7.0.
+Episode 3950, Reward Sum -7.0.
+Episode 3960, Reward Sum -8.0.
+Episode 3970, Reward Sum -10.0.
+Episode 3980, Reward Sum -15.0.
+Episode 3990, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -9.2.
+Episode 4000, Reward Sum -13.0.
+Episode 4010, Reward Sum -7.0.
+Episode 4020, Reward Sum -12.0.
+Episode 4030, Reward Sum -6.0.
+Episode 4040, Reward Sum -13.0.
+Episode 4050, Reward Sum -12.0.
+Episode 4060, Reward Sum -5.0.
+Episode 4070, Reward Sum -11.0.
+Episode 4080, Reward Sum -8.0.
+Episode 4090, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -7.8.
+Episode 4100, Reward Sum -13.0.
+Episode 4110, Reward Sum -7.0.
+Episode 4120, Reward Sum -11.0.
+Episode 4130, Reward Sum -5.0.
+Episode 4140, Reward Sum -11.0.
+Episode 4150, Reward Sum -5.0.
+Episode 4160, Reward Sum -13.0.
+Episode 4170, Reward Sum -12.0.
+Episode 4180, Reward Sum -11.0.
+Episode 4190, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -11.0.
+Episode 4200, Reward Sum -8.0.
+Episode 4210, Reward Sum -14.0.
+Episode 4220, Reward Sum -14.0.
+Episode 4230, Reward Sum -14.0.
+Episode 4240, Reward Sum -8.0.
+Episode 4250, Reward Sum -15.0.
+Episode 4260, Reward Sum -10.0.
+Episode 4270, Reward Sum -15.0.
+Episode 4280, Reward Sum -12.0.
+Episode 4290, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -12.6.
+Episode 4300, Reward Sum -13.0.
+Episode 4310, Reward Sum -7.0.
+Episode 4320, Reward Sum -14.0.
+Episode 4330, Reward Sum -8.0.
+Episode 4340, Reward Sum -8.0.
+Episode 4350, Reward Sum -9.0.
+Episode 4360, Reward Sum -12.0.
+Episode 4370, Reward Sum -12.0.
+Episode 4380, Reward Sum -4.0.
+Episode 4390, Reward Sum -7.0.
+evaluating on 5 episodes with mean reward -12.8.
+Episode 4400, Reward Sum -11.0.
+Episode 4410, Reward Sum -14.0.
+Episode 4420, Reward Sum -8.0.
+Episode 4430, Reward Sum -9.0.
+Episode 4440, Reward Sum -12.0.
+Episode 4450, Reward Sum -13.0.
+Episode 4460, Reward Sum -7.0.
+Episode 4470, Reward Sum -10.0.
+Episode 4480, Reward Sum -8.0.
+Episode 4490, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -10.6.
+Episode 4500, Reward Sum -7.0.
+Episode 4510, Reward Sum -10.0.
+Episode 4520, Reward Sum -13.0.
+Episode 4530, Reward Sum -10.0.
+Episode 4540, Reward Sum -12.0.
+Episode 4550, Reward Sum -15.0.
+Episode 4560, Reward Sum -15.0.
+Episode 4570, Reward Sum -13.0.
+Episode 4580, Reward Sum -16.0.
+Episode 4590, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -8.8.
+Episode 4600, Reward Sum -8.0.
+Episode 4610, Reward Sum -7.0.
+Episode 4620, Reward Sum -7.0.
+Episode 4630, Reward Sum -11.0.
+Episode 4640, Reward Sum -7.0.
+Episode 4650, Reward Sum -8.0.
+Episode 4660, Reward Sum -10.0.
+Episode 4670, Reward Sum -8.0.
+Episode 4680, Reward Sum -10.0.
+Episode 4690, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -9.0.
+Episode 4700, Reward Sum -3.0.
+Episode 4710, Reward Sum -6.0.
+Episode 4720, Reward Sum -11.0.
+Episode 4730, Reward Sum -8.0.
+Episode 4740, Reward Sum -11.0.
+Episode 4750, Reward Sum -5.0.
+Episode 4760, Reward Sum -7.0.
+Episode 4770, Reward Sum -7.0.
+Episode 4780, Reward Sum -11.0.
+Episode 4790, Reward Sum -14.0.
+evaluating on 5 episodes with mean reward -9.4.
+Episode 4800, Reward Sum -3.0.
+Episode 4810, Reward Sum -12.0.
+Episode 4820, Reward Sum -12.0.
+Episode 4830, Reward Sum -10.0.
+Episode 4840, Reward Sum -11.0.
+Episode 4850, Reward Sum -6.0.
+Episode 4860, Reward Sum -4.0.
+Episode 4870, Reward Sum -10.0.
+Episode 4880, Reward Sum -9.0.
+Episode 4890, Reward Sum -6.0.
+evaluating on 5 episodes with mean reward -11.6.
+Episode 4900, Reward Sum -8.0.
+Episode 4910, Reward Sum -7.0.
+Episode 4920, Reward Sum -8.0.
+Episode 4930, Reward Sum -12.0.
+Episode 4940, Reward Sum -9.0.
+Episode 4950, Reward Sum -13.0.
+Episode 4960, Reward Sum -14.0.
+Episode 4970, Reward Sum -3.0.
+Episode 4980, Reward Sum -16.0.
+Episode 4990, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -11.4.
+Episode 5000, Reward Sum -13.0.
+Episode 5010, Reward Sum -9.0.
+Episode 5020, Reward Sum 7.0.
+Episode 5030, Reward Sum -15.0.
+Episode 5040, Reward Sum -11.0.
+Episode 5050, Reward Sum -12.0.
+Episode 5060, Reward Sum -7.0.
+Episode 5070, Reward Sum -9.0.
+Episode 5080, Reward Sum -5.0.
+Episode 5090, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -8.8.
+Episode 5100, Reward Sum -10.0.
+Episode 5110, Reward Sum -10.0.
+Episode 5120, Reward Sum -12.0.
+Episode 5130, Reward Sum -12.0.
+Episode 5140, Reward Sum -8.0.
+Episode 5150, Reward Sum -6.0.
+Episode 5160, Reward Sum -9.0.
+Episode 5170, Reward Sum -9.0.
+Episode 5180, Reward Sum -17.0.
+Episode 5190, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -13.6.
+Episode 5200, Reward Sum -11.0.
+Episode 5210, Reward Sum -12.0.
+Episode 5220, Reward Sum -11.0.
+Episode 5230, Reward Sum -12.0.
+Episode 5240, Reward Sum -9.0.
+Episode 5250, Reward Sum -10.0.
+Episode 5260, Reward Sum -13.0.
+Episode 5270, Reward Sum -11.0.
+Episode 5280, Reward Sum -14.0.
+Episode 5290, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -8.6.
+Episode 5300, Reward Sum -6.0.
+Episode 5310, Reward Sum -11.0.
+Episode 5320, Reward Sum -15.0.
+Episode 5330, Reward Sum -14.0.
+Episode 5340, Reward Sum -12.0.
+Episode 5350, Reward Sum -13.0.
+Episode 5360, Reward Sum -11.0.
+Episode 5370, Reward Sum -8.0.
+Episode 5380, Reward Sum -7.0.
+Episode 5390, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -10.2.
+Episode 5400, Reward Sum -14.0.
+Episode 5410, Reward Sum -15.0.
+Episode 5420, Reward Sum -5.0.
+Episode 5430, Reward Sum -7.0.
+Episode 5440, Reward Sum -8.0.
+Episode 5450, Reward Sum -13.0.
+Episode 5460, Reward Sum -7.0.
+Episode 5470, Reward Sum -7.0.
+Episode 5480, Reward Sum -7.0.
+Episode 5490, Reward Sum -14.0.
+evaluating on 5 episodes with mean reward -8.8.
+Episode 5500, Reward Sum -11.0.
+Episode 5510, Reward Sum -12.0.
+Episode 5520, Reward Sum -9.0.
+Episode 5530, Reward Sum -11.0.
+Episode 5540, Reward Sum -7.0.
+Episode 5550, Reward Sum -13.0.
+Episode 5560, Reward Sum 2.0.
+Episode 5570, Reward Sum -11.0.
+Episode 5580, Reward Sum -8.0.
+Episode 5590, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -10.0.
+Episode 5600, Reward Sum -13.0.
+Episode 5610, Reward Sum -9.0.
+Episode 5620, Reward Sum -10.0.
+Episode 5630, Reward Sum -12.0.
+Episode 5640, Reward Sum -2.0.
+Episode 5650, Reward Sum -11.0.
+Episode 5660, Reward Sum -15.0.
+Episode 5670, Reward Sum -8.0.
+Episode 5680, Reward Sum -16.0.
+Episode 5690, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -9.0.
+Episode 5700, Reward Sum -13.0.
+Episode 5710, Reward Sum -11.0.
+Episode 5720, Reward Sum -15.0.
+Episode 5730, Reward Sum -6.0.
+Episode 5740, Reward Sum -12.0.
+Episode 5750, Reward Sum -9.0.
+Episode 5760, Reward Sum -7.0.
+Episode 5770, Reward Sum -10.0.
+Episode 5780, Reward Sum -13.0.
+Episode 5790, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -10.8.
+Episode 5800, Reward Sum -10.0.
+Episode 5810, Reward Sum -13.0.
+Episode 5820, Reward Sum -4.0.
+Episode 5830, Reward Sum -9.0.
+Episode 5840, Reward Sum -13.0.
+Episode 5850, Reward Sum -12.0.
+Episode 5860, Reward Sum -17.0.
+Episode 5870, Reward Sum -6.0.
+Episode 5880, Reward Sum -11.0.
+Episode 5890, Reward Sum -5.0.
+evaluating on 5 episodes with mean reward -8.8.
+Episode 5900, Reward Sum -13.0.
+Episode 5910, Reward Sum -10.0.
+Episode 5920, Reward Sum -11.0.
+Episode 5930, Reward Sum -1.0.
+Episode 5940, Reward Sum -12.0.
+Episode 5950, Reward Sum -1.0.
+Episode 5960, Reward Sum -10.0.
+Episode 5970, Reward Sum -7.0.
+Episode 5980, Reward Sum -11.0.
+Episode 5990, Reward Sum -7.0.
+evaluating on 5 episodes with mean reward -11.4.
+Episode 6000, Reward Sum -13.0.
+Episode 6010, Reward Sum -17.0.
+Episode 6020, Reward Sum -10.0.
+Episode 6030, Reward Sum -6.0.
+Episode 6040, Reward Sum -4.0.
+Episode 6050, Reward Sum -9.0.
+Episode 6060, Reward Sum -13.0.
+Episode 6070, Reward Sum -15.0.
+Episode 6080, Reward Sum -14.0.
+Episode 6090, Reward Sum -3.0.
+evaluating on 5 episodes with mean reward -9.4.
+Episode 6100, Reward Sum -13.0.
+Episode 6110, Reward Sum -14.0.
+Episode 6120, Reward Sum -9.0.
+Episode 6130, Reward Sum -9.0.
+Episode 6140, Reward Sum -11.0.
+Episode 6150, Reward Sum -13.0.
+Episode 6160, Reward Sum -8.0.
+Episode 6170, Reward Sum -17.0.
+Episode 6180, Reward Sum -7.0.
+Episode 6190, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -11.0.
+Episode 6200, Reward Sum -16.0.
+Episode 6210, Reward Sum -9.0.
+Episode 6220, Reward Sum -15.0.
+Episode 6230, Reward Sum -9.0.
+Episode 6240, Reward Sum -8.0.
+Episode 6250, Reward Sum -10.0.
+Episode 6260, Reward Sum -9.0.
+Episode 6270, Reward Sum -11.0.
+Episode 6280, Reward Sum -10.0.
+Episode 6290, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -10.4.
+Episode 6300, Reward Sum -10.0.
+Episode 6310, Reward Sum -12.0.
+Episode 6320, Reward Sum -10.0.
+Episode 6330, Reward Sum -13.0.
+Episode 6340, Reward Sum -4.0.
+Episode 6350, Reward Sum -8.0.
+Episode 6360, Reward Sum -12.0.
+Episode 6370, Reward Sum -6.0.
+Episode 6380, Reward Sum -11.0.
+Episode 6390, Reward Sum -8.0.
+evaluating on 5 episodes with mean reward -6.2.
+Episode 6400, Reward Sum -9.0.
+Episode 6410, Reward Sum -11.0.
+Episode 6420, Reward Sum -13.0.
+Episode 6430, Reward Sum -6.0.
+Episode 6440, Reward Sum -5.0.
+Episode 6450, Reward Sum -11.0.
+Episode 6460, Reward Sum -11.0.
+Episode 6470, Reward Sum -13.0.
+Episode 6480, Reward Sum -5.0.
+Episode 6490, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -10.0.
+Episode 6500, Reward Sum -13.0.
+Episode 6510, Reward Sum -15.0.
+Episode 6520, Reward Sum -6.0.
+Episode 6530, Reward Sum -13.0.
+Episode 6540, Reward Sum -10.0.
+Episode 6550, Reward Sum -12.0.
+Episode 6560, Reward Sum -10.0.
+Episode 6570, Reward Sum -6.0.
+Episode 6580, Reward Sum -8.0.
+Episode 6590, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -11.2.
+Episode 6600, Reward Sum -11.0.
+Episode 6610, Reward Sum -13.0.
+Episode 6620, Reward Sum -13.0.
+Episode 6630, Reward Sum -2.0.
+Episode 6640, Reward Sum -10.0.
+Episode 6650, Reward Sum -7.0.
+Episode 6660, Reward Sum -10.0.
+Episode 6670, Reward Sum -10.0.
+Episode 6680, Reward Sum -13.0.
+Episode 6690, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -9.6.
+Episode 6700, Reward Sum -9.0.
+Episode 6710, Reward Sum -13.0.
+Episode 6720, Reward Sum -10.0.
+Episode 6730, Reward Sum -10.0.
+Episode 6740, Reward Sum -7.0.
+Episode 6750, Reward Sum -10.0.
+Episode 6760, Reward Sum -14.0.
+Episode 6770, Reward Sum -9.0.
+Episode 6780, Reward Sum -7.0.
+Episode 6790, Reward Sum -6.0.
+evaluating on 5 episodes with mean reward -9.0.
+Episode 6800, Reward Sum -9.0.
+Episode 6810, Reward Sum -16.0.
+Episode 6820, Reward Sum -9.0.
+Episode 6830, Reward Sum -11.0.
+Episode 6840, Reward Sum -12.0.
+Episode 6850, Reward Sum -7.0.
+Episode 6860, Reward Sum -8.0.
+Episode 6870, Reward Sum -8.0.
+Episode 6880, Reward Sum -8.0.
+Episode 6890, Reward Sum -5.0.
+evaluating on 5 episodes with mean reward -10.4.
+Episode 6900, Reward Sum -11.0.
+Episode 6910, Reward Sum -15.0.
+Episode 6920, Reward Sum -9.0.
+Episode 6930, Reward Sum -12.0.
+Episode 6940, Reward Sum -13.0.
+Episode 6950, Reward Sum -8.0.
+Episode 6960, Reward Sum -9.0.
+Episode 6970, Reward Sum -14.0.
+Episode 6980, Reward Sum -17.0.
+Episode 6990, Reward Sum -6.0.
+evaluating on 5 episodes with mean reward -11.0.
+Episode 7000, Reward Sum -7.0.
+Episode 7010, Reward Sum -10.0.
+Episode 7020, Reward Sum -8.0.
+Episode 7030, Reward Sum -7.0.
+Episode 7040, Reward Sum -10.0.
+Episode 7050, Reward Sum -13.0.
+Episode 7060, Reward Sum -12.0.
+Episode 7070, Reward Sum -11.0.
+Episode 7080, Reward Sum -7.0.
+Episode 7090, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -9.4.
+Episode 7100, Reward Sum -9.0.
+Episode 7110, Reward Sum -6.0.
+Episode 7120, Reward Sum -10.0.
+Episode 7130, Reward Sum -13.0.
+Episode 7140, Reward Sum -11.0.
+Episode 7150, Reward Sum -11.0.
+Episode 7160, Reward Sum -9.0.
+Episode 7170, Reward Sum -9.0.
+Episode 7180, Reward Sum -10.0.
+Episode 7190, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -9.6.
+Episode 7200, Reward Sum -14.0.
+Episode 7210, Reward Sum -11.0.
+Episode 7220, Reward Sum -4.0.
+Episode 7230, Reward Sum -15.0.
+Episode 7240, Reward Sum -11.0.
+Episode 7250, Reward Sum -8.0.
+Episode 7260, Reward Sum -13.0.
+Episode 7270, Reward Sum -12.0.
+Episode 7280, Reward Sum -7.0.
+Episode 7290, Reward Sum -4.0.
+evaluating on 5 episodes with mean reward -10.6.
+Episode 7300, Reward Sum -11.0.
+Episode 7310, Reward Sum -12.0.
+Episode 7320, Reward Sum -11.0.
+Episode 7330, Reward Sum -7.0.
+Episode 7340, Reward Sum -1.0.
+Episode 7350, Reward Sum -13.0.
+Episode 7360, Reward Sum -12.0.
+Episode 7370, Reward Sum -5.0.
+Episode 7380, Reward Sum -6.0.
+Episode 7390, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -9.4.
+Episode 7400, Reward Sum -14.0.
+Episode 7410, Reward Sum -9.0.
+Episode 7420, Reward Sum -12.0.
+Episode 7430, Reward Sum -13.0.
+Episode 7440, Reward Sum -9.0.
+Episode 7450, Reward Sum -14.0.
+Episode 7460, Reward Sum -8.0.
+Episode 7470, Reward Sum -15.0.
+Episode 7480, Reward Sum -10.0.
+Episode 7490, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -10.0.
+Episode 7500, Reward Sum -13.0.
+Episode 7510, Reward Sum -9.0.
+Episode 7520, Reward Sum -11.0.
+Episode 7530, Reward Sum -11.0.
+Episode 7540, Reward Sum -15.0.
+Episode 7550, Reward Sum -8.0.
+Episode 7560, Reward Sum 2.0.
+Episode 7570, Reward Sum -12.0.
+Episode 7580, Reward Sum -4.0.
+Episode 7590, Reward Sum -6.0.
+evaluating on 5 episodes with mean reward -11.4.
+Episode 7600, Reward Sum -11.0.
+Episode 7610, Reward Sum -5.0.
+Episode 7620, Reward Sum -9.0.
+Episode 7630, Reward Sum -12.0.
+Episode 7640, Reward Sum -9.0.
+Episode 7650, Reward Sum -11.0.
+Episode 7660, Reward Sum -7.0.
+Episode 7670, Reward Sum -11.0.
+Episode 7680, Reward Sum -7.0.
+Episode 7690, Reward Sum -7.0.
+evaluating on 5 episodes with mean reward -11.6.
+Episode 7700, Reward Sum -10.0.
+Episode 7710, Reward Sum -5.0.
+Episode 7720, Reward Sum -11.0.
+Episode 7730, Reward Sum -10.0.
+Episode 7740, Reward Sum -10.0.
+Episode 7750, Reward Sum -6.0.
+Episode 7760, Reward Sum -12.0.
+Episode 7770, Reward Sum -12.0.
+Episode 7780, Reward Sum -15.0.
+Episode 7790, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -11.4.
+Episode 7800, Reward Sum -11.0.
+Episode 7810, Reward Sum -3.0.
+Episode 7820, Reward Sum -7.0.
+Episode 7830, Reward Sum -6.0.
+Episode 7840, Reward Sum -11.0.
+Episode 7850, Reward Sum -8.0.
+Episode 7860, Reward Sum -8.0.
+Episode 7870, Reward Sum -5.0.
+Episode 7880, Reward Sum -12.0.
+Episode 7890, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -9.8.
+Episode 7900, Reward Sum -10.0.
+Episode 7910, Reward Sum -15.0.
+Episode 7920, Reward Sum -13.0.
+Episode 7930, Reward Sum -11.0.
+Episode 7940, Reward Sum -3.0.
+Episode 7950, Reward Sum -4.0.
+Episode 7960, Reward Sum -12.0.
+Episode 7970, Reward Sum -5.0.
+Episode 7980, Reward Sum -5.0.
+Episode 7990, Reward Sum -5.0.
+evaluating on 5 episodes with mean reward -9.6.
+Episode 8000, Reward Sum -11.0.
+Episode 8010, Reward Sum -10.0.
+Episode 8020, Reward Sum -13.0.
+Episode 8030, Reward Sum -12.0.
+Episode 8040, Reward Sum -10.0.
+Episode 8050, Reward Sum -12.0.
+Episode 8060, Reward Sum -7.0.
+Episode 8070, Reward Sum -9.0.
+Episode 8080, Reward Sum -4.0.
+Episode 8090, Reward Sum -13.0.
+evaluating on 5 episodes with mean reward -11.2.
+Episode 8100, Reward Sum -6.0.
+Episode 8110, Reward Sum -10.0.
+Episode 8120, Reward Sum -9.0.
+Episode 8130, Reward Sum -5.0.
+Episode 8140, Reward Sum -6.0.
+Episode 8150, Reward Sum -9.0.
+Episode 8160, Reward Sum -9.0.
+Episode 8170, Reward Sum -7.0.
+Episode 8180, Reward Sum -10.0.
+Episode 8190, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -9.4.
+Episode 8200, Reward Sum -14.0.
+Episode 8210, Reward Sum -12.0.
+Episode 8220, Reward Sum -5.0.
+Episode 8230, Reward Sum -12.0.
+Episode 8240, Reward Sum -5.0.
+Episode 8250, Reward Sum -1.0.
+Episode 8260, Reward Sum -7.0.
+Episode 8270, Reward Sum -7.0.
+Episode 8280, Reward Sum -14.0.
+Episode 8290, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -10.0.
+Episode 8300, Reward Sum -11.0.
+Episode 8310, Reward Sum -8.0.
+Episode 8320, Reward Sum -14.0.
+Episode 8330, Reward Sum -5.0.
+Episode 8340, Reward Sum -6.0.
+Episode 8350, Reward Sum -5.0.
+Episode 8360, Reward Sum -7.0.
+Episode 8370, Reward Sum -8.0.
+Episode 8380, Reward Sum -11.0.
+Episode 8390, Reward Sum -5.0.
+evaluating on 5 episodes with mean reward -12.0.
+Episode 8400, Reward Sum -5.0.
+Episode 8410, Reward Sum -4.0.
+Episode 8420, Reward Sum -7.0.
+Episode 8430, Reward Sum -9.0.
+Episode 8440, Reward Sum -9.0.
+Episode 8450, Reward Sum -11.0.
+Episode 8460, Reward Sum -5.0.
+Episode 8470, Reward Sum -8.0.
+Episode 8480, Reward Sum -10.0.
+Episode 8490, Reward Sum -17.0.
+evaluating on 5 episodes with mean reward -10.0.
+Episode 8500, Reward Sum -7.0.
+Episode 8510, Reward Sum -11.0.
+Episode 8520, Reward Sum -14.0.
+Episode 8530, Reward Sum -8.0.
+Episode 8540, Reward Sum -11.0.
+Episode 8550, Reward Sum -8.0.
+Episode 8560, Reward Sum -13.0.
+Episode 8570, Reward Sum -14.0.
+Episode 8580, Reward Sum -13.0.
+Episode 8590, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -14.2.
+Episode 8600, Reward Sum -9.0.
+Episode 8610, Reward Sum -8.0.
+Episode 8620, Reward Sum -7.0.
+Episode 8630, Reward Sum -4.0.
+Episode 8640, Reward Sum -11.0.
+Episode 8650, Reward Sum -9.0.
+Episode 8660, Reward Sum -12.0.
+Episode 8670, Reward Sum -8.0.
+Episode 8680, Reward Sum -2.0.
+Episode 8690, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -7.6.
+Episode 8700, Reward Sum -2.0.
+Episode 8710, Reward Sum -11.0.
+Episode 8720, Reward Sum -15.0.
+Episode 8730, Reward Sum -11.0.
+Episode 8740, Reward Sum -6.0.
+Episode 8750, Reward Sum -13.0.
+Episode 8760, Reward Sum -5.0.
+Episode 8770, Reward Sum -5.0.
+Episode 8780, Reward Sum -9.0.
+Episode 8790, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -9.8.
+Episode 8800, Reward Sum -6.0.
+Episode 8810, Reward Sum -6.0.
+Episode 8820, Reward Sum -14.0.
+Episode 8830, Reward Sum -9.0.
+Episode 8840, Reward Sum -10.0.
+Episode 8850, Reward Sum -7.0.
+Episode 8860, Reward Sum -12.0.
+Episode 8870, Reward Sum -7.0.
+Episode 8880, Reward Sum -5.0.
+Episode 8890, Reward Sum -12.0.
+evaluating on 5 episodes with mean reward -9.8.
+Episode 8900, Reward Sum -9.0.
+Episode 8910, Reward Sum -3.0.
+Episode 8920, Reward Sum -14.0.
+Episode 8930, Reward Sum -1.0.
+Episode 8940, Reward Sum -7.0.
+Episode 8950, Reward Sum -8.0.
+Episode 8960, Reward Sum -15.0.
+Episode 8970, Reward Sum -5.0.
+Episode 8980, Reward Sum -8.0.
+Episode 8990, Reward Sum -8.0.
+evaluating on 5 episodes with mean reward -9.0.
+Episode 9000, Reward Sum -4.0.
+Episode 9010, Reward Sum -1.0.
+Episode 9020, Reward Sum -10.0.
+Episode 9030, Reward Sum -8.0.
+Episode 9040, Reward Sum -11.0.
+Episode 9050, Reward Sum -4.0.
+Episode 9060, Reward Sum -6.0.
+Episode 9070, Reward Sum -8.0.
+Episode 9080, Reward Sum -8.0.
+Episode 9090, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -6.4.
+Episode 9100, Reward Sum -6.0.
+Episode 9110, Reward Sum -8.0.
+Episode 9120, Reward Sum -6.0.
+Episode 9130, Reward Sum -9.0.
+Episode 9140, Reward Sum -7.0.
+Episode 9150, Reward Sum -11.0.
+Episode 9160, Reward Sum -12.0.
+Episode 9170, Reward Sum -11.0.
+Episode 9180, Reward Sum -10.0.
+Episode 9190, Reward Sum -4.0.
+evaluating on 5 episodes with mean reward -11.0.
+Episode 9200, Reward Sum -10.0.
+Episode 9210, Reward Sum -10.0.
+Episode 9220, Reward Sum -13.0.
+Episode 9230, Reward Sum -10.0.
+Episode 9240, Reward Sum -7.0.
+Episode 9250, Reward Sum -13.0.
+Episode 9260, Reward Sum -7.0.
+Episode 9270, Reward Sum -10.0.
+Episode 9280, Reward Sum -13.0.
+Episode 9290, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -10.8.
+Episode 9300, Reward Sum -9.0.
+Episode 9310, Reward Sum -5.0.
+Episode 9320, Reward Sum -8.0.
+Episode 9330, Reward Sum -13.0.
+Episode 9340, Reward Sum -11.0.
+Episode 9350, Reward Sum -3.0.
+Episode 9360, Reward Sum -14.0.
+Episode 9370, Reward Sum -3.0.
+Episode 9380, Reward Sum -4.0.
+Episode 9390, Reward Sum -11.0.
+evaluating on 5 episodes with mean reward -12.8.
+Episode 9400, Reward Sum -10.0.
+Episode 9410, Reward Sum -14.0.
+Episode 9420, Reward Sum -8.0.
+Episode 9430, Reward Sum -8.0.
+Episode 9440, Reward Sum -7.0.
+Episode 9450, Reward Sum -4.0.
+Episode 9460, Reward Sum -12.0.
+Episode 9470, Reward Sum -8.0.
+Episode 9480, Reward Sum -6.0.
+Episode 9490, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -7.8.
+Episode 9500, Reward Sum -4.0.
+Episode 9510, Reward Sum -4.0.
+Episode 9520, Reward Sum -12.0.
+Episode 9530, Reward Sum -1.0.
+Episode 9540, Reward Sum -5.0.
+Episode 9550, Reward Sum -7.0.
+Episode 9560, Reward Sum -13.0.
+Episode 9570, Reward Sum -11.0.
+Episode 9580, Reward Sum -14.0.
+Episode 9590, Reward Sum -8.0.
+evaluating on 5 episodes with mean reward -9.0.
+Episode 9600, Reward Sum -7.0.
+Episode 9610, Reward Sum -8.0.
+Episode 9620, Reward Sum -9.0.
+Episode 9630, Reward Sum -9.0.
+Episode 9640, Reward Sum -14.0.
+Episode 9650, Reward Sum -9.0.
+Episode 9660, Reward Sum 1.0.
+Episode 9670, Reward Sum -9.0.
+Episode 9680, Reward Sum -14.0.
+Episode 9690, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -10.2.
+Episode 9700, Reward Sum -6.0.
+Episode 9710, Reward Sum -14.0.
+Episode 9720, Reward Sum -9.0.
+Episode 9730, Reward Sum -4.0.
+Episode 9740, Reward Sum -18.0.
+Episode 9750, Reward Sum -8.0.
+Episode 9760, Reward Sum -12.0.
+Episode 9770, Reward Sum -12.0.
+Episode 9780, Reward Sum -9.0.
+Episode 9790, Reward Sum -9.0.
+evaluating on 5 episodes with mean reward -8.0.
+Episode 9800, Reward Sum -11.0.
+Episode 9810, Reward Sum -9.0.
+Episode 9820, Reward Sum -12.0.
+Episode 9830, Reward Sum -5.0.
+Episode 9840, Reward Sum -8.0.
+Episode 9850, Reward Sum -11.0.
+Episode 9860, Reward Sum -11.0.
+Episode 9870, Reward Sum -9.0.
+Episode 9880, Reward Sum -11.0.
+Episode 9890, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -8.0.
+Episode 9900, Reward Sum -8.0.
+Episode 9910, Reward Sum -2.0.
+Episode 9920, Reward Sum -6.0.
+Episode 9930, Reward Sum -8.0.
+Episode 9940, Reward Sum -5.0.
+Episode 9950, Reward Sum -11.0.
+Episode 9960, Reward Sum -11.0.
+Episode 9970, Reward Sum -4.0.
+Episode 9980, Reward Sum -6.0.
+Episode 9990, Reward Sum -10.0.
+evaluating on 5 episodes with mean reward -10.0.

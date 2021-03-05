@@ -106,16 +106,17 @@ opt = {
     "REWARD_SCALE" : 0.1 ,  # reward 缩放系数
     "NOISE" : 0.05,       # 动作噪声方差
     "LEARN_FREQ" : 5,
-    "TRAIN_EPISODE" : 3000 # 训练的总episode数
+    "TRAIN_EPISODE" : 10000 # 训练的总episode数
 }
 
 if __name__ == "__main__":
-    env_name = "Quadrotor"
-    logging.basicConfig(filename="DDPG/{}.log".format(env_name))
+    # env_name = "CartPole-v0"
     # env = env.ContinuousCartPoleEnv()
     # env_name = "Pendulum-v0"
     # env = NormalizedActions(gym.make("Pendulum-v0"))
+    env_name = "Quadrotor"
     env = make_env(env_name, task="hovering_control")
+    logging.basicConfig(filename="DDPG/{}.log".format(env_name))
     print("DQN trained on {}".format(env_name))
     logging.warning("DQN trained on {}".format(env_name))
     print(opt)

@@ -12,7 +12,7 @@ class DDPG_agent():
         self.tau = tau
         self.actor_lr = actor_lr
         self.critic_lr = critic_lr
-        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
         self.model = network.DDPGnetwork(obs_dim, act_dim)
         self.target_model = network.DDPGnetwork(obs_dim, act_dim)
         self.target_model.load_state_dict(copy.deepcopy(self.model.state_dict()))

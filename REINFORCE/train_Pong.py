@@ -94,4 +94,4 @@ if __name__ == "__main__":
     num_act = env.action_space.n
     obs_dim = 80 * 80
     agent = agent.PG_agent(obs_dim, num_act, opt["LEARNING_RATE"])
-    train(env, env_name, agent, 2000)
+    train(env, env_name, agent, 10000)
