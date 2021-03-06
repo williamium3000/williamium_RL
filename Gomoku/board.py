@@ -13,22 +13,69 @@ class board():
             raise Exception('board width and height can not be less than {}'.format(self.n))
         # player1 and player2
         self.players = [1, 2]
-    def initialization(self, **kwargs):
-        self.start_player = int(kwargs.get('start_player', np.random.randint(0, 2)))
-        if self.start_player > 1:
-            raise Exception("start player in 0 or 1")
+    def initialization(self, start_player):
         self.current_player = self.players[start_player]  # start player
         self.availables = list(range(self.width * self.height))
         self.states = np.zeros((self.height, self.width))
         self.last_move = (-1, -1)
 
     def current_state(self):
+        """
+        return the board state from the perspective of the current player.
+        state shape: 4*width*height
+        """
+        states_ = np.zeros((2, self.height, self.width))
+        states_[0] = self.states
+        states_[1][self.last_move[0], self.last_move[1]] = 1
+        return states_
+    def step(self, move):
+        i = move[0]
+        j = move[1]
+        self.states[i, j] = self.current_player
+        self.availables.remove(self.coor2move((i, j)))
+        self.current_player = (
+            self.players[0] if self.current_player == self.players[1]
+            else self.players[1]
+        )
+        self.last_move = (i, j)
+
+
+    def __check_position(self, i, j):
+        """
+        check the right, upper right, bottom right direction to see if there is n piece in a row.
+        """
+        if j in range(self.width - self.n + 1):
+            # check right
+            if len(set(self.states[i, x] for x in range(j, j + self.n))) == 1:
+                return True
+            # check upper right
+            if i in range(self.n - 1, self.height) and len(set(self.states[i - x, j + x] for x in range(self.n))) == 1:
+                return True
+            # check bottom right
+            if i in range(self.height - self.n + 1) and len(set(self.states[i + x, j + x] for x in range(self.n))) == 1:
+                return True
+        else:
+            return False
         
 
+    def check_end(self):
+        moved = set(range(self.width * self.height)) - set(self.availables)
+        if len(moved) < self.n * 2 - 1:
+            return False, -1
+        for i in range(self.height):
+            for j in range(self.width):
+                if self.states[i, j] == 0:
+                    continue
+                if self.__check_position(i, j):
+                    return True, self.states[i, j]
+        if len(self.availables) == 0:
+            return True, -1
+        else:
+            return False, -1
 
+        
 
-
-     def move2coor(self, move):
+    def move2coor(self, move):
         """
         3*3 board's moves like:
         0 1 2
@@ -52,7 +99,7 @@ class board():
             return -1
         h = location[0]
         w = location[1]
-        move = (h - 1) * self.width + w - 1
+        move = h * self.width + w
         if move not in range(self.width * self.height):
             move = -1
         return move
