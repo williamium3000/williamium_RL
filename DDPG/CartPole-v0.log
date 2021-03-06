@@ -221,3 +221,182 @@ WARNING:root:evaluating on 5 episodes with mean reward 200.0.
 WARNING:root:Episode 1090, step 200 Reward Sum 200.0.
 WARNING:root:evaluating on 5 episodes with mean reward 200.0.
 WARNING:root:Episode 1100, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1110, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1120, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 181.0.
+WARNING:root:Episode 1130, step 187 Reward Sum 187.0.
+WARNING:root:evaluating on 5 episodes with mean reward 171.6.
+WARNING:root:Episode 1140, step 177 Reward Sum 177.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1150, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 180.0.
+WARNING:root:Episode 1160, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1170, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 198.8.
+WARNING:root:Episode 1180, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 196.6.
+WARNING:root:Episode 1190, step 191 Reward Sum 191.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1200, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 181.8.
+WARNING:root:Episode 1210, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 73.6.
+WARNING:root:Episode 1220, step 87 Reward Sum 87.0.
+WARNING:root:evaluating on 5 episodes with mean reward 85.2.
+WARNING:root:Episode 1230, step 86 Reward Sum 86.0.
+WARNING:root:evaluating on 5 episodes with mean reward 104.8.
+WARNING:root:Episode 1240, step 17 Reward Sum 17.0.
+WARNING:root:evaluating on 5 episodes with mean reward 125.0.
+WARNING:root:Episode 1250, step 69 Reward Sum 69.0.
+WARNING:root:evaluating on 5 episodes with mean reward 75.8.
+WARNING:root:Episode 1260, step 80 Reward Sum 80.0.
+WARNING:root:evaluating on 5 episodes with mean reward 100.2.
+WARNING:root:Episode 1270, step 93 Reward Sum 93.0.
+WARNING:root:evaluating on 5 episodes with mean reward 78.0.
+WARNING:root:Episode 1280, step 78 Reward Sum 78.0.
+WARNING:root:evaluating on 5 episodes with mean reward 53.8.
+WARNING:root:Episode 1290, step 45 Reward Sum 45.0.
+WARNING:root:evaluating on 5 episodes with mean reward 36.4.
+WARNING:root:Episode 1300, step 18 Reward Sum 18.0.
+WARNING:root:evaluating on 5 episodes with mean reward 142.0.
+WARNING:root:Episode 1310, step 154 Reward Sum 154.0.
+WARNING:root:evaluating on 5 episodes with mean reward 152.6.
+WARNING:root:Episode 1320, step 170 Reward Sum 170.0.
+WARNING:root:evaluating on 5 episodes with mean reward 50.2.
+WARNING:root:Episode 1330, step 18 Reward Sum 18.0.
+WARNING:root:evaluating on 5 episodes with mean reward 69.0.
+WARNING:root:Episode 1340, step 14 Reward Sum 14.0.
+WARNING:root:evaluating on 5 episodes with mean reward 60.6.
+WARNING:root:Episode 1350, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 81.8.
+WARNING:root:Episode 1360, step 82 Reward Sum 82.0.
+WARNING:root:evaluating on 5 episodes with mean reward 75.4.
+WARNING:root:Episode 1370, step 62 Reward Sum 62.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1380, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1390, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 184.6.
+WARNING:root:Episode 1400, step 185 Reward Sum 185.0.
+WARNING:root:evaluating on 5 episodes with mean reward 57.4.
+WARNING:root:Episode 1410, step 49 Reward Sum 49.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1420, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1430, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 150.2.
+WARNING:root:Episode 1440, step 158 Reward Sum 158.0.
+WARNING:root:evaluating on 5 episodes with mean reward 186.0.
+WARNING:root:Episode 1450, step 192 Reward Sum 192.0.
+WARNING:root:evaluating on 5 episodes with mean reward 135.6.
+WARNING:root:Episode 1460, step 122 Reward Sum 122.0.
+WARNING:root:evaluating on 5 episodes with mean reward 182.6.
+WARNING:root:Episode 1470, step 118 Reward Sum 118.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1480, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 189.4.
+WARNING:root:Episode 1490, step 174 Reward Sum 174.0.
+WARNING:root:evaluating on 5 episodes with mean reward 174.2.
+WARNING:root:Episode 1500, step 170 Reward Sum 170.0.
+WARNING:root:evaluating on 5 episodes with mean reward 199.0.
+WARNING:root:Episode 1510, step 172 Reward Sum 172.0.
+WARNING:root:evaluating on 5 episodes with mean reward 176.0.
+WARNING:root:Episode 1520, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 175.0.
+WARNING:root:Episode 1530, step 169 Reward Sum 169.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1540, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1550, step 198 Reward Sum 198.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1560, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 198.4.
+WARNING:root:Episode 1570, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 183.4.
+WARNING:root:Episode 1580, step 184 Reward Sum 184.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1590, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 188.2.
+WARNING:root:Episode 1600, step 161 Reward Sum 161.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1610, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1620, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 170.8.
+WARNING:root:Episode 1630, step 165 Reward Sum 165.0.
+WARNING:root:evaluating on 5 episodes with mean reward 198.0.
+WARNING:root:Episode 1640, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 164.6.
+WARNING:root:Episode 1650, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1660, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 195.0.
+WARNING:root:Episode 1670, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 172.2.
+WARNING:root:Episode 1680, step 143 Reward Sum 143.0.
+WARNING:root:evaluating on 5 episodes with mean reward 151.8.
+WARNING:root:Episode 1690, step 197 Reward Sum 197.0.
+WARNING:root:evaluating on 5 episodes with mean reward 157.0.
+WARNING:root:Episode 1700, step 170 Reward Sum 170.0.
+WARNING:root:evaluating on 5 episodes with mean reward 157.0.
+WARNING:root:Episode 1710, step 181 Reward Sum 181.0.
+WARNING:root:evaluating on 5 episodes with mean reward 130.6.
+WARNING:root:Episode 1720, step 123 Reward Sum 123.0.
+WARNING:root:evaluating on 5 episodes with mean reward 139.2.
+WARNING:root:Episode 1730, step 144 Reward Sum 144.0.
+WARNING:root:evaluating on 5 episodes with mean reward 131.0.
+WARNING:root:Episode 1740, step 128 Reward Sum 128.0.
+WARNING:root:evaluating on 5 episodes with mean reward 186.6.
+WARNING:root:Episode 1750, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 178.2.
+WARNING:root:Episode 1760, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 140.8.
+WARNING:root:Episode 1770, step 163 Reward Sum 163.0.
+WARNING:root:evaluating on 5 episodes with mean reward 138.4.
+WARNING:root:Episode 1780, step 132 Reward Sum 132.0.
+WARNING:root:evaluating on 5 episodes with mean reward 193.2.
+WARNING:root:Episode 1790, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 196.2.
+WARNING:root:Episode 1800, step 185 Reward Sum 185.0.
+WARNING:root:evaluating on 5 episodes with mean reward 200.0.
+WARNING:root:Episode 1810, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 155.6.
+WARNING:root:Episode 1820, step 158 Reward Sum 158.0.
+WARNING:root:evaluating on 5 episodes with mean reward 199.6.
+WARNING:root:Episode 1830, step 189 Reward Sum 189.0.
+WARNING:root:evaluating on 5 episodes with mean reward 186.8.
+WARNING:root:Episode 1840, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 194.8.
+WARNING:root:Episode 1850, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 195.8.
+WARNING:root:Episode 1860, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 147.4.
+WARNING:root:Episode 1870, step 185 Reward Sum 185.0.
+WARNING:root:evaluating on 5 episodes with mean reward 167.6.
+WARNING:root:Episode 1880, step 124 Reward Sum 124.0.
+WARNING:root:evaluating on 5 episodes with mean reward 193.4.
+WARNING:root:Episode 1890, step 181 Reward Sum 181.0.
+WARNING:root:evaluating on 5 episodes with mean reward 195.6.
+WARNING:root:Episode 1900, step 196 Reward Sum 196.0.
+WARNING:root:evaluating on 5 episodes with mean reward 192.6.
+WARNING:root:Episode 1910, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 166.6.
+WARNING:root:Episode 1920, step 184 Reward Sum 184.0.
+WARNING:root:evaluating on 5 episodes with mean reward 132.8.
+WARNING:root:Episode 1930, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 177.6.
+WARNING:root:Episode 1940, step 177 Reward Sum 177.0.
+WARNING:root:evaluating on 5 episodes with mean reward 192.2.
+WARNING:root:Episode 1950, step 189 Reward Sum 189.0.
+WARNING:root:evaluating on 5 episodes with mean reward 147.8.
+WARNING:root:Episode 1960, step 143 Reward Sum 143.0.
+WARNING:root:evaluating on 5 episodes with mean reward 113.6.
+WARNING:root:Episode 1970, step 122 Reward Sum 122.0.
+WARNING:root:evaluating on 5 episodes with mean reward 192.2.
+WARNING:root:Episode 1980, step 200 Reward Sum 200.0.
+WARNING:root:evaluating on 5 episodes with mean reward 179.4.
+WARNING:root:Episode 1990, step 174 Reward Sum 174.0.
+WARNING:root:evaluating on 5 episodes with mean reward 144.6.

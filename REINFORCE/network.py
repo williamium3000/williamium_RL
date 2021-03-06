@@ -14,11 +14,9 @@ class PGnetwork(nn.Module):
     def __init__(self, num_obs, num_act):
         super(PGnetwork, self).__init__()
         self.fc = nn.Sequential(
-            nn.Linear(num_obs, num_obs // 10, True),
+            nn.Linear(num_obs, num_obs, True),
             nn.ReLU(),
-            nn.Linear(num_obs // 10, num_obs // 10, True),
-            nn.ReLU(),
-            nn.Linear(num_obs // 10, num_act, True),
+            nn.Linear(num_obs, num_act, True),
             nn.Softmax(1)
         )
   

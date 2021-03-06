@@ -73,7 +73,7 @@ def train(env, env_name, agent, episodes):
     agent.save(env_name)
 
 opt = {
-    "LEARNING_RATE" : 1e-3
+    "LEARNING_RATE" : 0.005
 }
 
 def preprocess(image):
@@ -94,4 +94,4 @@ if __name__ == "__main__":
     num_act = env.action_space.n
     obs_dim = 80 * 80
     agent = agent.PG_agent(obs_dim, num_act, opt["LEARNING_RATE"])
-    train(env, env_name, agent, 5000)
+    train(env, env_name, agent, 20000)
