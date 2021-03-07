@@ -1,9 +1,10 @@
 import sys
 sys.path.append(".")
-from Gomoku import Board
+from Gomoku import board
 from Gomoku import humanPlayer
 from Gomoku import vanillaMcts
 import numpy as np
+from Gomoku import dfsPlayer
 class Game(object):
     """
     Game play
@@ -25,7 +26,7 @@ class Game(object):
         if start_player not in (0, 1):
             raise Exception('start_player should be either 0 (player1 first) '
                             'or 1 (player2 first)')
-        self.board = Board.board(w = self.width, h = self.height, n = self.n)
+        self.board = board.board(w = self.width, h = self.height, n = self.n)
         self.board.initialization(start_player)
         id1, id2 = self.board.players
         player1.set_player_id(id1)
@@ -76,8 +77,12 @@ class Game(object):
                     print('_'.center(8), end='')
             print('\r\n\r\n')
 
+
+
+
 if __name__ == "__main__":
     player1 = humanPlayer.humanPlayer()
-    player2 = vanillaMcts.MCTSPlayer()
+    # player2 = vanillaMcts.MCTSPlayer()
+    player2 = dfsPlayer.dfsPlayer()
     test =  Game(w = 15, h = 15, n = 5)
     test.start_play(player1, player2, True)
