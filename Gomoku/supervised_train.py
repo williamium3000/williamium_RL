@@ -120,12 +120,12 @@ def save_model(save_dir, whole_model, file_name = None, model = None):
 task_name = "SL_alphaGo"
 model_name = "alphaGo"
 optimizer_name = "Adam"
-lr = 0.0001
-batch_size = 512
+lr = 0.001
+batch_size = 64
 device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 num_classes = 255
 param_to_update_name_prefix = []
-epochs = 200
+epochs = 1000
 logging.basicConfig(filename="Gomoku/{}.log".format(task_name))
 print(
     """{}:
@@ -173,6 +173,7 @@ if __name__ == "__main__":
 
      # load model
     model = PolicyValueNet.PolicyValueNet(15, 15, 1)
+    # model.load_state_dict(torch.load("Gomoku/model_checkpoint/check_point.pkl"))
     # unfix param
     # for name, param in model.named_parameters():
     #         for i in param_to_update_name_prefix:
@@ -182,8 +183,9 @@ if __name__ == "__main__":
     # get the param to update
     params_to_update = []
     for name, param in model.named_parameters():
-                if param.requires_grad == True:
-                    params_to_update.append(param)
+        param.requires_grad = True
+        if param.requires_grad == True:
+            params_to_update.append(param)
     
 
 

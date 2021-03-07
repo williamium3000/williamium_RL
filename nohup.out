@@ -14653,3 +14653,886 @@ Checking accuracy on train set:
 Got 36614 / 795648 correct (4.60)
 Checking accuracy on validate set: 
 Got 3245 / 99328 correct (3.27)
+epoche 44, loss = 5.383296
+Checking accuracy on train set: 
+Got 36432 / 795648 correct (4.58)
+Checking accuracy on validate set: 
+Got 3209 / 99328 correct (3.23)
+epoche 45, loss = 5.366341
+Checking accuracy on train set: 
+Got 36908 / 795648 correct (4.64)
+Checking accuracy on validate set: 
+Got 3220 / 99328 correct (3.24)
+epoche 46, loss = 5.374648
+Checking accuracy on train set: 
+Got 36918 / 795648 correct (4.64)
+Checking accuracy on validate set: 
+Got 3247 / 99328 correct (3.27)
+epoche 47, loss = 5.370603
+Checking accuracy on train set: 
+Got 36961 / 795648 correct (4.65)
+Checking accuracy on validate set: 
+Got 3243 / 99328 correct (3.26)
+epoche 48, loss = 5.384936
+Checking accuracy on train set: 
+Got 37229 / 795648 correct (4.68)
+Checking accuracy on validate set: 
+Got 3270 / 99328 correct (3.29)
+epoche 49, loss = 5.381118
+Checking accuracy on train set: 
+Got 37516 / 795648 correct (4.72)
+Checking accuracy on validate set: 
+Got 3261 / 99328 correct (3.28)
+epoche 50, loss = 5.374518
+Checking accuracy on train set: 
+Got 36830 / 795648 correct (4.63)
+Checking accuracy on validate set: 
+Got 3267 / 99328 correct (3.29)
+epoche 51, loss = 5.390114
+Checking accuracy on train set: 
+Got 37855 / 795648 correct (4.76)
+Checking accuracy on validate set: 
+Got 3293 / 99328 correct (3.32)
+epoche 52, loss = 5.368620
+Checking accuracy on train set: 
+Got 37784 / 795648 correct (4.75)
+Checking accuracy on validate set: 
+Got 3284 / 99328 correct (3.31)
+epoche 53, loss = 5.368003
+Checking accuracy on train set: 
+Got 38170 / 795648 correct (4.80)
+Checking accuracy on validate set: 
+Got 3275 / 99328 correct (3.30)
+epoche 54, loss = 5.376875
+Checking accuracy on train set: 
+Got 38021 / 795648 correct (4.78)
+Checking accuracy on validate set: 
+Got 3321 / 99328 correct (3.34)
+epoche 55, loss = 5.388127
+Checking accuracy on train set: 
+Got 38620 / 795648 correct (4.85)
+Checking accuracy on validate set: 
+Got 3345 / 99328 correct (3.37)
+epoche 56, loss = 5.374493
+Checking accuracy on train set: 
+Got 38497 / 795648 correct (4.84)
+Checking accuracy on validate set: 
+Got 3327 / 99328 correct (3.35)
+epoche 57, loss = 5.372370
+Checking accuracy on train set: 
+Got 37082 / 795648 correct (4.66)
+Checking accuracy on validate set: 
+Got 3250 / 99328 correct (3.27)
+epoche 58, loss = 5.364222
+Checking accuracy on train set: 
+Got 38342 / 795648 correct (4.82)
+Checking accuracy on validate set: 
+Got 3343 / 99328 correct (3.37)
+epoche 59, loss = 5.376488
+Checking accuracy on train set: 
+Got 38365 / 795648 correct (4.82)
+Checking accuracy on validate set: 
+Got 3332 / 99328 correct (3.35)
+epoche 60, loss = 5.383480
+Checking accuracy on train set: 
+Got 38956 / 795648 correct (4.90)
+Checking accuracy on validate set: 
+Got 3369 / 99328 correct (3.39)
+epoche 61, loss = 5.370732
+Checking accuracy on train set: 
+Got 38894 / 795648 correct (4.89)
+Checking accuracy on validate set: 
+Got 3356 / 99328 correct (3.38)
+epoche 62, loss = 5.378432
+Checking accuracy on train set: 
+Got 38455 / 795648 correct (4.83)
+Checking accuracy on validate set: 
+Got 3337 / 99328 correct (3.36)
+epoche 63, loss = 5.389519
+Checking accuracy on train set: 
+Got 38961 / 795648 correct (4.90)
+Checking accuracy on validate set: 
+Got 3377 / 99328 correct (3.40)
+epoche 64, loss = 5.378249
+Checking accuracy on train set: 
+Got 39652 / 795648 correct (4.98)
+Checking accuracy on validate set: 
+Got 3335 / 99328 correct (3.36)
+epoche 65, loss = 5.368268
+Checking accuracy on train set: 
+Got 39499 / 795648 correct (4.96)
+Checking accuracy on validate set: 
+Got 3370 / 99328 correct (3.39)
+epoche 66, loss = 5.379996
+Checking accuracy on train set: 
+Got 39630 / 795648 correct (4.98)
+Checking accuracy on validate set: 
+Got 3366 / 99328 correct (3.39)
+epoche 67, loss = 5.369946
+Checking accuracy on train set: 
+Got 39235 / 795648 correct (4.93)
+Checking accuracy on validate set: 
+Got 3366 / 99328 correct (3.39)
+epoche 68, loss = 5.368638
+Checking accuracy on train set: 
+Got 39845 / 795648 correct (5.01)
+Checking accuracy on validate set: 
+Got 3373 / 99328 correct (3.40)
+epoche 69, loss = 5.368271
+Checking accuracy on train set: 
+Got 39586 / 795648 correct (4.98)
+Checking accuracy on validate set: 
+Got 3351 / 99328 correct (3.37)
+epoche 70, loss = 5.375298
+Checking accuracy on train set: 
+Got 39567 / 795648 correct (4.97)
+Checking accuracy on validate set: 
+Got 3392 / 99328 correct (3.41)
+epoche 71, loss = 5.365008
+Checking accuracy on train set: 
+Got 40069 / 795648 correct (5.04)
+Checking accuracy on validate set: 
+Got 3377 / 99328 correct (3.40)
+epoche 72, loss = 5.378935
+Checking accuracy on train set: 
+Got 40607 / 795648 correct (5.10)
+Checking accuracy on validate set: 
+Got 3380 / 99328 correct (3.40)
+epoche 73, loss = 5.388298
+Checking accuracy on train set: 
+Got 40549 / 795648 correct (5.10)
+Checking accuracy on validate set: 
+Got 3358 / 99328 correct (3.38)
+epoche 74, loss = 5.371766
+Checking accuracy on train set: 
+Got 39721 / 795648 correct (4.99)
+Checking accuracy on validate set: 
+Got 3372 / 99328 correct (3.39)
+epoche 75, loss = 5.370922
+Checking accuracy on train set: 
+Got 40581 / 795648 correct (5.10)
+Checking accuracy on validate set: 
+Got 3423 / 99328 correct (3.45)
+epoche 76, loss = 5.376577
+Checking accuracy on train set: 
+Got 40189 / 795648 correct (5.05)
+Checking accuracy on validate set: 
+Got 3400 / 99328 correct (3.42)
+epoche 77, loss = 5.376456
+Checking accuracy on train set: 
+Got 40027 / 795648 correct (5.03)
+Checking accuracy on validate set: 
+Got 3385 / 99328 correct (3.41)
+epoche 78, loss = 5.383799
+Checking accuracy on train set: 
+Got 40749 / 795648 correct (5.12)
+Checking accuracy on validate set: 
+Got 3371 / 99328 correct (3.39)
+epoche 79, loss = 5.370577
+Checking accuracy on train set: 
+Got 40540 / 795648 correct (5.10)
+Checking accuracy on validate set: 
+Got 3404 / 99328 correct (3.43)
+epoche 80, loss = 5.373958
+Checking accuracy on train set: 
+Got 41026 / 795648 correct (5.16)
+Checking accuracy on validate set: 
+Got 3421 / 99328 correct (3.44)
+epoche 81, loss = 5.358989
+Checking accuracy on train set: 
+Got 40673 / 795648 correct (5.11)
+Checking accuracy on validate set: 
+Got 3438 / 99328 correct (3.46)
+epoche 82, loss = 5.372677
+Checking accuracy on train set: 
+Got 40353 / 795648 correct (5.07)
+Checking accuracy on validate set: 
+Got 3407 / 99328 correct (3.43)
+epoche 83, loss = 5.367274
+Checking accuracy on train set: 
+Got 41146 / 795648 correct (5.17)
+Checking accuracy on validate set: 
+Got 3395 / 99328 correct (3.42)
+epoche 84, loss = 5.369371
+Checking accuracy on train set: 
+Got 40614 / 795648 correct (5.10)
+Checking accuracy on validate set: 
+Got 3412 / 99328 correct (3.44)
+epoche 85, loss = 5.385765
+Checking accuracy on train set: 
+Got 41364 / 795648 correct (5.20)
+Checking accuracy on validate set: 
+Got 3398 / 99328 correct (3.42)
+epoche 86, loss = 5.377477
+Checking accuracy on train set: 
+Got 41321 / 795648 correct (5.19)
+Checking accuracy on validate set: 
+Got 3415 / 99328 correct (3.44)
+epoche 87, loss = 5.374439
+Checking accuracy on train set: 
+Got 41529 / 795648 correct (5.22)
+Checking accuracy on validate set: 
+Got 3436 / 99328 correct (3.46)
+epoche 88, loss = 5.349373
+Checking accuracy on train set: 
+Got 40958 / 795648 correct (5.15)
+Checking accuracy on validate set: 
+Got 3418 / 99328 correct (3.44)
+epoche 89, loss = 5.375512
+Checking accuracy on train set: 
+Got 41223 / 795648 correct (5.18)
+Checking accuracy on validate set: 
+Got 3464 / 99328 correct (3.49)
+epoche 90, loss = 5.381056
+Checking accuracy on train set: 
+Got 41886 / 795648 correct (5.26)
+Checking accuracy on validate set: 
+Got 3459 / 99328 correct (3.48)
+epoche 91, loss = 5.367232
+Checking accuracy on train set: 
+Got 41716 / 795648 correct (5.24)
+Checking accuracy on validate set: 
+Got 3451 / 99328 correct (3.47)
+epoche 92, loss = 5.372451
+Checking accuracy on train set: 
+Got 41873 / 795648 correct (5.26)
+Checking accuracy on validate set: 
+Got 3425 / 99328 correct (3.45)
+epoche 93, loss = 5.369180
+Checking accuracy on train set: 
+Got 42023 / 795648 correct (5.28)
+Checking accuracy on validate set: 
+Got 3441 / 99328 correct (3.46)
+epoche 94, loss = 5.368993
+Checking accuracy on train set: 
+Got 41728 / 795648 correct (5.24)
+Checking accuracy on validate set: 
+Got 3461 / 99328 correct (3.48)
+epoche 95, loss = 5.376340
+Checking accuracy on train set: 
+Got 42149 / 795648 correct (5.30)
+Checking accuracy on validate set: 
+Got 3483 / 99328 correct (3.51)
+epoche 96, loss = 5.382506
+Checking accuracy on train set: 
+Got 42330 / 795648 correct (5.32)
+Checking accuracy on validate set: 
+Got 3501 / 99328 correct (3.52)
+epoche 97, loss = 5.364609
+Checking accuracy on train set: 
+Got 42337 / 795648 correct (5.32)
+Checking accuracy on validate set: 
+Got 3452 / 99328 correct (3.48)
+epoche 98, loss = 5.356642
+Checking accuracy on train set: 
+Got 41486 / 795648 correct (5.21)
+Checking accuracy on validate set: 
+Got 3436 / 99328 correct (3.46)
+epoche 99, loss = 5.370903
+Checking accuracy on train set: 
+Got 41542 / 795648 correct (5.22)
+Checking accuracy on validate set: 
+Got 3441 / 99328 correct (3.46)
+epoche 100, loss = 5.370090
+Checking accuracy on train set: 
+Got 42264 / 795648 correct (5.31)
+Checking accuracy on validate set: 
+Got 3468 / 99328 correct (3.49)
+epoche 101, loss = 5.351295
+Checking accuracy on train set: 
+Got 42461 / 795648 correct (5.34)
+Checking accuracy on validate set: 
+Got 3483 / 99328 correct (3.51)
+epoche 102, loss = 5.375256
+Checking accuracy on train set: 
+Got 42064 / 795648 correct (5.29)
+Checking accuracy on validate set: 
+Got 3461 / 99328 correct (3.48)
+epoche 103, loss = 5.379416
+Checking accuracy on train set: 
+Got 42176 / 795648 correct (5.30)
+Checking accuracy on validate set: 
+Got 3505 / 99328 correct (3.53)
+epoche 104, loss = 5.370497
+Checking accuracy on train set: 
+Got 42513 / 795648 correct (5.34)
+Checking accuracy on validate set: 
+Got 3474 / 99328 correct (3.50)
+epoche 105, loss = 5.373874
+Checking accuracy on train set: 
+Got 41668 / 795648 correct (5.24)
+Checking accuracy on validate set: 
+Got 3446 / 99328 correct (3.47)
+epoche 106, loss = 5.371898
+Checking accuracy on train set: 
+Got 42580 / 795648 correct (5.35)
+Checking accuracy on validate set: 
+Got 3506 / 99328 correct (3.53)
+epoche 107, loss = 5.366221
+Checking accuracy on train set: 
+Got 42982 / 795648 correct (5.40)
+Checking accuracy on validate set: 
+Got 3498 / 99328 correct (3.52)
+epoche 108, loss = 5.360126
+Checking accuracy on train set: 
+Got 42754 / 795648 correct (5.37)
+Checking accuracy on validate set: 
+Got 3465 / 99328 correct (3.49)
+epoche 109, loss = 5.377453
+Checking accuracy on train set: 
+Got 43100 / 795648 correct (5.42)
+Checking accuracy on validate set: 
+Got 3495 / 99328 correct (3.52)
+epoche 110, loss = 5.364931
+Checking accuracy on train set: 
+Got 42980 / 795648 correct (5.40)
+Checking accuracy on validate set: 
+Got 3469 / 99328 correct (3.49)
+epoche 111, loss = 5.364366
+Checking accuracy on train set: 
+Got 43100 / 795648 correct (5.42)
+Checking accuracy on validate set: 
+Got 3503 / 99328 correct (3.53)
+epoche 112, loss = 5.364766
+Checking accuracy on train set: 
+Got 43498 / 795648 correct (5.47)
+Checking accuracy on validate set: 
+Got 3505 / 99328 correct (3.53)
+epoche 113, loss = 5.360305
+Checking accuracy on train set: 
+Got 42202 / 795648 correct (5.30)
+Checking accuracy on validate set: 
+Got 3490 / 99328 correct (3.51)
+epoche 114, loss = 5.380928
+Checking accuracy on train set: 
+Got 43008 / 795648 correct (5.41)
+Checking accuracy on validate set: 
+Got 3491 / 99328 correct (3.51)
+epoche 115, loss = 5.354590
+Checking accuracy on train set: 
+Got 43598 / 795648 correct (5.48)
+Checking accuracy on validate set: 
+Got 3511 / 99328 correct (3.53)
+epoche 116, loss = 5.378463
+Checking accuracy on train set: 
+Got 43231 / 795648 correct (5.43)
+Checking accuracy on validate set: 
+Got 3524 / 99328 correct (3.55)
+epoche 117, loss = 5.376764
+Checking accuracy on train set: 
+Got 43533 / 795648 correct (5.47)
+Checking accuracy on validate set: 
+Got 3492 / 99328 correct (3.52)
+epoche 118, loss = 5.375449
+Checking accuracy on train set: 
+Got 43473 / 795648 correct (5.46)
+Checking accuracy on validate set: 
+Got 3552 / 99328 correct (3.58)
+epoche 119, loss = 5.373022
+Checking accuracy on train set: 
+Got 43538 / 795648 correct (5.47)
+Checking accuracy on validate set: 
+Got 3520 / 99328 correct (3.54)
+epoche 120, loss = 5.362530
+Checking accuracy on train set: 
+Got 43943 / 795648 correct (5.52)
+Checking accuracy on validate set: 
+Got 3554 / 99328 correct (3.58)
+epoche 121, loss = 5.369226
+Checking accuracy on train set: 
+Got 43495 / 795648 correct (5.47)
+Checking accuracy on validate set: 
+Got 3537 / 99328 correct (3.56)
+epoche 122, loss = 5.370828
+Checking accuracy on train set: 
+Got 43283 / 795648 correct (5.44)
+Checking accuracy on validate set: 
+Got 3538 / 99328 correct (3.56)
+epoche 123, loss = 5.371871
+Checking accuracy on train set: 
+Got 43573 / 795648 correct (5.48)
+Checking accuracy on validate set: 
+Got 3474 / 99328 correct (3.50)
+epoche 124, loss = 5.367111
+Checking accuracy on train set: 
+Got 44235 / 795648 correct (5.56)
+Checking accuracy on validate set: 
+Got 3524 / 99328 correct (3.55)
+epoche 125, loss = 5.372850
+Checking accuracy on train set: 
+Got 43898 / 795648 correct (5.52)
+Checking accuracy on validate set: 
+Got 3496 / 99328 correct (3.52)
+epoche 126, loss = 5.377660
+Checking accuracy on train set: 
+Got 44239 / 795648 correct (5.56)
+Checking accuracy on validate set: 
+Got 3514 / 99328 correct (3.54)
+epoche 127, loss = 5.367127
+Checking accuracy on train set: 
+Got 43620 / 795648 correct (5.48)
+Checking accuracy on validate set: 
+Got 3526 / 99328 correct (3.55)
+epoche 128, loss = 5.368896
+Checking accuracy on train set: 
+Got 44180 / 795648 correct (5.55)
+Checking accuracy on validate set: 
+Got 3524 / 99328 correct (3.55)
+epoche 129, loss = 5.374176
+Checking accuracy on train set: 
+Got 44124 / 795648 correct (5.55)
+Checking accuracy on validate set: 
+Got 3538 / 99328 correct (3.56)
+
+Episode 54390, step 102 Reward Sum -525.7597127330878.
+Episode 54400, step 116 Reward Sum -388.50304569836646.
+Episode 54410, step 132 Reward Sum -274.95481793118523.
+Episode 54420, step 137 Reward Sum -265.06491260971694.
+Episode 54430, step 140 Reward Sum -210.68991413226144.
+Episode 54440, step 111 Reward Sum -464.7201243456796.
+Episode 54450, step 135 Reward Sum -147.8218899281464.
+Episode 54460, step 140 Reward Sum -193.03675233538533.
+Episode 54470, step 125 Reward Sum -304.4791175481902.
+Episode 54480, step 108 Reward Sum -454.8421652647757.
+Episode 54490, step 113 Reward Sum -431.3180837646704.
+Episode 54500, step 113 Reward Sum -409.16549044455286.
+Episode 54510, step 136 Reward Sum -194.6652362362169.
+Episode 54520, step 120 Reward Sum -395.23758120360026.
+Episode 54530, step 121 Reward Sum -398.61332575882824.
+Episode 54540, step 112 Reward Sum -436.8173883149413.
+Episode 54550, step 118 Reward Sum -397.7753266891506.
+Episode 54560, step 131 Reward Sum -225.30244862613344.
+Episode 54570, step 110 Reward Sum -469.1390342075852.
+Episode 54580, step 135 Reward Sum -225.54492256279423.
+Episode 54590, step 116 Reward Sum -455.1218305186766.
+Episode 54600, step 113 Reward Sum -393.39026614261024.
+Episode 54610, step 110 Reward Sum -476.935900649917.
+Episode 54620, step 133 Reward Sum -242.16270242035276.
+Episode 54630, step 104 Reward Sum -490.4031460671804.
+Episode 54640, step 113 Reward Sum -433.95565904715374.
+Episode 54650, step 117 Reward Sum -375.949330523733.
+Episode 54660, step 134 Reward Sum -201.83149496030268.
+Episode 54670, step 108 Reward Sum -427.596035299554.
+Episode 54680, step 109 Reward Sum -445.1638996485961.
+Episode 54690, step 128 Reward Sum -380.91329517706663.
+Episode 54700, step 121 Reward Sum -347.0205399778081.
+Episode 54710, step 117 Reward Sum -381.65493183522227.
+Episode 54720, step 120 Reward Sum -399.76195954040924.
+Episode 54730, step 117 Reward Sum -402.84801719230774.
+Episode 54740, step 140 Reward Sum -197.54908809493563.
+Episode 54750, step 117 Reward Sum -382.0841696771884.
+Episode 54760, step 104 Reward Sum -497.5119975643717.
+Episode 54770, step 126 Reward Sum -313.44441299758114.
+Episode 54780, step 121 Reward Sum -362.6258372887315.
+Episode 54790, step 115 Reward Sum -413.4820925481964.
+Episode 54800, step 122 Reward Sum -344.4327869370991.
+Episode 54810, step 131 Reward Sum -273.2772000967422.
+Episode 54820, step 111 Reward Sum -470.0187679978301.
+Episode 54830, step 125 Reward Sum -273.54939002584825.
+Episode 54840, step 115 Reward Sum -483.3242052741081.
+Episode 54850, step 140 Reward Sum -173.12604337511547.
+Episode 54860, step 139 Reward Sum -202.24007056969086.
+Episode 54870, step 106 Reward Sum -485.44972762038213.
+Episode 54880, step 105 Reward Sum -472.54765721272787.
+Episode 54890, step 110 Reward Sum -448.02325467945286.
+Episode 54900, step 125 Reward Sum -353.5243155826408.
+Episode 54910, step 105 Reward Sum -492.869368155648.
+Episode 54920, step 121 Reward Sum -304.37645088936125.
+Episode 54930, step 135 Reward Sum -274.5373213350457.
+Episode 54940, step 103 Reward Sum -507.7802389691507.
+Episode 54950, step 142 Reward Sum -147.0629589102295.
+Episode 54960, step 105 Reward Sum -470.0896928489548.
+Episode 54970, step 105 Reward Sum -501.4457031393117.
+Episode 54980, step 129 Reward Sum -263.89155741865596.
+Episode 54990, step 114 Reward Sum -488.9003359717014.
+evaluating on 5 episodes with mean reward -327.74512289424393.
+Episode 55000, step 118 Reward Sum -400.72039169848887.
+Episode 55010, step 111 Reward Sum -465.12090625328204.
+Episode 55020, step 113 Reward Sum -448.76811457167616.
+Episode 55030, step 103 Reward Sum -508.4766435862.
+Episode 55040, step 103 Reward Sum -489.1286529455122.
+Episode 55050, step 127 Reward Sum -315.3926770254131.
+Episode 55060, step 111 Reward Sum -416.50771175074664.
+Episode 55070, step 137 Reward Sum -167.47643928583486.
+Episode 55080, step 105 Reward Sum -457.97904963870326.
+Episode 55090, step 135 Reward Sum -235.91155043100795.
+Episode 55100, step 121 Reward Sum -352.6822507068152.
+Episode 55110, step 130 Reward Sum -266.0265007744407.
+Episode 55120, step 118 Reward Sum -387.98306846129407.
+Episode 55130, step 128 Reward Sum -270.99854201321847.
+Episode 55140, step 112 Reward Sum -413.9507694622055.
+Episode 55150, step 106 Reward Sum -485.5579940098052.
+Episode 55160, step 108 Reward Sum -483.0336707268446.
+Episode 55170, step 122 Reward Sum -353.12470356069707.
+Episode 55180, step 113 Reward Sum -398.48141167873837.
+Episode 55190, step 111 Reward Sum -427.7934985675808.
+Episode 55200, step 131 Reward Sum -223.02889370108338.
+Episode 55210, step 103 Reward Sum -465.84941474921794.
+Episode 55220, step 136 Reward Sum -162.81917309653497.
+Episode 55230, step 116 Reward Sum -363.943961727581.
+Episode 55240, step 109 Reward Sum -407.38106934048585.
+Episode 55250, step 105 Reward Sum -535.3434190144401.
+Episode 55260, step 134 Reward Sum -251.09521755991014.
+Episode 55270, step 104 Reward Sum -536.755528483537.
+Episode 55280, step 132 Reward Sum -258.6342204453234.
+Episode 55290, step 113 Reward Sum -467.78351011078524.
+Episode 55300, step 117 Reward Sum -408.80713629423406.
+Episode 55310, step 138 Reward Sum -204.6346788687739.
+Episode 55320, step 106 Reward Sum -494.80631308983897.
+Episode 55330, step 130 Reward Sum -260.8678257258676.
+Episode 55340, step 118 Reward Sum -395.67934155273394.
+Episode 55350, step 127 Reward Sum -310.51388287571393.
+Episode 55360, step 112 Reward Sum -439.9336982031093.
+Episode 55370, step 107 Reward Sum -485.7992871558531.
+Episode 55380, step 114 Reward Sum -418.7969469401029.
+Episode 55390, step 135 Reward Sum -279.74419313238474.
+Episode 55400, step 140 Reward Sum -176.3155598886802.
+Episode 55410, step 109 Reward Sum -473.78303409806193.
+Episode 55420, step 102 Reward Sum -504.55654124326935.
+Episode 55430, step 103 Reward Sum -507.62747128220406.
+Episode 55440, step 140 Reward Sum -159.87038125183025.
+Episode 55450, step 118 Reward Sum -352.7301797564074.
+Episode 55460, step 109 Reward Sum -473.60293388762403.
+Episode 55470, step 112 Reward Sum -455.43976031145513.
+Episode 55480, step 113 Reward Sum -398.6516826383932.
+Episode 55490, step 125 Reward Sum -306.8779201026252.
+Episode 55500, step 127 Reward Sum -336.28833452635183.
+Episode 55510, step 127 Reward Sum -304.6897298957108.
+Episode 55520, step 112 Reward Sum -384.22983387715726.
+Episode 55530, step 132 Reward Sum -272.06013813838933.
+Episode 55540, step 104 Reward Sum -468.0368209817892.
+Episode 55550, step 139 Reward Sum -203.3118534645145.
+Episode 55560, step 110 Reward Sum -457.79771133645806.
+Episode 55570, step 130 Reward Sum -259.1061387480957.
+Episode 55580, step 106 Reward Sum -482.7936633460033.
+Episode 55590, step 120 Reward Sum -406.1795584549391.
+Episode 55600, step 139 Reward Sum -138.54768857659587.
+Episode 55610, step 138 Reward Sum -207.00744616662084.
+Episode 55620, step 128 Reward Sum -321.8143084287205.
+Episode 55630, step 141 Reward Sum -227.08966478679045.
+Episode 55640, step 114 Reward Sum -416.31361512172487.
+Episode 55650, step 118 Reward Sum -402.56651793386163.
+Episode 55660, step 120 Reward Sum -357.0860851537397.
+Episode 55670, step 140 Reward Sum -99.54951604099264.
+Episode 55680, step 133 Reward Sum -227.27320629267115.
+Episode 55690, step 127 Reward Sum -276.7299517304955.
+Episode 55700, step 126 Reward Sum -322.5189722933895.
+Episode 55710, step 103 Reward Sum -495.98563633793765.
+Episode 55720, step 103 Reward Sum -497.67435502579116.
+Episode 55730, step 106 Reward Sum -484.15662484690387.
+Episode 55740, step 138 Reward Sum -177.46081564038468.
+Episode 55750, step 109 Reward Sum -492.04327357657775.
+Episode 55760, step 105 Reward Sum -487.3162490746382.
+Episode 55770, step 111 Reward Sum -425.2772417391402.
+Episode 55780, step 110 Reward Sum -434.1301750875421.
+Episode 55790, step 126 Reward Sum -325.9313273154849.
+Episode 55800, step 136 Reward Sum -227.88097023790021.
+Episode 55810, step 106 Reward Sum -463.1994572234053.
+Episode 55820, step 105 Reward Sum -474.60801107677736.
+Episode 55830, step 137 Reward Sum -209.090425449695.
+Episode 55840, step 105 Reward Sum -444.6971945499588.
+Episode 55850, step 117 Reward Sum -421.154262842877.epoche 130, loss = 5.356322
+Checking accuracy on train set: 
+Got 44369 / 795648 correct (5.58)
+Checking accuracy on validate set: 
+Got 3540 / 99328 correct (3.56)
+epoche 131, loss = 5.380398
+Checking accuracy on train set: 
+Got 44163 / 795648 correct (5.55)
+Checking accuracy on validate set: 
+Got 3549 / 99328 correct (3.57)
+epoche 132, loss = 5.379425
+Checking accuracy on train set: 
+Got 44373 / 795648 correct (5.58)
+Checking accuracy on validate set: 
+Got 3536 / 99328 correct (3.56)
+epoche 133, loss = 5.376779
+Checking accuracy on train set: 
+Got 44040 / 795648 correct (5.54)
+Checking accuracy on validate set: 
+Got 3523 / 99328 correct (3.55)
+epoche 134, loss = 5.367511
+Checking accuracy on train set: 
+Got 44587 / 795648 correct (5.60)
+Checking accuracy on validate set: 
+Got 3555 / 99328 correct (3.58)
+epoche 135, loss = 5.367345
+Checking accuracy on train set: 
+Got 43650 / 795648 correct (5.49)
+Checking accuracy on validate set: 
+Got 3524 / 99328 correct (3.55)
+epoche 136, loss = 5.391161
+Checking accuracy on train set: 
+Got 44404 / 795648 correct (5.58)
+Checking accuracy on validate set: 
+Got 3557 / 99328 correct (3.58)
+epoche 137, loss = 5.366553
+Checking accuracy on train set: 
+Got 44503 / 795648 correct (5.59)
+Checking accuracy on validate set: 
+Got 3538 / 99328 correct (3.56)
+epoche 138, loss = 5.381754
+Checking accuracy on train set: 
+Got 44309 / 795648 correct (5.57)
+Checking accuracy on validate set: 
+Got 3515 / 99328 correct (3.54)
+epoche 139, loss = 5.388370
+Checking accuracy on train set: 
+Got 44535 / 795648 correct (5.60)
+Checking accuracy on validate set: 
+Got 3547 / 99328 correct (3.57)
+epoche 140, loss = 5.390718
+Checking accuracy on train set: 
+Got 44755 / 795648 correct (5.62)
+Checking accuracy on validate set: 
+Got 3528 / 99328 correct (3.55)
+epoche 141, loss = 5.364277
+Checking accuracy on train set: 
+Got 44330 / 795648 correct (5.57)
+Checking accuracy on validate set: 
+Got 3522 / 99328 correct (3.55)
+epoche 142, loss = 5.365129
+Checking accuracy on train set: 
+Got 44230 / 795648 correct (5.56)
+Checking accuracy on validate set: 
+Got 3539 / 99328 correct (3.56)
+epoche 143, loss = 5.379950
+Checking accuracy on train set: 
+Got 45157 / 795648 correct (5.68)
+Checking accuracy on validate set: 
+Got 3529 / 99328 correct (3.55)
+epoche 144, loss = 5.387702
+Checking accuracy on train set: 
+Got 44296 / 795648 correct (5.57)
+Checking accuracy on validate set: 
+Got 3533 / 99328 correct (3.56)
+epoche 145, loss = 5.359036
+Checking accuracy on train set: 
+Got 45102 / 795648 correct (5.67)
+Checking accuracy on validate set: 
+Got 3549 / 99328 correct (3.57)
+epoche 146, loss = 5.363638
+Checking accuracy on train set: 
+Got 44449 / 795648 correct (5.59)
+Checking accuracy on validate set: 
+Got 3523 / 99328 correct (3.55)
+epoche 147, loss = 5.349823
+Checking accuracy on train set: 
+Got 45500 / 795648 correct (5.72)
+Checking accuracy on validate set: 
+Got 3567 / 99328 correct (3.59)
+epoche 148, loss = 5.377339
+Checking accuracy on train set: 
+Got 43276 / 795648 correct (5.44)
+Checking accuracy on validate set: 
+Got 3518 / 99328 correct (3.54)
+epoche 149, loss = 5.372454
+Checking accuracy on train set: 
+Got 44949 / 795648 correct (5.65)
+Checking accuracy on validate set: 
+Got 3552 / 99328 correct (3.58)
+epoche 150, loss = 5.378649
+Checking accuracy on train set: 
+Got 44737 / 795648 correct (5.62)
+Checking accuracy on validate set: 
+Got 3560 / 99328 correct (3.58)
+epoche 151, loss = 5.379004
+Checking accuracy on train set: 
+Got 44654 / 795648 correct (5.61)
+Checking accuracy on validate set: 
+Got 3546 / 99328 correct (3.57)
+epoche 152, loss = 5.379614
+Checking accuracy on train set: 
+Got 45100 / 795648 correct (5.67)
+Checking accuracy on validate set: 
+Got 3553 / 99328 correct (3.58)
+epoche 153, loss = 5.364848
+Checking accuracy on train set: 
+Got 45129 / 795648 correct (5.67)
+Checking accuracy on validate set: 
+Got 3552 / 99328 correct (3.58)
+epoche 154, loss = 5.345397
+Checking accuracy on train set: 
+Got 45267 / 795648 correct (5.69)
+Checking accuracy on validate set: 
+Got 3540 / 99328 correct (3.56)
+epoche 155, loss = 5.378381
+Checking accuracy on train set: 
+Got 45274 / 795648 correct (5.69)
+Checking accuracy on validate set: 
+Got 3523 / 99328 correct (3.55)
+epoche 156, loss = 5.351549
+Checking accuracy on train set: 
+Got 45366 / 795648 correct (5.70)
+Checking accuracy on validate set: 
+Got 3529 / 99328 correct (3.55)
+epoche 157, loss = 5.356615
+Checking accuracy on train set: 
+Got 45226 / 795648 correct (5.68)
+Checking accuracy on validate set: 
+Got 3548 / 99328 correct (3.57)
+epoche 158, loss = 5.365917
+Checking accuracy on train set: 
+Got 45239 / 795648 correct (5.69)
+Checking accuracy on validate set: 
+Got 3532 / 99328 correct (3.56)
+epoche 159, loss = 5.363411
+Checking accuracy on train set: 
+Got 44781 / 795648 correct (5.63)
+Checking accuracy on validate set: 
+Got 3540 / 99328 correct (3.56)
+epoche 160, loss = 5.377196
+Checking accuracy on train set: 
+Got 45633 / 795648 correct (5.74)
+Checking accuracy on validate set: 
+Got 3555 / 99328 correct (3.58)
+epoche 161, loss = 5.371275
+Checking accuracy on train set: 
+Got 45264 / 795648 correct (5.69)
+Checking accuracy on validate set: 
+Got 3530 / 99328 correct (3.55)
+epoche 162, loss = 5.359061
+Checking accuracy on train set: 
+Got 44485 / 795648 correct (5.59)
+Checking accuracy on validate set: 
+Got 3538 / 99328 correct (3.56)
+epoche 163, loss = 5.372321
+Checking accuracy on train set: 
+Got 45863 / 795648 correct (5.76)
+Checking accuracy on validate set: 
+Got 3552 / 99328 correct (3.58)
+epoche 164, loss = 5.346338
+Checking accuracy on train set: 
+Got 45571 / 795648 correct (5.73)
+Checking accuracy on validate set: 
+Got 3546 / 99328 correct (3.57)
+epoche 165, loss = 5.365453
+Checking accuracy on train set: 
+Got 45572 / 795648 correct (5.73)
+Checking accuracy on validate set: 
+Got 3536 / 99328 correct (3.56)
+epoche 166, loss = 5.358720
+Checking accuracy on train set: 
+Got 45174 / 795648 correct (5.68)
+Checking accuracy on validate set: 
+Got 3536 / 99328 correct (3.56)
+epoche 167, loss = 5.369017
+Checking accuracy on train set: 
+Got 45222 / 795648 correct (5.68)
+Checking accuracy on validate set: 
+Got 3521 / 99328 correct (3.54)
+epoche 168, loss = 5.361621
+Checking accuracy on train set: 
+Got 45911 / 795648 correct (5.77)
+Checking accuracy on validate set: 
+Got 3561 / 99328 correct (3.59)
+epoche 169, loss = 5.369967
+Checking accuracy on train set: 
+Got 45728 / 795648 correct (5.75)
+Checking accuracy on validate set: 
+Got 3614 / 99328 correct (3.64)
+epoche 170, loss = 5.370651
+Checking accuracy on train set: 
+Got 45707 / 795648 correct (5.74)
+Checking accuracy on validate set: 
+Got 3584 / 99328 correct (3.61)
+epoche 171, loss = 5.359730
+Checking accuracy on train set: 
+Got 46247 / 795648 correct (5.81)
+Checking accuracy on validate set: 
+Got 3576 / 99328 correct (3.60)
+epoche 172, loss = 5.367599
+Checking accuracy on train set: 
+Got 46396 / 795648 correct (5.83)
+Checking accuracy on validate set: 
+Got 3540 / 99328 correct (3.56)
+epoche 173, loss = 5.368296
+Checking accuracy on train set: 
+Got 46366 / 795648 correct (5.83)
+Checking accuracy on validate set: 
+Got 3562 / 99328 correct (3.59)
+epoche 174, loss = 5.376719
+Checking accuracy on train set: 
+Got 45370 / 795648 correct (5.70)
+Checking accuracy on validate set: 
+Got 3562 / 99328 correct (3.59)
+epoche 175, loss = 5.378141
+Checking accuracy on train set: 
+Got 46066 / 795648 correct (5.79)
+Checking accuracy on validate set: 
+Got 3620 / 99328 correct (3.64)
+epoche 176, loss = 5.386251
+Checking accuracy on train set: 
+Got 46020 / 795648 correct (5.78)
+Checking accuracy on validate set: 
+Got 3592 / 99328 correct (3.62)
+epoche 177, loss = 5.365388
+Checking accuracy on train set: 
+Got 45533 / 795648 correct (5.72)
+Checking accuracy on validate set: 
+Got 3551 / 99328 correct (3.58)
+epoche 178, loss = 5.362632
+Checking accuracy on train set: 
+Got 45306 / 795648 correct (5.69)
+Checking accuracy on validate set: 
+Got 3549 / 99328 correct (3.57)
+epoche 179, loss = 5.350679
+Checking accuracy on train set: 
+Got 46221 / 795648 correct (5.81)
+Checking accuracy on validate set: 
+Got 3601 / 99328 correct (3.63)
+epoche 180, loss = 5.391603
+Checking accuracy on train set: 
+Got 45524 / 795648 correct (5.72)
+Checking accuracy on validate set: 
+Got 3605 / 99328 correct (3.63)
+epoche 181, loss = 5.381300
+Checking accuracy on train set: 
+Got 45976 / 795648 correct (5.78)
+Checking accuracy on validate set: 
+Got 3556 / 99328 correct (3.58)
+epoche 182, loss = 5.334324
+Checking accuracy on train set: 
+Got 46477 / 795648 correct (5.84)
+Checking accuracy on validate set: 
+Got 3557 / 99328 correct (3.58)
+epoche 183, loss = 5.359601
+Checking accuracy on train set: 
+Got 46538 / 795648 correct (5.85)
+Checking accuracy on validate set: 
+Got 3607 / 99328 correct (3.63)
+SL_alphaGo:
+    - model name: alphaGo
+    - optimizer: Adam
+    - learning rate: 0.001
+    - batch size: 64
+    - device : cuda:3
+    - num_of_classes: 255
+    - param_to_update_name_prefix: []
+    - epochs: 1000
+ 
+epoche 0, loss = 5.413954
+Checking accuracy on train set: 
+Got 5621 / 796032 correct (0.71)
+Checking accuracy on validate set: 
+Got 617 / 99648 correct (0.62)
+epoche 1, loss = 5.415716
+Checking accuracy on train set: 
+Got 5621 / 796032 correct (0.71)
+Checking accuracy on validate set: 
+Got 617 / 99648 correct (0.62)
+epoche 2, loss = 5.414658
+Checking accuracy on train set: 
+Got 5621 / 796032 correct (0.71)
+Checking accuracy on validate set: 
+Got 616 / 99648 correct (0.62)
+SL_alphaGo:
+    - model name: alphaGo
+    - optimizer: Adam
+    - learning rate: 0.001
+    - batch size: 64
+    - device : cuda:3
+    - num_of_classes: 255
+    - param_to_update_name_prefix: []
+    - epochs: 1000
+ 
