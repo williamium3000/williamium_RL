@@ -6,7 +6,7 @@ import numpy as np
 class PolicyValueNet(nn.Module):
     """policy-value network module"""
     def __init__(self, h, w, c):
-        super(Net, self).__init__()
+        super(PolicyValueNet, self).__init__()
 
         self.h = h
         self.w = w
@@ -26,7 +26,7 @@ class PolicyValueNet(nn.Module):
 
         # action policy layers
         self.policy_head = nn.Sequential(
-            nn.Linear(h * w, h * w)
+            nn.Linear(h * w, h * w),
             nn.Softmax(dim = 1)
         )
 
@@ -44,9 +44,19 @@ class PolicyValueNet(nn.Module):
         # common layers
         feature = self.backbone(states)
         # action policy layers
-        x_act = feature.view(-1, h * w)
+        x_act = feature.view(-1, self.h * self.w)
         x_act = self.policy_head(x_act)
         # state value layers
-        x_val = feature.view(-1, h * w)
+        x_val = feature.view(-1, self.h * self.w)
         x_val = self.value_head(x_val)
         return x_act, x_val
+
+
+if __name__ == "__main__":
+    test = PolicyValueNet(15, 15, 1)
+    test_tensor = torch.rand((10, 1, 15, 15))
+    x_act, x_val = test(test_tensor)
+    loss = torch.mean(x_val - 10)
+    loss.backward()
+    for p in test.value_head.parameters():
+        print(p.grad)

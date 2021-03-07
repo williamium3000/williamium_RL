@@ -13,6 +13,7 @@ import copy
 import os
 import time
 import json
+from Gomoku.dataLoader import dataLoaderManager
 def check_accuracy(device, loader, model, phase):
     print('Checking accuracy on %s set: ' % phase)
     num_correct = 0
@@ -22,8 +23,8 @@ def check_accuracy(device, loader, model, phase):
         for x, y in loader:
             x = x.to(device=device)  # move to device, e.g. GPU
             y = y.to(device=device)
-            scores = model(x)
-            _, preds = scores.max(1)
+            actions, value = model(x)
+            _, preds = actions.max(1)
             num_correct += (preds == y).sum()
             num_samples += preds.size(0)
         acc = float(num_correct) / num_samples
@@ -64,8 +65,8 @@ def train(model, optimizer, is_inception, dataloaders, device, epochs):
                 loss2 = F.cross_entropy(aux_outputs, y)
                 loss = loss1 + 0.4 * loss2
             else:
-                outputs = model(x)
-                loss = F.cross_entropy(outputs, y)
+                actions, value = model(x)
+                loss = F.cross_entropy(actions, y)
             # Zero out all of the gradients for the variables which the optimizer will update.
             optimizer.zero_grad()
 
@@ -74,6 +75,7 @@ def train(model, optimizer, is_inception, dataloaders, device, epochs):
 
             # Actually update the parameters of the model using the gradients computed by the backwards pass.
             optimizer.step()
+        save_model(save_dir = "Gomoku/model_checkpoint", whole_model = False, file_name = "check_point", model = model)
 
         print('epoche %d, loss = %f' % (e, loss.item()))
         train_acc = check_accuracy(device, dataloaders["train"], model, "train")
@@ -89,7 +91,7 @@ def train(model, optimizer, is_inception, dataloaders, device, epochs):
     print('Best val Acc: {:4f}'.format(best_acc))
     # load best model weights
     model.load_state_dict(best_model_wts)
-    save_model(save_dir = "model_checkpoint", checkpoint_save_whole_model = False, file_name = task_name, model = model)
+    save_model(save_dir = "Gomoku/model_checkpoint", whole_model = False, file_name = task_name, model = model)
     return model, best_acc, rec
 
 def save_model(save_dir, whole_model, file_name = None, model = None):
@@ -109,15 +111,13 @@ def save_model(save_dir, whole_model, file_name = None, model = None):
 
 
 # configuration
-task_name = "test_run"
-model_name = "resnet152"
+task_name = "SL_alphaGo"
+model_name = "alphaGo"
 optimizer_name = "Adam"
 lr = 0.0001
-batch_size = 16
+batch_size = 512
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-num_classes = 4
-fix_param = False
-use_pretrained = True
+num_classes = 255
 param_to_update_name_prefix = []
 epochs = 100
 print(
@@ -146,16 +146,12 @@ if __name__ == "__main__":
     
 
      # load model
-    model, input_size = modelLoader.modelLoader().initialize_model(model_name = model_name, 
-                                                                    num_classes = num_classes, 
-                                                                    feature_extract = fix_param, 
-                                                                    use_pretrained = use_pretrained
-                                                                    )
+    model = PolicyValueNet.PolicyValueNet(15, 15, 1)
     # unfix param
-    for name, param in model.named_parameters():
-            for i in param_to_update_name_prefix:
-                if i in name:
-                    param.requires_grad = True
+    # for name, param in model.named_parameters():
+    #         for i in param_to_update_name_prefix:
+    #             if i in name:
+    #                 param.requires_grad = True
 
     # get the param to update
     params_to_update = []

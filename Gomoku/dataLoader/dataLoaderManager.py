@@ -15,7 +15,8 @@ from sklearn.model_selection import KFold
 from torch.autograd import Variable
 from torch.optim import lr_scheduler
 from torchvision import datasets, models, transforms
-
+import sys
+sys.path.append("Gomoku")
 from dataLoader import dataSet
 from dataLoader import baseManager
 
@@ -36,4 +37,6 @@ if __name__ == "__main__":
     test = dataLoaderManager(batch_size = 16, shuffle = True, 
                                 num_workers = 0, drop_last = True, 
                                 random_state = 0, pin_memory = True)
-    print(test.getDataLoaders())
+    for states, actions in test.getDataLoaders()["train"]:
+        print(states.shape)
+        print(actions.shape)
