@@ -68,22 +68,24 @@ def train(env, env_name, agent, episodes):
         batch_reward = np.array(reward_list)
 
         agent.learn(batch_obs, batch_action, batch_reward)
-        if (i + 1) % 100 == 0:
+        if i % 100 == 0:
             total_reward = evaluate(5, env, agent, render=False) 
     agent.save(env_name)
 
 opt = {
-    "LEARNING_RATE" : 0.005
+    "LEARNING_RATE" : 0.0001
 }
 
 def preprocess(image):
     """ 预处理 210x160x3 uint8 frame into 6400 (80x80) 1维 float vector """
-    image = image[35:195] # 裁剪
-    image = image[::2,::2,0] # 下采样，缩放2倍
+    # image = image[35:195] # 裁剪
+    image = image[::2,::2,:] # 下采样，缩放2倍
     image[image == 144] = 0 # 擦除背景 (background type 1)
     image[image == 109] = 0 # 擦除背景 (background type 2)
-    image[image != 0] = 1 # 转为灰度图，除了黑色外其他都是白色
-    return image.astype(np.float).ravel()
+    # image[image != 0] = 1 # 转为灰度图，除了黑色外其他都是白色
+    image = image.transpose([2, 0, 1]).astype(np.float)
+    # print(image.shape)
+    return image
 if __name__ == "__main__":
     env_name = "Pong-v0"
     env = gym.make(env_name)
@@ -92,6 +94,6 @@ if __name__ == "__main__":
     print(opt)
     logging.warning(opt)
     num_act = env.action_space.n
-    obs_dim = 80 * 80
+    obs_dim = (105, 80, 3)
     agent = agent.PG_agent(obs_dim, num_act, opt["LEARNING_RATE"])
     train(env, env_name, agent, 20000)

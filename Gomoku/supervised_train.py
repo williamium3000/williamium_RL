@@ -14,8 +14,10 @@ import os
 import time
 import json
 from Gomoku.dataLoader import dataLoaderManager
+import logging
 def check_accuracy(device, loader, model, phase):
     print('Checking accuracy on %s set: ' % phase)
+    logging.warning('Checking accuracy on %s set: ' % phase)
     num_correct = 0
     num_samples = 0
     model.eval()  # set model to evaluation mode
@@ -29,6 +31,7 @@ def check_accuracy(device, loader, model, phase):
             num_samples += preds.size(0)
         acc = float(num_correct) / num_samples
         print('Got %d / %d correct (%.2f)' % (num_correct, num_samples, 100 * acc))
+        logging.warning('Got %d / %d correct (%.2f)' % (num_correct, num_samples, 100 * acc))
         return acc
 
 
@@ -78,6 +81,7 @@ def train(model, optimizer, is_inception, dataloaders, device, epochs):
         save_model(save_dir = "Gomoku/model_checkpoint", whole_model = False, file_name = "check_point", model = model)
 
         print('epoche %d, loss = %f' % (e, loss.item()))
+        logging.warning('epoche %d, loss = %f' % (e, loss.item()))
         train_acc = check_accuracy(device, dataloaders["train"], model, "train")
         test_acc = check_accuracy(device, dataloaders["val"], model, "validate")
         if test_acc > best_acc:
@@ -89,6 +93,7 @@ def train(model, optimizer, is_inception, dataloaders, device, epochs):
      
     
     print('Best val Acc: {:4f}'.format(best_acc))
+    logging.warning('Best val Acc: {:4f}'.format(best_acc))
     # load best model weights
     model.load_state_dict(best_model_wts)
     save_model(save_dir = "Gomoku/model_checkpoint", whole_model = False, file_name = task_name, model = model)
@@ -108,18 +113,20 @@ def save_model(save_dir, whole_model, file_name = None, model = None):
             torch.save(model.state_dict(), save_path + ".pkl")
     else:
         print("check point not saved, best_model is None")
+        logging.warning("check point not saved, best_model is None")
 
 
 # configuration
 task_name = "SL_alphaGo"
 model_name = "alphaGo"
 optimizer_name = "Adam"
-lr = 0.0001
-batch_size = 512
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+lr = 0.001
+batch_size = 64
+device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 num_classes = 255
 param_to_update_name_prefix = []
-epochs = 100
+epochs = 1000
+logging.basicConfig(filename="Gomoku/{}.log".format(task_name))
 print(
     """{}:
     - model name: {}
@@ -141,12 +148,32 @@ print(
         param_to_update_name_prefix, 
         epochs)
 )
+logging.warning("""{}:
+    - model name: {}
+    - optimizer: {}
+    - learning rate: {}
+    - batch size: {}
+    - device : {}
+    - num_of_classes: {}
+    - param_to_update_name_prefix: {}
+    - epochs: {}
+ """.format(
+        task_name, 
+        model_name, 
+        optimizer_name, 
+        lr, 
+        batch_size,
+        device, 
+        num_classes, 
+        param_to_update_name_prefix, 
+        epochs))
 
 if __name__ == "__main__":
     
 
      # load model
     model = PolicyValueNet.PolicyValueNet(15, 15, 1)
+    # model.load_state_dict(torch.load("Gomoku/model_checkpoint/check_point.pkl"))
     # unfix param
     # for name, param in model.named_parameters():
     #         for i in param_to_update_name_prefix:
@@ -156,8 +183,9 @@ if __name__ == "__main__":
     # get the param to update
     params_to_update = []
     for name, param in model.named_parameters():
-                if param.requires_grad == True:
-                    params_to_update.append(param)
+        param.requires_grad = True
+        if param.requires_grad == True:
+            params_to_update.append(param)
     
 
 
@@ -167,7 +195,7 @@ if __name__ == "__main__":
     # dataLoaders
     dataLoaders = dataLoaderManager.dataLoaderManager(batch_size = batch_size, 
                                         shuffle = True, 
-                                        num_workers = 0, 
+                                        num_workers = 4, 
                                         drop_last = True, 
                                         random_state = 0, 
                                         pin_memory = True

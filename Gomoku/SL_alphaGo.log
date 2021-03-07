@@ -1,0 +1,10 @@
+WARNING:root:SL_alphaGo:
+    - model name: alphaGo
+    - optimizer: Adam
+    - learning rate: 0.001
+    - batch size: 64
+    - device : cuda:3
+    - num_of_classes: 255
+    - param_to_update_name_prefix: []
+    - epochs: 1000
+ 
