@@ -18,7 +18,7 @@ class ravel(nn.Module):
 class PGnetwork(nn.Module):
     def __init__(self, num_obs, num_act):
         super(PGnetwork, self).__init__()
-        features = (num_obs[0] // 16) * (num_obs[1] // 16) * 64
+        features = (num_obs[0] // 8) * (num_obs[1] // 8) * 64
         # print(features)
         self.layers = nn.Sequential(
             # nn.Linear(num_obs, num_obs, True),
@@ -37,9 +37,9 @@ class PGnetwork(nn.Module):
             nn.Conv2d(64, 64, 3, stride=1, padding=1),
             nn.ReLU(),
             nn.MaxPool2d(2, 2),
-            nn.Conv2d(64, 64, 3, stride=1, padding=1),
-            nn.ReLU(),
-            nn.MaxPool2d(2, 2),
+            # nn.Conv2d(64, 64, 3, stride=1, padding=1),
+            # nn.ReLU(),
+            # nn.MaxPool2d(2, 2),
             ravel(),
             nn.Linear(features, 64, True),
             nn.ReLU(),

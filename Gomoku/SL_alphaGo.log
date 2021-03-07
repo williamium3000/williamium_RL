@@ -203,3 +203,28 @@ WARNING:root:Checking accuracy on train set:
 WARNING:root:Got 35410 / 795648 correct (4.45)
 WARNING:root:Checking accuracy on validate set: 
 WARNING:root:Got 3223 / 99328 correct (3.24)
+WARNING:root:epoche 39, loss = 5.394683
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 35639 / 795648 correct (4.48)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3249 / 99328 correct (3.27)
+WARNING:root:epoche 40, loss = 5.378252
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 35565 / 795648 correct (4.47)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3182 / 99328 correct (3.20)
+WARNING:root:epoche 41, loss = 5.380608
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 36734 / 795648 correct (4.62)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3246 / 99328 correct (3.27)
+WARNING:root:epoche 42, loss = 5.372696
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 36258 / 795648 correct (4.56)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3280 / 99328 correct (3.30)
+WARNING:root:epoche 43, loss = 5.363489
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 36614 / 795648 correct (4.60)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3245 / 99328 correct (3.27)

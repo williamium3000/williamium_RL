@@ -5552,3 +5552,8 @@ WARNING:root:Episode 54940, step 103 Reward Sum -507.7802389691507.
 WARNING:root:Episode 54950, step 142 Reward Sum -147.0629589102295.
 WARNING:root:Episode 54960, step 105 Reward Sum -470.0896928489548.
 WARNING:root:Episode 54970, step 105 Reward Sum -501.4457031393117.
+WARNING:root:Episode 54980, step 129 Reward Sum -263.89155741865596.
+WARNING:root:Episode 54990, step 114 Reward Sum -488.9003359717014.
+WARNING:root:evaluating on 5 episodes with mean reward -327.74512289424393.
+WARNING:root:Episode 55000, step 118 Reward Sum -400.72039169848887.
+WARNING:root:Episode 55010, step 111 Reward Sum -465.12090625328204.
