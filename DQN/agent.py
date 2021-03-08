@@ -76,7 +76,7 @@ class DQN_agent():
     def save(self, name):
         torch.save(self.model, os.path.join("DQN", name + ".pth"))
     def load(self, path):
-        self.model = torch.load(path)
+        self.model = torch.load(path, map_location="cuda:0" if torch.cuda.is_available() else "cpu")
         self.sync_target()
 
     def sync_target(self):

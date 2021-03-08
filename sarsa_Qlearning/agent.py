@@ -53,8 +53,8 @@ class QLearningAgent():
         else:
             target_Q = reward + self.gamma * np.max(self.Q_table[next_state]) # Q-learning off policy
         self.Q_table[state, action] += self.lr * (target_Q - predict_Q) # 修正q
-    def save(self):
-        np.save("sarsa_Qlearning/q_table.npy", self.Q_table)
+    def save(self, name):
+        np.save("sarsa_Qlearning/{}.npy".format(name), self.Q_table)
         print("Q_table saved...")
     def restore(self, file_path):
         self.Q_table = np.load(file_path)

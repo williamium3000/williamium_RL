@@ -125,22 +125,25 @@ opt = {
 }
 
 if __name__ == "__main__":
-    env_name = "CartPole-v0"
-    env = env.ContinuousCartPoleEnv()
+    # env_name = "CartPole-v0"
+    # env = env.ContinuousCartPoleEnv()
 
-    # env_name = "Pendulum-v0"
-    # env = NormalizedActions(gym.make("Pendulum-v0"))
+    env_name = "Pendulum-v0"
+    env = NormalizedActions(gym.make("Pendulum-v0"))
 
     # env_name = "Quadrotor"
     # env = make_env(env_name, task="hovering_control")
 
-    logging.basicConfig(filename="DDPG/{}.log".format(env_name))
-    print("DQN trained on {}".format(env_name))
-    logging.warning("DQN trained on {}".format(env_name))
-    print(opt)
-    logging.warning(opt)
+    # logging.basicConfig(filename="DDPG/{}.log".format(env_name))
+    # print("DQN trained on {}".format(env_name))
+    # logging.warning("DQN trained on {}".format(env_name))
+    # print(opt)
+    # logging.warning(opt)
     act_dim = env.action_space.shape[0]
     obs_dim = env.observation_space.shape[0]
     rpm = experience_replay.ReplayMemory(opt["MEMORY_SIZE"])
     agent = agent.DDPG_agent(obs_dim = obs_dim, act_dim = act_dim, actor_lr = opt["ACTOR_LR"], critic_lr = opt["CRITIC_LR"], tau = opt["TAU"], gamma = opt["GAMMA"])
-    train(env, env_name, agent, opt["TRAIN_EPISODE"], rpm)
+    # train(env, env_name, agent, opt["TRAIN_EPISODE"], rpm)
+    agent.load("DDPG/Pendulum-v0.pth")
+    evaluate(5, env, agent, render=True)
+

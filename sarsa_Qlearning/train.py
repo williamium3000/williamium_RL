@@ -63,7 +63,7 @@ def train(episodes, env, agent, save):
         # reward, steps = run_episode_with_sarsa(env, agent, False)
         print("episode {} : reward {}, steps {}".format(episode + 1, reward, steps))
     if save:
-        agent.save()
+        agent.save("FrozenLake")
     return agent
 def test(agent, env):
     reward, steps = test_episode(env, agent)
@@ -72,7 +72,7 @@ def test(agent, env):
 
 if __name__ == "__main__":
     # env = gym.make("CliffWalking-v0")
-    env = gym.make("FrozenLake-v0", is_slippery = True)
+    env = gym.make("FrozenLake-v0", is_slippery = False)
     env = gridworld.FrozenLakeWapper(env)
     # sarsa_agent = agent.sarsaAgent(
     #     num_state=env.observation_space.n,
@@ -86,7 +86,7 @@ if __name__ == "__main__":
         lr=0.1,
         gamma=0.9,
         e_greedy=0.1)
-    # agent = train(5000, env, QLearning_agent, True)
-    QLearning_agent.restore("sarsa_Qlearning/q_table.npy")
+    # agent = train(2000, env, QLearning_agent, True)
+    QLearning_agent.restore("sarsa_Qlearning/FrozenLake.npy")
     test(QLearning_agent, env)
 

@@ -49,12 +49,24 @@ class PG_agent():
         act = np.expand_dims(act, axis=-1)
         obs, act, reward = torch.tensor(obs, dtype = torch.float32), torch.tensor(act, dtype = torch.int64), torch.tensor(reward, dtype = torch.float32)
         obs, act, reward = obs.to(self.device), act.to(self.device), reward.to(self.device)
-        act_prob = self.model(obs)
-        act_prob = torch.gather(act_prob, 1, act)
-        act_prob = torch.log(act_prob)
-        cost = -1 * act_prob * reward
-        loss = torch.mean(cost)
+        batch_size = 64
+        size = obs.shape[0]
         self.optimizer.zero_grad()
+        for i in range(size, batch_size):
+            obs_batch, act_batch, reward_batch = obs[i:i + batch_size], act[i:i + batch_size], reward[i:i + batch_size]
+            act_prob = self.model(obs_batch)
+            act_prob = torch.gather(act_prob, 1, act_batch)
+            act_prob = torch.log(act_prob)
+            cost = -1 * act_prob * reward_batch
+            loss = torch.mean(cost)
+            loss.backward()
+        i = (size // batch_size) * batch_size
+        obs_batch, act_batch, reward_batch = obs[i:], act[i:], reward[i:]
+        act_prob = self.model(obs_batch)
+        act_prob = torch.gather(act_prob, 1, act_batch)
+        act_prob = torch.log(act_prob)
+        cost = -1 * act_prob * reward_batch
+        loss = torch.mean(cost)
         loss.backward()
         self.optimizer.step()
     def calc_reward_to_go(self, reward_list, gamma=0.99):
