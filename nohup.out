@@ -18908,4 +18908,815 @@ Episode 80720, step 105 Reward Sum -508.7137179816327.
 Episode 80730, step 130 Reward Sum -279.8431856740174.
 Episode 80740, step 119 Reward Sum -400.57469018509846.
 Episode 80750, step 104 Reward Sum -477.86277008726864.
-Episode 80760, step 129 Reward Sum -291.8903483533576.
+Episode 80760, step 129 Reward Sum -291.8903483533576.DQN trained on Pong-v0
+{'LEARNING_RATE': 0.0001}
+Episode 0, Reward Sum -20.0.
+evaluating on 5 episodes with mean reward -21.0.
+Episode 10, Reward Sum -21.0.
+Traceback (most recent call last):
+  File "REINFORCE/train_Pong.py", line 99, in <module>
+    train(env, env_name, agent, 20000)
+  File "REINFORCE/train_Pong.py", line 70, in train
+    agent.learn(batch_obs, batch_action, batch_reward)
+  File "./REINFORCE/agent.py", line 65, in learn
+    act_prob = self.model(obs_batch)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/experiment/williamium_RL/REINFORCE/network.py", line 63, in forward
+    x = self.backbone(x)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torchvision/models/resnet.py", line 220, in forward
+    return self._forward_impl(x)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torchvision/models/resnet.py", line 206, in _forward_impl
+    x = self.maxpool(x)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torch/nn/modules/pooling.py", line 157, in forward
+    return F.max_pool2d(input, self.kernel_size, self.stride,
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torch/_jit_internal.py", line 247, in fn
+    return if_false(*args, **kwargs)
+  File "/opt/conda/envs/pytorch_cuda10.1/lib/python3.8/site-packages/torch/nn/functional.py", line 575, in _max_pool2d
+    return torch.max_pool2d(
+RuntimeError: non-empty 3D or 4D input tensor expected but got ndim: 4
+
+Episode 80770, step 125 Reward Sum -341.14278054282585.
+Episode 80780, step 132 Reward Sum -258.4188441198027.
+Episode 80790, step 114 Reward Sum -436.5838959654582.
+Episode 80800, step 112 Reward Sum -497.62057437123207.
+Episode 80810, step 143 Reward Sum -175.42510027950033.
+Episode 80820, step 124 Reward Sum -325.04226497788744.
+Episode 80830, step 116 Reward Sum -446.74038053212405.
+Episode 80840, step 114 Reward Sum -430.05721698675274.
+Episode 80850, step 141 Reward Sum -172.28347147882084.
+Episode 80860, step 130 Reward Sum -254.69289883925774.
+Episode 80870, step 133 Reward Sum -239.66430950852654.
+Episode 80880, step 123 Reward Sum -365.6896192798747.
+Episode 80890, step 136 Reward Sum -180.21054966158314.
+Episode 80900, step 107 Reward Sum -437.28714521088216.
+Episode 80910, step 115 Reward Sum -440.03041399352406.
+Episode 80920, step 128 Reward Sum -315.6964956872032.
+Episode 80930, step 124 Reward Sum -344.53020465630317.
+Episode 80940, step 118 Reward Sum -418.1031160711133.
+Episode 80950, step 124 Reward Sum -310.3513761999506.
+Episode 80960, step 124 Reward Sum -356.5941746718665.
+Episode 80970, step 133 Reward Sum -307.7314915984329.
+Episode 80980, step 127 Reward Sum -286.6739301309578.
+Episode 80990, step 104 Reward Sum -496.0047396269496.
+evaluating on 5 episodes with mean reward -298.78384041062804.
+Episode 81000, step 107 Reward Sum -476.5325792917698.
+Episode 81010, step 109 Reward Sum -494.30323456810106.
+Episode 81020, step 131 Reward Sum -261.1209893091224.
+Episode 81030, step 111 Reward Sum -464.02629118074765.
+Episode 81040, step 121 Reward Sum -361.7606986238762.
+Episode 81050, step 112 Reward Sum -458.804465904313.
+Episode 81060, step 131 Reward Sum -274.70156549787947.
+Episode 81070, step 126 Reward Sum -371.27434459584634.
+Episode 81080, step 117 Reward Sum -405.5393005092453.
+Episode 81090, step 144 Reward Sum -216.1835674469402.
+Episode 81100, step 113 Reward Sum -484.0799653319416.
+Episode 81110, step 109 Reward Sum -438.6523201859826.
+Episode 81120, step 128 Reward Sum -283.05066293843873.
+Episode 81130, step 127 Reward Sum -302.9975617520897.
+Episode 81140, step 105 Reward Sum -493.609105587874.
+Episode 81150, step 119 Reward Sum -353.50687242867315.
+Episode 81160, step 136 Reward Sum -267.5188409100307.
+Episode 81170, step 122 Reward Sum -401.2391244601529.
+Episode 81180, step 114 Reward Sum -411.1103845185975.
+Episode 81190, step 121 Reward Sum -381.1013729141441.
+Episode 81200, step 119 Reward Sum -424.26885510063454.
+Episode 81210, step 112 Reward Sum -466.34029118557623.
+Episode 81220, step 139 Reward Sum -224.61249910060963.
+Episode 81230, step 113 Reward Sum -402.57799573019713.
+Episode 81240, step 120 Reward Sum -372.1458925708264.
+Episode 81250, step 116 Reward Sum -386.01342386413694.
+Episode 81260, step 125 Reward Sum -345.7741048081273.
+Episode 81270, step 112 Reward Sum -484.85434556204984.
+Episode 81280, step 141 Reward Sum -197.52577066701005.
+Episode 81290, step 121 Reward Sum -377.768858166202.
+Episode 81300, step 104 Reward Sum -495.4697360772082.
+Episode 81310, step 144 Reward Sum -128.34700069893265.
+Episode 81320, step 135 Reward Sum -241.83857110345386.
+Episode 81330, step 106 Reward Sum -518.8431146425092.
+Episode 81340, step 137 Reward Sum -227.33494371761708.
+Episode 81350, step 125 Reward Sum -367.84687127087756.
+Episode 81360, step 110 Reward Sum -436.7359264330773.
+Episode 81370, step 104 Reward Sum -486.04026765387033.
+Episode 81380, step 113 Reward Sum -488.8401781208628.
+Episode 81390, step 114 Reward Sum -440.1983374246403.
+Episode 81400, step 129 Reward Sum -330.6049288071433.
+Episode 81410, step 118 Reward Sum -394.7821102277106.
+Episode 81420, step 113 Reward Sum -458.2769509952988.
+Episode 81430, step 135 Reward Sum -256.8446516775784.
+Episode 81440, step 111 Reward Sum -467.1629175635461.
+Episode 81450, step 105 Reward Sum -499.2462987731343.
+Episode 81460, step 108 Reward Sum -483.7608645532332.
+Episode 81470, step 112 Reward Sum -438.6524955845265.
+Episode 81480, step 105 Reward Sum -501.7699395968822.
+Episode 81490, step 114 Reward Sum -461.6987237310556.
+Episode 81500, step 106 Reward Sum -475.7245219325755.
+Episode 81510, step 107 Reward Sum -488.5790540206663.
+Episode 81520, step 111 Reward Sum -431.21919197914804.
+Episode 81530, step 117 Reward Sum -380.84346555700984.
+Episode 81540, step 124 Reward Sum -351.159430748642.
+Episode 81550, step 136 Reward Sum -225.4828625814368.
+Episode 81560, step 122 Reward Sum -322.32461059799425.
+Episode 81570, step 106 Reward Sum -544.7958387110891.
+Episode 81580, step 117 Reward Sum -444.9351697280041.
+Episode 81590, step 107 Reward Sum -498.46976057876265.
+Episode 81600, step 123 Reward Sum -333.0051625060801.
+Episode 81610, step 116 Reward Sum -386.964797511934.
+Episode 81620, step 134 Reward Sum -232.9268257327304.
+Episode 81630, step 128 Reward Sum -313.6196344633295.
+Episode 81640, step 141 Reward Sum -229.83816722675905.
+Episode 81650, step 143 Reward Sum -178.6728640223706.
+Episode 81660, step 109 Reward Sum -450.70020471818924.
+Episode 81670, step 128 Reward Sum -309.12511185942276.
+Episode 81680, step 117 Reward Sum -447.45011031678723.
+Episode 81690, step 119 Reward Sum -382.20834269643564.
+Episode 81700, step 124 Reward Sum -404.8557485827058.
+Episode 81710, step 127 Reward Sum -363.0929416740977.
+Episode 81720, step 122 Reward Sum -329.095024579388.
+Episode 81730, step 137 Reward Sum -255.744938654077.
+Episode 81740, step 121 Reward Sum -380.17769516211393.
+Episode 81750, step 116 Reward Sum -423.2451930304647.
+Episode 81760, step 134 Reward Sum -207.7900857864073.
+Episode 81770, step 118 Reward Sum -437.87420436594044.
+Episode 81780, step 119 Reward Sum -357.21803026431064.
+Episode 81790, step 108 Reward Sum -495.86408352509665.
+Episode 81800, step 131 Reward Sum -227.525403861904.
+Episode 81810, step 125 Reward Sum -339.794223940946.
+Episode 81820, step 105 Reward Sum -489.31081017953574.
+Episode 81830, step 122 Reward Sum -351.4704051597699.
+Episode 81840, step 144 Reward Sum -153.1229022347782.
+Episode 81850, step 133 Reward Sum -247.28779226512802.
+Episode 81860, step 134 Reward Sum -272.56040769481086.
+Episode 81870, step 109 Reward Sum -468.7895152714025.
+Episode 81880, step 140 Reward Sum -177.97016424534343.
+Episode 81890, step 115 Reward Sum -349.29186397019976.
+Episode 81900, step 120 Reward Sum -372.0177299689868.
+Episode 81910, step 137 Reward Sum -233.2908493192318.
+Episode 81920, step 119 Reward Sum -440.42772355408994.
+Episode 81930, step 125 Reward Sum -326.72770952792837.
+Episode 81940, step 115 Reward Sum -382.5004463447782.
+Episode 81950, step 112 Reward Sum -474.87580462120576.
+Episode 81960, step 118 Reward Sum -403.64725182233.
+Episode 81970, step 108 Reward Sum -440.1590026437229.
+Episode 81980, step 107 Reward Sum -449.4848313480578.
+Episode 81990, step 110 Reward Sum -508.0018275505262.
+evaluating on 5 episodes with mean reward -374.47481603304993.
+Episode 82000, step 114 Reward Sum -440.55488287090515.
+Episode 82010, step 111 Reward Sum -464.74338733077064.
+Episode 82020, step 125 Reward Sum -357.90518580561496.
+Episode 82030, step 121 Reward Sum -335.0050356283388.
+Episode 82040, step 107 Reward Sum -449.1025533837943.
+Episode 82050, step 123 Reward Sum -343.85968026599517.
+Episode 82060, step 140 Reward Sum -194.45893776809788.
+Episode 82070, step 138 Reward Sum -230.93225516829162.
+Episode 82080, step 114 Reward Sum -447.6492303058508.
+Episode 82090, step 110 Reward Sum -455.58864640526133.
+Episode 82100, step 113 Reward Sum -483.57064749805176.
+Episode 82110, step 128 Reward Sum -306.1660312222719.
+Episode 82120, step 137 Reward Sum -249.58874493449073.
+Episode 82130, step 139 Reward Sum -178.2172622037769.
+Episode 82140, step 125 Reward Sum -342.13195915665375.
+Episode 82150, step 130 Reward Sum -321.1097987699541.
+Episode 82160, step 143 Reward Sum -134.52638091413954.
+Episode 82170, step 117 Reward Sum -454.8359662325689.
+Episode 82180, step 108 Reward Sum -472.49533776258335.
+Episode 82190, step 140 Reward Sum -175.77965230904388.
+Episode 82200, step 135 Reward Sum -319.9512467114834.
+Episode 82210, step 138 Reward Sum -205.44059426087804.
+Episode 82220, step 122 Reward Sum -350.9169245167013.SL_alphaGo:
+    - model name: alphaGo
+    - optimizer: Adam
+    - learning rate: 0.0001
+    - batch size: 1024
+    - device : cuda:3
+    - num_of_classes: 255
+    - param_to_update_name_prefix: []
+    - epochs: 1000
+ 
+epoche 0, loss = 5.400590
+Checking accuracy on train set: 
+Got 15771 / 795648 correct (1.98)
+Checking accuracy on validate set: 
+Got 1789 / 99328 correct (1.80)
+epoche 1, loss = 5.392720
+Checking accuracy on train set: 
+Got 20345 / 795648 correct (2.56)
+Checking accuracy on validate set: 
+Got 2222 / 99328 correct (2.24)
+epoche 2, loss = 5.393171
+Checking accuracy on train set: 
+
+Episode 82230, step 123 Reward Sum -377.71967624472364.
+Episode 82240, step 129 Reward Sum -316.3027544520853.
+Episode 82250, step 112 Reward Sum -445.0768975123509.
+Episode 82260, step 118 Reward Sum -433.5491595330954.
+Episode 82270, step 122 Reward Sum -381.0726688486479.
+Episode 82280, step 115 Reward Sum -439.4203576081141.
+Episode 82290, step 120 Reward Sum -346.429012969474.
+Episode 82300, step 135 Reward Sum -243.74306985815033.
+Episode 82310, step 135 Reward Sum -274.2129966069332.
+Episode 82320, step 139 Reward Sum -198.82124500098007.
+Episode 82330, step 115 Reward Sum -422.96079888305553.
+Episode 82340, step 134 Reward Sum -231.48175295584852.
+Episode 82350, step 144 Reward Sum -189.27847772761214.
+Episode 82360, step 132 Reward Sum -320.55968027283217.
+Episode 82370, step 131 Reward Sum -292.60965515132705.
+Episode 82380, step 132 Reward Sum -220.0128059494771.
+Episode 82390, step 109 Reward Sum -501.2775987840874.
+Episode 82400, step 141 Reward Sum -173.32260864361547.
+Episode 82410, step 106 Reward Sum -498.24512949146464.
+Episode 82420, step 125 Reward Sum -382.0616623901638.
+Episode 82430, step 132 Reward Sum -281.2679511231003.
+Episode 82440, step 131 Reward Sum -219.61054451787106.
+Episode 82450, step 112 Reward Sum -443.41485883206536.
+Episode 82460, step 117 Reward Sum -426.9688978588487.
+Episode 82470, step 139 Reward Sum -190.0618053858582.
+Episode 82480, step 112 Reward Sum -454.4274906734274.
+Episode 82490, step 113 Reward Sum -475.13054034247.
+Episode 82500, step 116 Reward Sum -428.1526964648576.
+Episode 82510, step 105 Reward Sum -451.5305526238137.
+Episode 82520, step 113 Reward Sum -391.3972593455062.
+Episode 82530, step 116 Reward Sum -434.6508433831092.
+Episode 82540, step 108 Reward Sum -498.80854530519883.
+Episode 82550, step 116 Reward Sum -447.5389283696721.
+Episode 82560, step 114 Reward Sum -437.51956066701047.
+Episode 82570, step 104 Reward Sum -543.2841863658857.
+Episode 82580, step 129 Reward Sum -331.13870364057533.
+Episode 82590, step 122 Reward Sum -425.9517422707889.
+Episode 82600, step 138 Reward Sum -153.26309163904858.
+Episode 82610, step 114 Reward Sum -426.5541844340109.
+Episode 82620, step 107 Reward Sum -548.1998885936049.
+Episode 82630, step 126 Reward Sum -345.2617409934929.
+Episode 82640, step 105 Reward Sum -497.07909156314486.
+Episode 82650, step 106 Reward Sum -478.5646936442218.
+Episode 82660, step 116 Reward Sum -380.7568521272314.
+Episode 82670, step 121 Reward Sum -344.1646608026063.
+Episode 82680, step 130 Reward Sum -299.32847821688335.
+Episode 82690, step 134 Reward Sum -239.85833609014716.
+Episode 82700, step 142 Reward Sum -166.1464491373149.
+Episode 82710, step 118 Reward Sum -413.0794460979128.
+Episode 82720, step 139 Reward Sum -217.8426713315388.
+Episode 82730, step 108 Reward Sum -492.1413749498856.
+Episode 82740, step 120 Reward Sum -441.23465102075636.
+Episode 82750, step 142 Reward Sum -126.18662238742809.
+Episode 82760, step 113 Reward Sum -523.4355873461254.
+Episode 82770, step 106 Reward Sum -461.86554833689956.
+Episode 82780, step 121 Reward Sum -381.3978252364625.
+Episode 82790, step 137 Reward Sum -175.88027434046148.
+Episode 82800, step 119 Reward Sum -371.2641329481302.
+Episode 82810, step 130 Reward Sum -273.28994967108747.
+Episode 82820, step 131 Reward Sum -259.07105264076995.
+Episode 82830, step 119 Reward Sum -317.39007462752727.
+Episode 82840, step 118 Reward Sum -422.7886466718738.
+Episode 82850, step 116 Reward Sum -404.6423724357266.
+Episode 82860, step 127 Reward Sum -304.84185693456124.
+Episode 82870, step 112 Reward Sum -376.89502111089115.
+Episode 82880, step 107 Reward Sum -475.04475099306154.
+Episode 82890, step 118 Reward Sum -455.5147984954315.
+Episode 82900, step 121 Reward Sum -383.0962594880316.
+Episode 82910, step 136 Reward Sum -198.01919360877298.
+Episode 82920, step 141 Reward Sum -191.79286600525586.
+Episode 82930, step 119 Reward Sum -437.1426664561928.
+Episode 82940, step 103 Reward Sum -494.585605917223.
+Episode 82950, step 123 Reward Sum -305.38667967880934.
+Episode 82960, step 126 Reward Sum -295.9737603031424.
+Episode 82970, step 141 Reward Sum -207.03468318497877.
+Episode 82980, step 145 Reward Sum -173.50759874024843.
+Episode 82990, step 125 Reward Sum -341.7684371824312.
+evaluating on 5 episodes with mean reward -405.0218994142596.
+Episode 83000, step 129 Reward Sum -371.7006794811126.
+Episode 83010, step 110 Reward Sum -501.27675411086744.
+Episode 83020, step 111 Reward Sum -491.41554642951286.
+Episode 83030, step 105 Reward Sum -488.7214903727346.
+Episode 83040, step 116 Reward Sum -437.9838939941662.
+Episode 83050, step 116 Reward Sum -420.7037082707954.
+Episode 83060, step 109 Reward Sum -505.4095766337222.
+Episode 83070, step 103 Reward Sum -464.14165038469423.
+Episode 83080, step 109 Reward Sum -446.33908982393535.
+Episode 83090, step 103 Reward Sum -514.825340044293.
+Episode 83100, step 119 Reward Sum -385.53231755326385.
+Episode 83110, step 113 Reward Sum -437.9523909826864.
+Episode 83120, step 122 Reward Sum -370.626159519425.
+Episode 83130, step 103 Reward Sum -520.9933085052501.
+Episode 83140, step 141 Reward Sum -189.7347805906423.
+Episode 83150, step 117 Reward Sum -401.8568346146129.
+Episode 83160, step 103 Reward Sum -518.3383378610451.
+Episode 83170, step 107 Reward Sum -486.34914264887226.
+Episode 83180, step 120 Reward Sum -375.0223254490418.
+Episode 83190, step 106 Reward Sum -509.6599154735711.
+Episode 83200, step 125 Reward Sum -298.8054273096971.
+Episode 83210, step 127 Reward Sum -367.996342326778.
+Episode 83220, step 117 Reward Sum -431.0048079482145.
+Episode 83230, step 119 Reward Sum -430.38273043019626.
+Episode 83240, step 114 Reward Sum -417.45576662481557.
+Episode 83250, step 119 Reward Sum -382.2381282921633.
+Episode 83260, step 111 Reward Sum -461.76917413392385.
+Episode 83270, step 112 Reward Sum -460.4610505011301.
+Episode 83280, step 106 Reward Sum -490.76953820566.
+Episode 83290, step 118 Reward Sum -384.9542227333399.
+Episode 83300, step 115 Reward Sum -425.3247392494639.
+Episode 83310, step 118 Reward Sum -407.440931055039.
+Episode 83320, step 110 Reward Sum -478.3036513541396.
+Episode 83330, step 140 Reward Sum -153.17411190992775.
+Episode 83340, step 108 Reward Sum -500.64481395234156.
+Episode 83350, step 104 Reward Sum -471.92461130621416.
+Episode 83360, step 115 Reward Sum -441.01021629904506.
+Episode 83370, step 141 Reward Sum -158.28748135201764.
+Episode 83380, step 136 Reward Sum -206.63370168538881.
+Episode 83390, step 140 Reward Sum -183.0939474524722.
+Episode 83400, step 107 Reward Sum -465.6180124034762.
+Episode 83410, step 103 Reward Sum -478.88088518157684.
+Episode 83420, step 127 Reward Sum -293.46721031960897.
+Episode 83430, step 130 Reward Sum -258.08743442106635.
+Episode 83440, step 107 Reward Sum -485.71714283391094.
+Episode 83450, step 118 Reward Sum -352.9942646976262.
+Episode 83460, step 112 Reward Sum -426.3768660947577.
+Episode 83470, step 109 Reward Sum -493.01435631170716.
+Episode 83480, step 133 Reward Sum -224.54609582596825.
+Episode 83490, step 110 Reward Sum -456.9079359532324.
+Episode 83500, step 135 Reward Sum -218.66162296467292.
+Episode 83510, step 110 Reward Sum -460.3849159151443.
+Episode 83520, step 115 Reward Sum -403.68212976816204.
+Episode 83530, step 129 Reward Sum -279.6187210079757.
+Episode 83540, step 124 Reward Sum -336.2380103144134.
+Episode 83550, step 112 Reward Sum -433.54299348589313.
+Episode 83560, step 112 Reward Sum -436.4608497029173.
+Episode 83570, step 137 Reward Sum -208.89070261901134.
+Episode 83580, step 120 Reward Sum -322.989923856675.
+Episode 83590, step 141 Reward Sum -169.23464624992414.
+Episode 83600, step 123 Reward Sum -348.56641621684514.
+Episode 83610, step 138 Reward Sum -206.4855968746436.
+Episode 83620, step 104 Reward Sum -479.53972133214785.
+Episode 83630, step 122 Reward Sum -352.90044451146287.
+Episode 83640, step 130 Reward Sum -267.5756402358068.
+Episode 83650, step 118 Reward Sum -369.4619264634646.
+Episode 83660, step 123 Reward Sum -337.95964430085553.
+Episode 83670, step 114 Reward Sum -432.8948935279846.
+Episode 83680, step 105 Reward Sum -464.39972326964727.
+Episode 83690, step 121 Reward Sum -404.1751726847822.Got 23461 / 795648 correct (2.95)
+Checking accuracy on validate set: 
+Got 2563 / 99328 correct (2.58)
+epoche 3, loss = 5.393406
+Checking accuracy on train set: 
+Got 25755 / 795648 correct (3.24)
+Checking accuracy on validate set: 
+Got 2621 / 99328 correct (2.64)
+epoche 4, loss = 5.387482
+Checking accuracy on train set: 
+Got 29241 / 795648 correct (3.68)
+Checking accuracy on validate set: 
+Got 2849 / 99328 correct (2.87)
+epoche 5, loss = 5.389771
+Checking accuracy on train set: 
+Got 30654 / 795648 correct (3.85)
+Checking accuracy on validate set: 
+Got 2940 / 99328 correct (2.96)
+epoche 6, loss = 5.378010
+Checking accuracy on train set: 
+Got 33162 / 795648 correct (4.17)
+Checking accuracy on validate set: 
+Got 3025 / 99328 correct (3.05)
+epoche 7, loss = 5.377577
+Checking accuracy on train set: 
+Got 36366 / 795648 correct (4.57)
+Checking accuracy on validate set: 
+Got 3168 / 99328 correct (3.19)
+epoche 8, loss = 5.383276
+Checking accuracy on train set: 
+Got 38564 / 795648 correct (4.85)
+Checking accuracy on validate set: 
+Got 3242 / 99328 correct (3.26)
+epoche 9, loss = 5.375913
+Checking accuracy on train set: 
+Got 40872 / 795648 correct (5.14)
+Checking accuracy on validate set: 
+Got 3331 / 99328 correct (3.35)
+epoche 10, loss = 5.369920
+Checking accuracy on train set: 
+Got 43520 / 795648 correct (5.47)
+Checking accuracy on validate set: 
+Got 3423 / 99328 correct (3.45)
+epoche 11, loss = 5.377697
+Checking accuracy on train set: 
+Got 45801 / 795648 correct (5.76)
+Checking accuracy on validate set: 
+Got 3503 / 99328 correct (3.53)
+epoche 12, loss = 5.375263
+Checking accuracy on train set: 
+Got 47765 / 795648 correct (6.00)
+Checking accuracy on validate set: 
+Got 3578 / 99328 correct (3.60)
+epoche 13, loss = 5.354338
+Checking accuracy on train set: 
+Got 49052 / 795648 correct (6.17)
+Checking accuracy on validate set: 
+Got 3624 / 99328 correct (3.65)
+epoche 14, loss = 5.363894
+Checking accuracy on train set: 
+Got 51828 / 795648 correct (6.51)
+Checking accuracy on validate set: 
+Got 3753 / 99328 correct (3.78)
+epoche 15, loss = 5.356788
+Checking accuracy on train set: 
+Got 53779 / 795648 correct (6.76)
+Checking accuracy on validate set: 
+Got 3861 / 99328 correct (3.89)
+
+Episode 83700, step 131 Reward Sum -283.23257289112485.
+Episode 83710, step 115 Reward Sum -376.5269864915284.
+Episode 83720, step 134 Reward Sum -245.56554675845976.
+Episode 83730, step 141 Reward Sum -185.85771362286582.
+Episode 83740, step 122 Reward Sum -381.49106225788455.
+Episode 83750, step 124 Reward Sum -368.64660106480545.
+Episode 83760, step 111 Reward Sum -422.20637622775996.
+Episode 83770, step 115 Reward Sum -440.86010908467534.
+Episode 83780, step 139 Reward Sum -161.97607558260611.
+Episode 83790, step 123 Reward Sum -321.2165121269942.
+Episode 83800, step 142 Reward Sum -119.35478518453866.
+Episode 83810, step 124 Reward Sum -283.95482245987745.
+Episode 83820, step 106 Reward Sum -500.95568917619426.
+Episode 83830, step 137 Reward Sum -207.18705611421504.
+Episode 83840, step 108 Reward Sum -508.85146119202847.
+Episode 83850, step 133 Reward Sum -273.219889503214.
+Episode 83860, step 123 Reward Sum -369.4889090263062.
+Episode 83870, step 127 Reward Sum -279.61769805191693.
+Episode 83880, step 125 Reward Sum -327.99131444107144.
+Episode 83890, step 110 Reward Sum -459.8805279745914.
+Episode 83900, step 135 Reward Sum -186.05717052942367.
+Episode 83910, step 122 Reward Sum -344.3346110782165.
+Episode 83920, step 109 Reward Sum -496.5687721367897.
+Episode 83930, step 110 Reward Sum -423.7755972329936.
+Episode 83940, step 105 Reward Sum -495.2493446141386.
+Episode 83950, step 115 Reward Sum -404.44315497534274.
+Episode 83960, step 138 Reward Sum -212.7098504043702.
+Episode 83970, step 134 Reward Sum -228.6206887500018.
+Episode 83980, step 131 Reward Sum -298.9286736836554.
+Episode 83990, step 120 Reward Sum -407.7384911003824.
+evaluating on 5 episodes with mean reward -390.8691097597411.
+Episode 84000, step 121 Reward Sum -325.959950230708.
+Episode 84010, step 103 Reward Sum -495.33270495555007.
+Episode 84020, step 128 Reward Sum -322.1269599939513.
+Episode 84030, step 115 Reward Sum -426.95883700466646.
+Episode 84040, step 133 Reward Sum -288.8011502373587.
+Episode 84050, step 125 Reward Sum -354.6793836255063.
+Episode 84060, step 142 Reward Sum -205.6839112750491.
+Episode 84070, step 125 Reward Sum -392.1895452043276.
+Episode 84080, step 130 Reward Sum -325.8231847133539.
+Episode 84090, step 107 Reward Sum -492.5562669573937.
+Episode 84100, step 140 Reward Sum -189.3070947341142.
+Episode 84110, step 104 Reward Sum -499.49937053659454.
+Episode 84120, step 106 Reward Sum -511.9741550378173.
+Episode 84130, step 139 Reward Sum -191.82234133376468.
+Episode 84140, step 125 Reward Sum -327.4481299692015.
+Episode 84150, step 120 Reward Sum -404.9668919148375.
+Episode 84160, step 107 Reward Sum -457.5686122239067.
+Episode 84170, step 142 Reward Sum -228.39057113882515.
+Episode 84180, step 109 Reward Sum -460.89644967490625.
+Episode 84190, step 124 Reward Sum -298.77691748632793.
+Episode 84200, step 141 Reward Sum -112.92992912645188.
+Episode 84210, step 103 Reward Sum -485.1894266934811.
+Episode 84220, step 141 Reward Sum -119.62626745054754.
+Episode 84230, step 131 Reward Sum -204.98136445593497.
+Episode 84240, step 110 Reward Sum -483.9671737998697.
+Episode 84250, step 138 Reward Sum -234.4598048638608.
+Episode 84260, step 142 Reward Sum -131.0188901467284.
+Episode 84270, step 124 Reward Sum -357.59709720409705.
+Episode 84280, step 142 Reward Sum -193.72196076819918.
+Episode 84290, step 112 Reward Sum -391.2344163181063.
+Episode 84300, step 111 Reward Sum -454.10301388065096.
+Episode 84310, step 127 Reward Sum -300.20412240747106.
+Episode 84320, step 112 Reward Sum -447.8390982454897.
+Episode 84330, step 117 Reward Sum -418.61324226328674.
+Episode 84340, step 120 Reward Sum -394.0979308733299.
+Episode 84350, step 124 Reward Sum -361.96401209352985.
+Episode 84360, step 138 Reward Sum -179.39090005922301.
+Episode 84370, step 115 Reward Sum -420.25517793105485.
+Episode 84380, step 133 Reward Sum -206.32142549667105.
+Episode 84390, step 134 Reward Sum -228.74515843407912.
+Episode 84400, step 106 Reward Sum -501.8044165890777.
+Episode 84410, step 124 Reward Sum -377.2868822637372.
+Episode 84420, step 120 Reward Sum -373.5661111250834.
+Episode 84430, step 118 Reward Sum -432.41526450703856.
+Episode 84440, step 118 Reward Sum -421.2405641961867.
+Episode 84450, step 119 Reward Sum -404.98431769821826.
+Episode 84460, step 104 Reward Sum -523.692216818854.
+Episode 84470, step 124 Reward Sum -354.49474938671773.
+Episode 84480, step 125 Reward Sum -328.5962928458866.
+Episode 84490, step 128 Reward Sum -306.89670611947673.
+Episode 84500, step 105 Reward Sum -501.7774167963629.
+Episode 84510, step 135 Reward Sum -230.36091736780082.
+Episode 84520, step 109 Reward Sum -472.576394966085.
+Episode 84530, step 113 Reward Sum -439.6635232263551.
+Episode 84540, step 105 Reward Sum -528.6570654553356.
+Episode 84550, step 115 Reward Sum -416.4467421058375.
+Episode 84560, step 124 Reward Sum -311.17403184556935.
+Episode 84570, step 121 Reward Sum -389.8664903905574.
+Episode 84580, step 141 Reward Sum -203.93062542678751.
+Episode 84590, step 122 Reward Sum -309.80253726101193.
+Episode 84600, step 118 Reward Sum -360.8518827781261.
+Episode 84610, step 108 Reward Sum -477.6609257506558.
+Episode 84620, step 130 Reward Sum -261.00808693403457.
+Episode 84630, step 106 Reward Sum -487.73463937798135.
+Episode 84640, step 137 Reward Sum -235.80250564952553.
+Episode 84650, step 134 Reward Sum -222.75734674432812.
+Episode 84660, step 130 Reward Sum -286.5802618042094.
+Episode 84670, step 104 Reward Sum -487.75651774508856.
+Episode 84680, step 125 Reward Sum -287.0624603271652.
+Episode 84690, step 126 Reward Sum -264.06496148972076.
+Episode 84700, step 127 Reward Sum -345.98930000204945.
+Episode 84710, step 109 Reward Sum -460.31698383678076.
+Episode 84720, step 107 Reward Sum -477.63051972811024.
+Episode 84730, step 119 Reward Sum -364.9729004255756.
+Episode 84740, step 118 Reward Sum -374.36424173427486.
+Episode 84750, step 134 Reward Sum -254.61584770649412.
+Episode 84760, step 131 Reward Sum -283.0611423673848.
+Episode 84770, step 121 Reward Sum -330.735852668954.
+Episode 84780, step 142 Reward Sum -82.5124268638194.
+Episode 84790, step 107 Reward Sum -491.25997616567474.
+Episode 84800, step 108 Reward Sum -490.54448827452916.
+Episode 84810, step 104 Reward Sum -520.4192297237298.
+Episode 84820, step 126 Reward Sum -353.6174376389656.
+Episode 84830, step 121 Reward Sum -345.9765899275663.
+Episode 84840, step 142 Reward Sum -120.37175606128496.
+Episode 84850, step 103 Reward Sum -506.53303219123734.
+Episode 84860, step 104 Reward Sum -495.9326297034092.
+Episode 84870, step 128 Reward Sum -273.63196734775175.
+Episode 84880, step 135 Reward Sum -255.9096192836268.
+Episode 84890, step 116 Reward Sum -455.26858362261066.
+Episode 84900, step 111 Reward Sum -471.2379779158648.
+Episode 84910, step 124 Reward Sum -303.97725346099315.
+Episode 84920, step 124 Reward Sum -340.9559570688019.
+Episode 84930, step 114 Reward Sum -442.8529332744136.
+Episode 84940, step 114 Reward Sum -432.2153248939612.
+Episode 84950, step 127 Reward Sum -313.85321772397185.
+Episode 84960, step 134 Reward Sum -166.89712601179033.
+Episode 84970, step 114 Reward Sum -424.5615442410541.
+Episode 84980, step 114 Reward Sum -444.3414290363031.
+Episode 84990, step 138 Reward Sum -208.5368991115226.
+evaluating on 5 episodes with mean reward -387.6983483648872.
+Episode 85000, step 127 Reward Sum -262.38937175158776.
+Episode 85010, step 118 Reward Sum -342.4305640941953.
+Episode 85020, step 109 Reward Sum -433.95540509191517.
+Episode 85030, step 133 Reward Sum -242.17739324637628.
+Episode 85040, step 117 Reward Sum -418.4182205425141.
+Episode 85050, step 124 Reward Sum -335.2647379875043.
+Episode 85060, step 106 Reward Sum -451.60067124252873.
+Episode 85070, step 105 Reward Sum -452.14010677340167.
+Episode 85080, step 104 Reward Sum -476.4318013532408.
+Episode 85090, step 120 Reward Sum -339.5415551317271.
+Episode 85100, step 138 Reward Sum -207.95902755890492.
+Episode 85110, step 111 Reward Sum -429.85500160576447.
+Episode 85120, step 129 Reward Sum -303.15645342307056.
+Episode 85130, step 108 Reward Sum -433.60493122609745.
+Episode 85140, step 118 Reward Sum -402.9271755183275.
+Episode 85150, step 119 Reward Sum -403.411118592303.epoche 16, loss = 5.376567
+Checking accuracy on train set: 
+Got 55014 / 795648 correct (6.91)
+Checking accuracy on validate set: 
+Got 3777 / 99328 correct (3.80)
+epoche 17, loss = 5.354240
+Checking accuracy on train set: 
+Got 57398 / 795648 correct (7.21)
+Checking accuracy on validate set: 
+Got 3870 / 99328 correct (3.90)
+epoche 18, loss = 5.350873
+Checking accuracy on train set: 
+Got 57992 / 795648 correct (7.29)
+Checking accuracy on validate set: 
+Got 3931 / 99328 correct (3.96)
+epoche 19, loss = 5.345227
+Checking accuracy on train set: 
+Got 60400 / 795648 correct (7.59)
+Checking accuracy on validate set: 
+Got 3949 / 99328 correct (3.98)
+epoche 20, loss = 5.351855
+Checking accuracy on train set: 
+Got 61519 / 795648 correct (7.73)
+Checking accuracy on validate set: 
+Got 4053 / 99328 correct (4.08)
+epoche 21, loss = 5.344073
+Checking accuracy on train set: 
+Got 63262 / 795648 correct (7.95)
+Checking accuracy on validate set: 
+Got 4071 / 99328 correct (4.10)
+epoche 22, loss = 5.338174
+Checking accuracy on train set: 
+Got 63971 / 795648 correct (8.04)
+Checking accuracy on validate set: 
+Got 4134 / 99328 correct (4.16)
+epoche 23, loss = 5.346847
+Checking accuracy on train set: 
+Got 65428 / 795648 correct (8.22)
+Checking accuracy on validate set: 
+Got 4084 / 99328 correct (4.11)
+epoche 24, loss = 5.331477
+Checking accuracy on train set: 
+Got 66695 / 795648 correct (8.38)
+Checking accuracy on validate set: 
+Got 4129 / 99328 correct (4.16)
+epoche 25, loss = 5.329165
+Checking accuracy on train set: 
+Got 69402 / 795648 correct (8.72)
+Checking accuracy on validate set: 
+Got 4297 / 99328 correct (4.33)
+epoche 26, loss = 5.349319
+Checking accuracy on train set: 
+Got 70253 / 795648 correct (8.83)
+Checking accuracy on validate set: 
+Got 4266 / 99328 correct (4.29)
+epoche 27, loss = 5.334487
+Checking accuracy on train set: 
+Got 69772 / 795648 correct (8.77)
+Checking accuracy on validate set: 
+Got 4221 / 99328 correct (4.25)
+epoche 28, loss = 5.344360
+Checking accuracy on train set: 
+Got 71052 / 795648 correct (8.93)
+Checking accuracy on validate set: 
+Got 4250 / 99328 correct (4.28)
+
+Episode 85160, step 108 Reward Sum -483.70184577971503.
+Episode 85170, step 128 Reward Sum -274.1577523165203.
+Episode 85180, step 122 Reward Sum -397.4989659097063.
+Episode 85190, step 133 Reward Sum -263.4086937771556.
+Episode 85200, step 121 Reward Sum -320.8465501873749.
+Episode 85210, step 106 Reward Sum -500.96546360957143.
+Episode 85220, step 122 Reward Sum -322.836999323502.
+Episode 85230, step 119 Reward Sum -385.4918396511215.
+Episode 85240, step 115 Reward Sum -399.67161895428137.
+Episode 85250, step 103 Reward Sum -492.1141845434883.
+Episode 85260, step 115 Reward Sum -474.50031260611905.
+Episode 85270, step 127 Reward Sum -352.95792571399386.
+Episode 85280, step 127 Reward Sum -296.8541560256756.
+Episode 85290, step 120 Reward Sum -414.65770119010944.
+Episode 85300, step 106 Reward Sum -455.3459015408975.
+Episode 85310, step 105 Reward Sum -496.10067719551904.
+Episode 85320, step 138 Reward Sum -154.1913392563623.
+Episode 85330, step 136 Reward Sum -213.81783609660175.
+Episode 85340, step 120 Reward Sum -376.67306165279615.
+Episode 85350, step 133 Reward Sum -249.83789693980512.
+Episode 85360, step 141 Reward Sum -149.21412319616405.
+Episode 85370, step 117 Reward Sum -356.33854094330195.
+Episode 85380, step 106 Reward Sum -479.1639799814972.
+Episode 85390, step 106 Reward Sum -477.4280868604281.
+Episode 85400, step 113 Reward Sum -417.4699831806671.
+Episode 85410, step 105 Reward Sum -450.842868878732.
+Episode 85420, step 121 Reward Sum -368.55086887428.
+Episode 85430, step 112 Reward Sum -438.61668932156783.
+Episode 85440, step 133 Reward Sum -267.9223568597626.
+Episode 85450, step 106 Reward Sum -474.5920919778322.
+Episode 85460, step 115 Reward Sum -397.17304652829955.
+Episode 85470, step 123 Reward Sum -313.77449346053186.
+Episode 85480, step 115 Reward Sum -389.96951693077.
+Episode 85490, step 133 Reward Sum -250.68070839845822.
+Episode 85500, step 134 Reward Sum -286.6175570055476.
+Episode 85510, step 120 Reward Sum -368.13727203595516.
+Episode 85520, step 136 Reward Sum -194.30796402750317.
+Episode 85530, step 132 Reward Sum -286.24708403814975.
+Episode 85540, step 112 Reward Sum -439.65330924074146.
+Episode 85550, step 123 Reward Sum -333.1418872599304.
+Episode 85560, step 122 Reward Sum -348.6307637347174.
+Episode 85570, step 133 Reward Sum -224.32388429833284.
+Episode 85580, step 114 Reward Sum -388.7662887592425.
+Episode 85590, step 107 Reward Sum -489.19133824781403.
+Episode 85600, step 108 Reward Sum -418.2650975979088.
+Episode 85610, step 117 Reward Sum -394.9795286289088.
+Episode 85620, step 130 Reward Sum -294.0681245371478.
+Episode 85630, step 117 Reward Sum -359.6081334182851.
+Episode 85640, step 109 Reward Sum -472.77347089568644.
+Episode 85650, step 108 Reward Sum -489.7112821594867.
+Episode 85660, step 121 Reward Sum -326.5428429328061.
+Episode 85670, step 115 Reward Sum -422.539043337458.
+Episode 85680, step 111 Reward Sum -443.39375225662604.
+Episode 85690, step 133 Reward Sum -259.62108736900467.
+Episode 85700, step 144 Reward Sum -176.27545896116078.
+Episode 85710, step 115 Reward Sum -426.94859907766585.
+Episode 85720, step 134 Reward Sum -264.88295010237255.
+Episode 85730, step 121 Reward Sum -379.52263973994934.
+Episode 85740, step 137 Reward Sum -176.13783544989082.
+Episode 85750, step 106 Reward Sum -476.090266538875.
+Episode 85760, step 107 Reward Sum -465.7265392269833.
+Episode 85770, step 106 Reward Sum -482.5120294718553.
+Episode 85780, step 125 Reward Sum -269.77839411477765.
+Episode 85790, step 115 Reward Sum -393.314713870813.
+Episode 85800, step 140 Reward Sum -167.2274344496712.
+Episode 85810, step 130 Reward Sum -240.7559814631056.
+Episode 85820, step 131 Reward Sum -226.3710791112262.
+Episode 85830, step 123 Reward Sum -374.112263354652.
+Episode 85840, step 118 Reward Sum -431.1316396372702.
+Episode 85850, step 141 Reward Sum -159.57855592488164.
+Episode 85860, step 125 Reward Sum -356.80368109419686.
+Episode 85870, step 130 Reward Sum -215.38408187258193.
+Episode 85880, step 123 Reward Sum -302.3975441169401.
+Episode 85890, step 119 Reward Sum -400.73547979317794.
+Episode 85900, step 103 Reward Sum -523.8682682946908.
+Episode 85910, step 143 Reward Sum -208.4392153609567.
+Episode 85920, step 129 Reward Sum -284.97281925525704.
+Episode 85930, step 115 Reward Sum -401.751194941628.
+Episode 85940, step 110 Reward Sum -398.0842442037945.
+Episode 85950, step 134 Reward Sum -201.75554018123842.
+Episode 85960, step 133 Reward Sum -191.56410543020553.
+Episode 85970, step 106 Reward Sum -483.1882289669431.
+Episode 85980, step 136 Reward Sum -243.99301023144417.
+Episode 85990, step 123 Reward Sum -300.9779033028569.
+evaluating on 5 episodes with mean reward -295.34365913887086.
+Episode 86000, step 105 Reward Sum -498.4894031989592.
+Episode 86010, step 118 Reward Sum -379.6848170184676.
+Episode 86020, step 102 Reward Sum -505.9504414351372.
+Episode 86030, step 122 Reward Sum -378.9174858065962.
+Episode 86040, step 132 Reward Sum -225.8153909080261.
+Episode 86050, step 105 Reward Sum -521.3645774106851.
+Episode 86060, step 127 Reward Sum -325.9650732933885.
+Episode 86070, step 139 Reward Sum -180.3462137192603.
+Episode 86080, step 142 Reward Sum -165.88863266669492.
+Episode 86090, step 139 Reward Sum -155.97052612176498.
+Episode 86100, step 126 Reward Sum -326.1690342395223.
+Episode 86110, step 129 Reward Sum -277.0516848740304.
+Episode 86120, step 106 Reward Sum -459.99460415358254.
+Episode 86130, step 139 Reward Sum -209.85549157583426.
+Episode 86140, step 133 Reward Sum -197.94647214846304.
+Episode 86150, step 122 Reward Sum -320.2545499594421.
+Episode 86160, step 105 Reward Sum -493.65748604626503.
+Episode 86170, step 126 Reward Sum -324.15932165054386.
+Episode 86180, step 128 Reward Sum -340.21452458090505.
+Episode 86190, step 104 Reward Sum -534.8755406916595.
+Episode 86200, step 138 Reward Sum -176.09136381264855.
+Episode 86210, step 116 Reward Sum -405.7440500672239.
+Episode 86220, step 125 Reward Sum -348.1594377890227.
+Episode 86230, step 119 Reward Sum -396.97883336193564.
+Episode 86240, step 116 Reward Sum -396.7657118304345.
+Episode 86250, step 122 Reward Sum -363.3994600783614.
+Episode 86260, step 137 Reward Sum -245.22009389083195.
+Episode 86270, step 104 Reward Sum -502.7178428148585.
+Episode 86280, step 130 Reward Sum -234.4050345742701.
+Episode 86290, step 107 Reward Sum -464.19102678571227.
+Episode 86300, step 118 Reward Sum -435.1850664181088.
+Episode 86310, step 135 Reward Sum -225.73569743450784.
+Episode 86320, step 137 Reward Sum -185.47131616668258.
+Episode 86330, step 113 Reward Sum -380.20674992645525.
+Episode 86340, step 113 Reward Sum -450.7973415672528.
+Episode 86350, step 122 Reward Sum -382.6245111402882.
+Episode 86360, step 104 Reward Sum -497.115013374853.
+Episode 86370, step 128 Reward Sum -343.80550924707296.
+Episode 86380, step 135 Reward Sum -165.67061604571498.
+Episode 86390, step 142 Reward Sum -162.11458533797503.
+Episode 86400, step 119 Reward Sum -413.0968661232194.
+Episode 86410, step 129 Reward Sum -249.55783261033207.
+Episode 86420, step 109 Reward Sum -441.222838022443.
+Episode 86430, step 141 Reward Sum -141.29506627683617.
+Episode 86440, step 140 Reward Sum -168.07960544978584.
+Episode 86450, step 136 Reward Sum -243.78710876797473.
+Episode 86460, step 104 Reward Sum -516.7669613487394.
+Episode 86470, step 131 Reward Sum -256.90801217346785.
+Episode 86480, step 117 Reward Sum -428.98965644840837.
+Episode 86490, step 108 Reward Sum -467.4198934217777.
+Episode 86500, step 109 Reward Sum -460.7412872825134.
+Episode 86510, step 138 Reward Sum -197.4405863737966.
+Episode 86520, step 128 Reward Sum -297.6304443687893.
+Episode 86530, step 139 Reward Sum -163.28346849870118.
+Episode 86540, step 122 Reward Sum -311.5144989252168.
+Episode 86550, step 124 Reward Sum -310.3531137932709.
+Episode 86560, step 103 Reward Sum -530.9005693302095.
+Episode 86570, step 110 Reward Sum -471.4221390855085.
+Episode 86580, step 123 Reward Sum -365.96102513218455.
+Episode 86590, step 117 Reward Sum -364.8826451245794.
+Episode 86600, step 108 Reward Sum -466.32001959039997.
+Episode 86610, step 127 Reward Sum -275.32143079021.
+Episode 86620, step 110 Reward Sum -449.443367025929.epoche 29, loss = 5.341030
+Checking accuracy on train set: 
+Got 72413 / 795648 correct (9.10)
+Checking accuracy on validate set: 
+Got 4277 / 99328 correct (4.31)
+epoche 30, loss = 5.337265
+Checking accuracy on train set: 
+Got 73306 / 795648 correct (9.21)
+Checking accuracy on validate set: 
+Got 4315 / 99328 correct (4.34)
+epoche 31, loss = 5.332824
+Checking accuracy on train set: 
+Got 75366 / 795648 correct (9.47)
+Checking accuracy on validate set: 
+Got 4366 / 99328 correct (4.40)
+epoche 32, loss = 5.326543
+Checking accuracy on train set: 
+Got 75354 / 795648 correct (9.47)
+Checking accuracy on validate set: 
+Got 4350 / 99328 correct (4.38)
+epoche 33, loss = 5.325962
+Checking accuracy on train set: 
+Got 76678 / 795648 correct (9.64)
+Checking accuracy on validate set: 
+Got 4413 / 99328 correct (4.44)
+epoche 34, loss = 5.322078
+Checking accuracy on train set: 
+Got 78534 / 795648 correct (9.87)
+Checking accuracy on validate set: 
+Got 4430 / 99328 correct (4.46)
+epoche 35, loss = 5.326671
+Checking accuracy on train set: 
+Got 79109 / 795648 correct (9.94)
+Checking accuracy on validate set: 

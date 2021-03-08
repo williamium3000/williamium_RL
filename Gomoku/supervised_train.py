@@ -195,7 +195,7 @@ if __name__ == "__main__":
     # dataLoaders
     dataLoaders = dataLoaderManager.dataLoaderManager(batch_size = batch_size, 
                                         shuffle = True, 
-                                        num_workers = 4, 
+                                        num_workers = 8, 
                                         drop_last = True, 
                                         random_state = 0, 
                                         pin_memory = True

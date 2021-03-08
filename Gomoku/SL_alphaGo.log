@@ -1,10 +1,189 @@
 WARNING:root:SL_alphaGo:
     - model name: alphaGo
     - optimizer: Adam
-    - learning rate: 0.001
-    - batch size: 64
+    - learning rate: 0.0001
+    - batch size: 1024
     - device : cuda:3
     - num_of_classes: 255
     - param_to_update_name_prefix: []
     - epochs: 1000
  
+WARNING:root:epoche 0, loss = 5.400590
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 15771 / 795648 correct (1.98)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 1789 / 99328 correct (1.80)
+WARNING:root:epoche 1, loss = 5.392720
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 20345 / 795648 correct (2.56)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 2222 / 99328 correct (2.24)
+WARNING:root:epoche 2, loss = 5.393171
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 23461 / 795648 correct (2.95)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 2563 / 99328 correct (2.58)
+WARNING:root:epoche 3, loss = 5.393406
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 25755 / 795648 correct (3.24)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 2621 / 99328 correct (2.64)
+WARNING:root:epoche 4, loss = 5.387482
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 29241 / 795648 correct (3.68)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 2849 / 99328 correct (2.87)
+WARNING:root:epoche 5, loss = 5.389771
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 30654 / 795648 correct (3.85)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 2940 / 99328 correct (2.96)
+WARNING:root:epoche 6, loss = 5.378010
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 33162 / 795648 correct (4.17)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3025 / 99328 correct (3.05)
+WARNING:root:epoche 7, loss = 5.377577
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 36366 / 795648 correct (4.57)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3168 / 99328 correct (3.19)
+WARNING:root:epoche 8, loss = 5.383276
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 38564 / 795648 correct (4.85)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3242 / 99328 correct (3.26)
+WARNING:root:epoche 9, loss = 5.375913
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 40872 / 795648 correct (5.14)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3331 / 99328 correct (3.35)
+WARNING:root:epoche 10, loss = 5.369920
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 43520 / 795648 correct (5.47)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3423 / 99328 correct (3.45)
+WARNING:root:epoche 11, loss = 5.377697
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 45801 / 795648 correct (5.76)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3503 / 99328 correct (3.53)
+WARNING:root:epoche 12, loss = 5.375263
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 47765 / 795648 correct (6.00)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3578 / 99328 correct (3.60)
+WARNING:root:epoche 13, loss = 5.354338
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 49052 / 795648 correct (6.17)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3624 / 99328 correct (3.65)
+WARNING:root:epoche 14, loss = 5.363894
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 51828 / 795648 correct (6.51)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3753 / 99328 correct (3.78)
+WARNING:root:epoche 15, loss = 5.356788
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 53779 / 795648 correct (6.76)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3861 / 99328 correct (3.89)
+WARNING:root:epoche 16, loss = 5.376567
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 55014 / 795648 correct (6.91)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3777 / 99328 correct (3.80)
+WARNING:root:epoche 17, loss = 5.354240
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 57398 / 795648 correct (7.21)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3870 / 99328 correct (3.90)
+WARNING:root:epoche 18, loss = 5.350873
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 57992 / 795648 correct (7.29)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3931 / 99328 correct (3.96)
+WARNING:root:epoche 19, loss = 5.345227
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 60400 / 795648 correct (7.59)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 3949 / 99328 correct (3.98)
+WARNING:root:epoche 20, loss = 5.351855
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 61519 / 795648 correct (7.73)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4053 / 99328 correct (4.08)
+WARNING:root:epoche 21, loss = 5.344073
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 63262 / 795648 correct (7.95)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4071 / 99328 correct (4.10)
+WARNING:root:epoche 22, loss = 5.338174
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 63971 / 795648 correct (8.04)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4134 / 99328 correct (4.16)
+WARNING:root:epoche 23, loss = 5.346847
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 65428 / 795648 correct (8.22)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4084 / 99328 correct (4.11)
+WARNING:root:epoche 24, loss = 5.331477
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 66695 / 795648 correct (8.38)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4129 / 99328 correct (4.16)
+WARNING:root:epoche 25, loss = 5.329165
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 69402 / 795648 correct (8.72)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4297 / 99328 correct (4.33)
+WARNING:root:epoche 26, loss = 5.349319
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 70253 / 795648 correct (8.83)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4266 / 99328 correct (4.29)
+WARNING:root:epoche 27, loss = 5.334487
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 69772 / 795648 correct (8.77)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4221 / 99328 correct (4.25)
+WARNING:root:epoche 28, loss = 5.344360
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 71052 / 795648 correct (8.93)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4250 / 99328 correct (4.28)
+WARNING:root:epoche 29, loss = 5.341030
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 72413 / 795648 correct (9.10)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4277 / 99328 correct (4.31)
+WARNING:root:epoche 30, loss = 5.337265
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 73306 / 795648 correct (9.21)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4315 / 99328 correct (4.34)
+WARNING:root:epoche 31, loss = 5.332824
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 75366 / 795648 correct (9.47)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4366 / 99328 correct (4.40)
+WARNING:root:epoche 32, loss = 5.326543
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 75354 / 795648 correct (9.47)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4350 / 99328 correct (4.38)
+WARNING:root:epoche 33, loss = 5.325962
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 76678 / 795648 correct (9.64)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4413 / 99328 correct (4.44)
+WARNING:root:epoche 34, loss = 5.322078
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 78534 / 795648 correct (9.87)
+WARNING:root:Checking accuracy on validate set: 
+WARNING:root:Got 4430 / 99328 correct (4.46)
+WARNING:root:epoche 35, loss = 5.326671
+WARNING:root:Checking accuracy on train set: 
+WARNING:root:Got 79109 / 795648 correct (9.94)
+WARNING:root:Checking accuracy on validate set: 
