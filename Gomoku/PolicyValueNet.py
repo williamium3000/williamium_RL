@@ -12,13 +12,19 @@ class PolicyValueNet(nn.Module):
         self.w = w
         # common layers
         self.backbone = nn.Sequential(
-            nn.Conv2d(c, 32, kernel_size=5, padding=2),
+            nn.Conv2d(c, 46, kernel_size=5, padding=2),
             nn.ReLU(),
-            nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.Conv2d(46, 192, kernel_size=5, padding=2),
             nn.ReLU(),
-            nn.Conv2d(64, 128, kernel_size=3, padding=1),
+            nn.Conv2d(192, 192, kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.Conv2d(128, 1, kernel_size=1),
+            nn.Conv2d(192, 192, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(192, 192, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(192, 192, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(192, 1, kernel_size=1),
             nn.ReLU(),
         )
         
@@ -33,9 +39,9 @@ class PolicyValueNet(nn.Module):
 
         # state value layers
         self.value_head = nn.Sequential(
-            nn.Linear(h * w, 64),
+            nn.Linear(h * w, 128),
             nn.ReLU(),
-            nn.Linear(64, 1),
+            nn.Linear(128, 1),
             nn.Tanh()
         )
 

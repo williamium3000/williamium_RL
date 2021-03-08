@@ -120,8 +120,8 @@ def save_model(save_dir, whole_model, file_name = None, model = None):
 task_name = "SL_alphaGo"
 model_name = "alphaGo"
 optimizer_name = "Adam"
-lr = 0.001
-batch_size = 64
+lr = 0.0001
+batch_size = 1024
 device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 num_classes = 255
 param_to_update_name_prefix = []
