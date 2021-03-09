@@ -4,7 +4,7 @@ import numpy as np
 import sys
 sys.path.append(".")
 from REINFORCE import agent
-logging.basicConfig(filename="REINFORCE/Pong-v0.log")
+logging.basicConfig(filename="REINFORCE/Pong-v0_dnn.log")
 import torch
 import random
 import numpy as np
@@ -78,12 +78,14 @@ opt = {
 
 def preprocess(image):
     """ 预处理 210x160x3 uint8 frame into 6400 (80x80) 1维 float vector """
-    # image = image[35:195] # 裁剪
-    # image = image[::2,::2,:] # 下采样，缩放2倍
+    image = image[35:195] # 裁剪
+    image = image[::2,::2,1] # 下采样，缩放2倍
     image[image == 144] = 0 # 擦除背景 (background type 1)
     image[image == 109] = 0 # 擦除背景 (background type 2)
-    # image[image != 0] = 1 # 转为灰度图，除了黑色外其他都是白色
-    image = image.transpose([2, 0, 1]).astype(np.float)
+    image[image != 0] = 1 # 转为灰度图，除了黑色外其他都是白色
+    image = image.ravel()
+    # print(image.shape)
+    # image = image.transpose([2, 0, 1]).astype(np.float)
     # print(image.shape)
     return image
 if __name__ == "__main__":
@@ -94,6 +96,7 @@ if __name__ == "__main__":
     print(opt)
     logging.warning(opt)
     num_act = env.action_space.n
-    obs_dim = (210, 160, 3)
+    # obs_dim = (210, 160, 3)
+    obs_dim = 80 * 80
     agent = agent.PG_agent(obs_dim, num_act, opt["LEARNING_RATE"])
     train(env, env_name, agent, 20000)

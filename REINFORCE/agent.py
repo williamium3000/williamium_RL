@@ -22,7 +22,7 @@ class PG_agent():
         self.obs_dim = obs_dim
         self.num_act = num_act 
         self.lr = lr
-        self.device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         self.model = network.PGnetwork(self.obs_dim, self.num_act)
         self.optimizer = optim.Adam(self.model.parameters(), self.lr)
     def get_prob(self, obs):
@@ -49,7 +49,7 @@ class PG_agent():
         act = np.expand_dims(act, axis=-1)
         obs, act, reward = torch.tensor(obs, dtype = torch.float32), torch.tensor(act, dtype = torch.int64), torch.tensor(reward, dtype = torch.float32)
         obs, act, reward = obs.to(self.device), act.to(self.device), reward.to(self.device)
-        batch_size = 128
+        batch_size = 64
         size = obs.shape[0]
         self.optimizer.zero_grad()
         for i in range(size, batch_size):

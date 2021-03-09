@@ -1,0 +1,291 @@
+WARNING:root:DQN trained on Pong-v0
+WARNING:root:{'LEARNING_RATE': 0.0001}
+WARNING:root:Episode 0, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:DQN trained on Pong-v0
+WARNING:root:{'LEARNING_RATE': 0.0001}
+WARNING:root:Episode 0, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:DQN trained on Pong-v0
+WARNING:root:{'LEARNING_RATE': 0.0001}
+WARNING:root:Episode 0, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 10, Reward Sum -21.0.
+WARNING:root:Episode 20, Reward Sum -21.0.
+WARNING:root:Episode 30, Reward Sum -21.0.
+WARNING:root:Episode 40, Reward Sum -21.0.
+WARNING:root:Episode 50, Reward Sum -21.0.
+WARNING:root:Episode 60, Reward Sum -21.0.
+WARNING:root:Episode 70, Reward Sum -21.0.
+WARNING:root:Episode 80, Reward Sum -21.0.
+WARNING:root:Episode 90, Reward Sum -21.0.
+WARNING:root:Episode 100, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 110, Reward Sum -21.0.
+WARNING:root:Episode 120, Reward Sum -21.0.
+WARNING:root:Episode 130, Reward Sum -21.0.
+WARNING:root:Episode 140, Reward Sum -21.0.
+WARNING:root:Episode 150, Reward Sum -21.0.
+WARNING:root:Episode 160, Reward Sum -21.0.
+WARNING:root:Episode 170, Reward Sum -21.0.
+WARNING:root:Episode 180, Reward Sum -21.0.
+WARNING:root:Episode 190, Reward Sum -21.0.
+WARNING:root:Episode 200, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 210, Reward Sum -21.0.
+WARNING:root:Episode 220, Reward Sum -21.0.
+WARNING:root:Episode 230, Reward Sum -21.0.
+WARNING:root:Episode 240, Reward Sum -21.0.
+WARNING:root:Episode 250, Reward Sum -21.0.
+WARNING:root:Episode 260, Reward Sum -21.0.
+WARNING:root:Episode 270, Reward Sum -21.0.
+WARNING:root:Episode 280, Reward Sum -21.0.
+WARNING:root:Episode 290, Reward Sum -21.0.
+WARNING:root:Episode 300, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 310, Reward Sum -21.0.
+WARNING:root:Episode 320, Reward Sum -21.0.
+WARNING:root:Episode 330, Reward Sum -21.0.
+WARNING:root:Episode 340, Reward Sum -21.0.
+WARNING:root:Episode 350, Reward Sum -21.0.
+WARNING:root:Episode 360, Reward Sum -21.0.
+WARNING:root:Episode 370, Reward Sum -21.0.
+WARNING:root:Episode 380, Reward Sum -21.0.
+WARNING:root:Episode 390, Reward Sum -21.0.
+WARNING:root:Episode 400, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 410, Reward Sum -21.0.
+WARNING:root:Episode 420, Reward Sum -21.0.
+WARNING:root:Episode 430, Reward Sum -21.0.
+WARNING:root:Episode 440, Reward Sum -21.0.
+WARNING:root:Episode 450, Reward Sum -21.0.
+WARNING:root:Episode 460, Reward Sum -21.0.
+WARNING:root:Episode 470, Reward Sum -21.0.
+WARNING:root:Episode 480, Reward Sum -21.0.
+WARNING:root:Episode 490, Reward Sum -21.0.
+WARNING:root:Episode 500, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 510, Reward Sum -21.0.
+WARNING:root:Episode 520, Reward Sum -21.0.
+WARNING:root:Episode 530, Reward Sum -21.0.
+WARNING:root:Episode 540, Reward Sum -21.0.
+WARNING:root:Episode 550, Reward Sum -21.0.
+WARNING:root:Episode 560, Reward Sum -21.0.
+WARNING:root:Episode 570, Reward Sum -21.0.
+WARNING:root:Episode 580, Reward Sum -21.0.
+WARNING:root:Episode 590, Reward Sum -21.0.
+WARNING:root:Episode 600, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 610, Reward Sum -21.0.
+WARNING:root:Episode 620, Reward Sum -21.0.
+WARNING:root:Episode 630, Reward Sum -21.0.
+WARNING:root:Episode 640, Reward Sum -21.0.
+WARNING:root:Episode 650, Reward Sum -21.0.
+WARNING:root:Episode 660, Reward Sum -21.0.
+WARNING:root:Episode 670, Reward Sum -21.0.
+WARNING:root:Episode 680, Reward Sum -21.0.
+WARNING:root:Episode 690, Reward Sum -21.0.
+WARNING:root:Episode 700, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 710, Reward Sum -21.0.
+WARNING:root:Episode 720, Reward Sum -21.0.
+WARNING:root:Episode 730, Reward Sum -21.0.
+WARNING:root:Episode 740, Reward Sum -21.0.
+WARNING:root:Episode 750, Reward Sum -21.0.
+WARNING:root:Episode 760, Reward Sum -21.0.
+WARNING:root:Episode 770, Reward Sum -21.0.
+WARNING:root:Episode 780, Reward Sum -21.0.
+WARNING:root:Episode 790, Reward Sum -21.0.
+WARNING:root:Episode 800, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 810, Reward Sum -21.0.
+WARNING:root:Episode 820, Reward Sum -21.0.
+WARNING:root:Episode 830, Reward Sum -21.0.
+WARNING:root:Episode 840, Reward Sum -21.0.
+WARNING:root:Episode 850, Reward Sum -21.0.
+WARNING:root:Episode 860, Reward Sum -21.0.
+WARNING:root:Episode 870, Reward Sum -21.0.
+WARNING:root:Episode 880, Reward Sum -21.0.
+WARNING:root:Episode 890, Reward Sum -21.0.
+WARNING:root:Episode 900, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 910, Reward Sum -21.0.
+WARNING:root:Episode 920, Reward Sum -21.0.
+WARNING:root:Episode 930, Reward Sum -21.0.
+WARNING:root:Episode 940, Reward Sum -21.0.
+WARNING:root:Episode 950, Reward Sum -21.0.
+WARNING:root:Episode 960, Reward Sum -21.0.
+WARNING:root:Episode 970, Reward Sum -21.0.
+WARNING:root:Episode 980, Reward Sum -21.0.
+WARNING:root:Episode 990, Reward Sum -21.0.
+WARNING:root:Episode 1000, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1010, Reward Sum -21.0.
+WARNING:root:Episode 1020, Reward Sum -21.0.
+WARNING:root:Episode 1030, Reward Sum -21.0.
+WARNING:root:Episode 1040, Reward Sum -21.0.
+WARNING:root:Episode 1050, Reward Sum -21.0.
+WARNING:root:Episode 1060, Reward Sum -21.0.
+WARNING:root:Episode 1070, Reward Sum -21.0.
+WARNING:root:Episode 1080, Reward Sum -21.0.
+WARNING:root:Episode 1090, Reward Sum -21.0.
+WARNING:root:Episode 1100, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1110, Reward Sum -21.0.
+WARNING:root:Episode 1120, Reward Sum -21.0.
+WARNING:root:Episode 1130, Reward Sum -21.0.
+WARNING:root:Episode 1140, Reward Sum -21.0.
+WARNING:root:Episode 1150, Reward Sum -21.0.
+WARNING:root:Episode 1160, Reward Sum -21.0.
+WARNING:root:Episode 1170, Reward Sum -21.0.
+WARNING:root:Episode 1180, Reward Sum -21.0.
+WARNING:root:Episode 1190, Reward Sum -21.0.
+WARNING:root:Episode 1200, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1210, Reward Sum -21.0.
+WARNING:root:Episode 1220, Reward Sum -21.0.
+WARNING:root:Episode 1230, Reward Sum -21.0.
+WARNING:root:Episode 1240, Reward Sum -21.0.
+WARNING:root:Episode 1250, Reward Sum -21.0.
+WARNING:root:Episode 1260, Reward Sum -21.0.
+WARNING:root:Episode 1270, Reward Sum -21.0.
+WARNING:root:Episode 1280, Reward Sum -21.0.
+WARNING:root:Episode 1290, Reward Sum -21.0.
+WARNING:root:Episode 1300, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1310, Reward Sum -21.0.
+WARNING:root:Episode 1320, Reward Sum -21.0.
+WARNING:root:Episode 1330, Reward Sum -21.0.
+WARNING:root:Episode 1340, Reward Sum -21.0.
+WARNING:root:Episode 1350, Reward Sum -21.0.
+WARNING:root:Episode 1360, Reward Sum -21.0.
+WARNING:root:Episode 1370, Reward Sum -21.0.
+WARNING:root:Episode 1380, Reward Sum -21.0.
+WARNING:root:Episode 1390, Reward Sum -21.0.
+WARNING:root:Episode 1400, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1410, Reward Sum -21.0.
+WARNING:root:Episode 1420, Reward Sum -21.0.
+WARNING:root:Episode 1430, Reward Sum -21.0.
+WARNING:root:Episode 1440, Reward Sum -21.0.
+WARNING:root:Episode 1450, Reward Sum -21.0.
+WARNING:root:Episode 1460, Reward Sum -21.0.
+WARNING:root:Episode 1470, Reward Sum -21.0.
+WARNING:root:Episode 1480, Reward Sum -21.0.
+WARNING:root:Episode 1490, Reward Sum -21.0.
+WARNING:root:Episode 1500, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1510, Reward Sum -21.0.
+WARNING:root:Episode 1520, Reward Sum -21.0.
+WARNING:root:Episode 1530, Reward Sum -21.0.
+WARNING:root:Episode 1540, Reward Sum -21.0.
+WARNING:root:Episode 1550, Reward Sum -21.0.
+WARNING:root:Episode 1560, Reward Sum -21.0.
+WARNING:root:Episode 1570, Reward Sum -21.0.
+WARNING:root:Episode 1580, Reward Sum -21.0.
+WARNING:root:Episode 1590, Reward Sum -21.0.
+WARNING:root:Episode 1600, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1610, Reward Sum -21.0.
+WARNING:root:Episode 1620, Reward Sum -21.0.
+WARNING:root:Episode 1630, Reward Sum -21.0.
+WARNING:root:Episode 1640, Reward Sum -21.0.
+WARNING:root:Episode 1650, Reward Sum -21.0.
+WARNING:root:Episode 1660, Reward Sum -21.0.
+WARNING:root:Episode 1670, Reward Sum -21.0.
+WARNING:root:Episode 1680, Reward Sum -21.0.
+WARNING:root:Episode 1690, Reward Sum -21.0.
+WARNING:root:Episode 1700, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1710, Reward Sum -21.0.
+WARNING:root:Episode 1720, Reward Sum -21.0.
+WARNING:root:Episode 1730, Reward Sum -21.0.
+WARNING:root:Episode 1740, Reward Sum -21.0.
+WARNING:root:Episode 1750, Reward Sum -21.0.
+WARNING:root:Episode 1760, Reward Sum -21.0.
+WARNING:root:Episode 1770, Reward Sum -21.0.
+WARNING:root:Episode 1780, Reward Sum -21.0.
+WARNING:root:Episode 1790, Reward Sum -21.0.
+WARNING:root:Episode 1800, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1810, Reward Sum -21.0.
+WARNING:root:Episode 1820, Reward Sum -21.0.
+WARNING:root:Episode 1830, Reward Sum -21.0.
+WARNING:root:Episode 1840, Reward Sum -21.0.
+WARNING:root:Episode 1850, Reward Sum -21.0.
+WARNING:root:Episode 1860, Reward Sum -21.0.
+WARNING:root:Episode 1870, Reward Sum -21.0.
+WARNING:root:Episode 1880, Reward Sum -21.0.
+WARNING:root:Episode 1890, Reward Sum -21.0.
+WARNING:root:Episode 1900, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 1910, Reward Sum -21.0.
+WARNING:root:Episode 1920, Reward Sum -21.0.
+WARNING:root:Episode 1930, Reward Sum -21.0.
+WARNING:root:Episode 1940, Reward Sum -21.0.
+WARNING:root:Episode 1950, Reward Sum -21.0.
+WARNING:root:Episode 1960, Reward Sum -21.0.
+WARNING:root:Episode 1970, Reward Sum -21.0.
+WARNING:root:Episode 1980, Reward Sum -21.0.
+WARNING:root:Episode 1990, Reward Sum -21.0.
+WARNING:root:Episode 2000, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 2010, Reward Sum -21.0.
+WARNING:root:Episode 2020, Reward Sum -21.0.
+WARNING:root:Episode 2030, Reward Sum -21.0.
+WARNING:root:Episode 2040, Reward Sum -21.0.
+WARNING:root:Episode 2050, Reward Sum -21.0.
+WARNING:root:Episode 2060, Reward Sum -21.0.
+WARNING:root:Episode 2070, Reward Sum -21.0.
+WARNING:root:Episode 2080, Reward Sum -21.0.
+WARNING:root:Episode 2090, Reward Sum -21.0.
+WARNING:root:Episode 2100, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 2110, Reward Sum -21.0.
+WARNING:root:Episode 2120, Reward Sum -21.0.
+WARNING:root:Episode 2130, Reward Sum -21.0.
+WARNING:root:Episode 2140, Reward Sum -21.0.
+WARNING:root:Episode 2150, Reward Sum -21.0.
+WARNING:root:Episode 2160, Reward Sum -21.0.
+WARNING:root:Episode 2170, Reward Sum -21.0.
+WARNING:root:Episode 2180, Reward Sum -21.0.
+WARNING:root:Episode 2190, Reward Sum -21.0.
+WARNING:root:Episode 2200, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 2210, Reward Sum -21.0.
+WARNING:root:Episode 2220, Reward Sum -21.0.
+WARNING:root:Episode 2230, Reward Sum -21.0.
+WARNING:root:Episode 2240, Reward Sum -21.0.
+WARNING:root:Episode 2250, Reward Sum -21.0.
+WARNING:root:Episode 2260, Reward Sum -21.0.
+WARNING:root:Episode 2270, Reward Sum -21.0.
+WARNING:root:Episode 2280, Reward Sum -21.0.
+WARNING:root:Episode 2290, Reward Sum -21.0.
+WARNING:root:Episode 2300, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 2310, Reward Sum -21.0.
+WARNING:root:Episode 2320, Reward Sum -21.0.
+WARNING:root:Episode 2330, Reward Sum -21.0.
+WARNING:root:Episode 2340, Reward Sum -21.0.
+WARNING:root:Episode 2350, Reward Sum -21.0.
+WARNING:root:Episode 2360, Reward Sum -21.0.
+WARNING:root:Episode 2370, Reward Sum -21.0.
+WARNING:root:Episode 2380, Reward Sum -21.0.
+WARNING:root:Episode 2390, Reward Sum -21.0.
+WARNING:root:Episode 2400, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 2410, Reward Sum -21.0.
+WARNING:root:Episode 2420, Reward Sum -21.0.
+WARNING:root:Episode 2430, Reward Sum -21.0.
+WARNING:root:Episode 2440, Reward Sum -21.0.
+WARNING:root:Episode 2450, Reward Sum -21.0.
+WARNING:root:Episode 2460, Reward Sum -21.0.
+WARNING:root:Episode 2470, Reward Sum -21.0.
+WARNING:root:Episode 2480, Reward Sum -21.0.
+WARNING:root:Episode 2490, Reward Sum -21.0.
+WARNING:root:Episode 2500, Reward Sum -21.0.
+WARNING:root:evaluating on 5 episodes with mean reward -21.0.
+WARNING:root:Episode 2510, Reward Sum -21.0.
+WARNING:root:Episode 2520, Reward Sum -21.0.
+WARNING:root:Episode 2530, Reward Sum -21.0.
+WARNING:root:Episode 2540, Reward Sum -21.0.

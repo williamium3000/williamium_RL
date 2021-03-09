@@ -1,4 +1,0 @@
-WARNING:root:DQN trained on Pong-v0
-WARNING:root:{'LEARNING_RATE': 0.0001}
-WARNING:root:Episode 0, Reward Sum -21.0.
-WARNING:root:evaluating on 5 episodes with mean reward -20.8.
